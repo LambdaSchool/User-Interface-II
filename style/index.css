@@ -1,1 +1,206 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: hotpink;
+    background-color: black;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia; 
+}
+
+.container {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+nav :hover {
+    color:purple;
+}
+
+.ashley {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.main-title {
+    text-align: center;
+    color:aquamarine;
+    font-size: 2.6rem;
+}
+
+.dog {
+    width: 100%;
+    height: 60rem;
+}
+
+.picture-row {
+    display: flex;
+    margin: 2rem 0rem;
+}
+
+.picture-row img {
+    object-fit: cover;
+    width: 325px;
+    height: 725px;
+}
+
+#pictureone {
+    margin: 0rem;
+}
+
+#picturetwo {
+    margin-left: 2rem;
+}
+
+#picturethree {
+    margin-left: 2rem;
+}
+
+#picturefour {
+    margin-left: 2rem;
+    border-right: 1rem;
+}
+
+.picture-row img {
+    width: 36rem;
+    height: 45rem;
+}
+
+.pictureabout {
+    padding: 3rem;
+    font-size: 2.5rem;
+}
+
+footer {
+    background-color: rebeccapurple;
+    text-align: center;
+    padding: 13rem;
+    margin-top: 5rem;
+}
+
+button {
+    background-color: dodgerblue;
+    color: greenyellow;
+    text-align: center;
+    padding: 2.4rem;
+    border: 8rem;
+}
+
+footer a:link, a:visited {
+    background-color: dodgerblue;
+    color: greenyellow;
+    text-align: center;
+    padding: 2.6rem;
+    border: 8rem;
+}
+
+@media(max-width: 800px){
+    .container {
+        padding: 3rem;
+    }
+
+    nav {
+        margin: 2rem 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: 12rem;
+        margin-bottom: 3rem;
+    }
+
+    .dog {
+        width: 60rem;
+        height: 35rem;
+      }
+      
+      .picture-row img {
+        width: 14.5rem;
+        height: 37rem;
+      }
+      
+      .pictureabout {
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        padding: 3rem;
+      }
+}
+
+@media(max-width: 500px){
+    .container {
+        margin: 0 auto;
+        width: 45rem;
+      }
+      header nav {
+        flex-direction: column;
+        align-items: center;
+        height: 13rem;
+        margin-bottom: 10rem;
+      }
+      
+      .main-title {
+        font-size: 1.8rem;
+      }
+      
+      .dog {
+        width: 40rem;
+      }
+      
+      .picture-row {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      #picturethree {
+        margin-top: 2rem;
+        margin-right: 2rem;
+      }
+      
+      #picturefour {
+        margin-top: 2rem;
+        margin-right: 2rem;
+      }
+      
+      .pictureabout {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+      
+      footer {
+        height: 35rem;
+      }
+      
+      button a{
+        width: 7rem;
+      }
+      
+      footer nav a {
+        width: 5rem;
+        display: none;
+      }
+}
