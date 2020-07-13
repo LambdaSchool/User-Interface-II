@@ -1,0 +1,43 @@
+
+
+
+.container {
+    display: flex;
+    color: #DDB9A3;
+    border: solid black;
+}
+
+ h1, h2, h3 {
+    display: flex;
+    color: black;
+    text-align: center;
+}
+
+.square {
+    background-color: #FF764E;
+    width: 30px;
+    height:30px;
+}
+
+.square0 {
+    background-color: #5ED3EB;
+    height: 30px;
+    width: 30px;
+}
+
+.square1 {
+    background-color: #FFCD69;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.truck {
+    background-color: palevioletred;
+    width: 10%; 
+    height: 25px;
+}
+
+.pic-container {
+    color: #F9E7DC;
+}
