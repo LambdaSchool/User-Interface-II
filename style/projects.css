@@ -52,8 +52,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .button {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     height: 40px;
     width: 120px;
     border: 1px solid #bbe1fa;
@@ -89,68 +88,24 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     background-color: #bbe1fa;
-}
-
-.intro {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 2%;
     font-family: "Open-Sans", sans-serif;
-  }
-
-.intro img{
-    width: 25%;
-    margin: 1% 1% 1% 1%;
-    border-radius: 5%;
 }
 
-.intro .bio {
-    width: 600px;
-    margin: 0 2%;
-}
-
-.intro .bio h2 {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    padding-bottom: 1.2%;
-    margin-bottom: 1.2%;
-    border-bottom: 1px solid #ebebeb;
-}
-
-.projects-heading h2{
-    font-size: 2.5rem;
-    margin-bottom: 0.5%;
-}
-
-.projects-heading {
+h1 {
     text-align: center;
-    margin-bottom: 2%;
-    font-family: "Open-Sans", sans-serif;
+    font-size: 2.75rem;
+    margin: 10px 0 0 0;
 }
-
-.projects-list {
+ 
+.projects {
+    width: 100%;
+    padding: 50px 0 150px 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    font-family: "Open-Sans", sans-serif;
-
 }
 
-.project-item {
-    text-align: center;
-    margin: 0 1% 2%;
-}
-
-.project-thumbnail {
-    border-radius: 5%;
-    margin-bottom: 2%;
-    overflow: hidden;
-}
 
 footer {
     background-color: #3282b8;
@@ -192,7 +147,7 @@ footer {
         padding: 10px 0 10px 0;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         align-content: center;
