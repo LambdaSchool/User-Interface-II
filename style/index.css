@@ -1,1 +1,184 @@
-/* Add CSS styling here */
+body{
+
+}
+.container{
+    background-color: #cceabb;
+    width: auto;
+    /* display:flex;
+    flex-direction: column;
+    justify-content: center; */
+
+
+}
+p{
+    font-family: 'Lexend Zetta', Regular; 
+}
+h1,
+h2{
+    font-family: 'Open Sans', Regular; 
+    font-size: 30px;
+}
+img{
+    box-shadow:0px 10px 10px gray ;
+}
+
+/*  */
+footer,
+header{
+    background-color: #fdcb9e;
+    display: flex;
+    /* justify-content: space-evenly; */
+    box-shadow:0px 4px 10px gray;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding:5%;
+    margin:1%;
+}
+.headerNav{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.headerNav a{
+    text-decoration: none;
+    color: #3f3f44;
+}
+#aboutNav{
+    background-color: #cceabb;
+    padding:3% 4px;
+    border-radius: 12%;
+}
+#projectsNav{
+    background-color: #cceabb;
+    padding:3% 4px;
+    border-radius: 12%;
+}
+#contactNav{
+    background-color: #cceabb;
+    padding:3% 4px;
+    border-radius: 12%;
+}
+
+.headerNav a:hover{
+    background-color: #cceabb;
+    /* margin: 9%;
+    padding: 10px; */
+}
+
+/*  */
+#intro{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+intro p{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+/*  */
+
+.largeImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+#twoBlock{
+    display: flex;
+    justify-content: space-evenly;
+}
+.images{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.projectInfo p{
+    display:flex;
+    justify-content: flex-end;
+}
+.projectA,
+.projectB,
+.projectC{
+}
+.projectA img{
+    height: 90%;
+    align-items: baseline;
+}
+.projectB img{
+    height: 90%;
+    margin-top: 20px;
+}
+.projectC img{
+    height: 90%;
+    margin-top: 40px;
+}
+.projectInfo{
+    text-align: center;
+    margin-top: 70px;
+} 
+
+footer{
+    display: flex;
+}
+
+button a{
+    text-decoration: none;
+}
+
+/*  */
+@media (max-width:800px) {
+    .container{
+        width:auto;
+    }
+    
+    .largeImage{
+        justify-content: center;
+    }
+
+    #twoBlock{
+        flex-direction: column;
+    }
+    .images{
+        flex-direction:row;
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        width:100%;
+    }
+    .projectInfo p{
+        flex-direction:column;
+    }
+  
+    /* .topContent #intro p{
+        justify-content: center;
+    } */
+}
+
+@media(max-width:500px) {
+    .container{
+        width:auto;
+    }
+    
+    .largeImage img{
+        justify-content: center;
+    }
+
+}
+
+/* The large image- I can't get to move fluidly
+
+The image and paragraph- I can't get them to stack at 500
+
+Look for the bottom button and the space of the items in the header after a certain point*/
