@@ -1,1 +1,253 @@
-/* Add CSS styling here */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Philosopher:wght@700&display=swap");
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 1.1rem;
+  font-family: "Noto Serif", serif;
+  color: #606b69;
+}
+
+/* Header */
+header,
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+h1 {
+  font-size: 5rem;
+  font-family: "Philosopher", sans-serif;
+  margin: 1.9rem 0;
+}
+
+.contact-me,
+header nav a {
+  border: 1px solid #bd968a;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.5rem;
+  background-color: #cca193;
+  color: white;
+  box-shadow: 0px 4px 8px 1px lightgrey;
+  margin: 0.5rem 0;
+}
+
+.contact-me:hover,
+header nav a:hover {
+  background-color: #bd8371;
+  border-color: #b78f82;
+}
+
+nav {
+  margin: 2rem 0;
+  width: 40vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.intro p {
+  width: 80%;
+}
+.heroImage {
+  height: 50vh;
+  width: 100%;
+  margin: 3rem 0;
+  background-size: cover;
+  background-image: url("../images/desk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #d6cccb;
+  box-shadow: 0px 2px 8px 3px #e0d8d7;
+}
+/* Projects */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects-wrapper {
+  width: 74vw;
+  height: 55vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.projects-wrapper img {
+  width: 93%;
+  height: 90%;
+  box-shadow: 3px 5px 8px 1px #e0d8d7;
+  border-radius: 0.5rem;
+}
+.projectImg {
+  width: 24%;
+  height: 98%;
+}
+.description {
+  width: 25vw;
+  padding: 3.5rem 3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #e7e2e6;
+  padding: 3.5rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -1px 10px 3px #eae8e7;
+  position: relative;
+  margin-top: 2rem;
+}
+footer i {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 6rem;
+  bottom: 4rem;
+  color: #707b79;
+}
+
+@media screen and (min-width: 800px) {
+  .projects-wrapper img:hover {
+    width: 100%;
+    height: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    width: 90vw;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  .projects-wrapper a {
+    width: 47%;
+    height: 20rem;
+  }
+  .projects-wrapper img {
+    width: 100%;
+  }
+  .description {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  footer {
+    justify-content: start;
+    padding: 3.5rem 4.5rem;
+  }
+  footer i {
+    font-size: 2.5rem;
+  }
+}
