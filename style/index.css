@@ -1,1 +1,194 @@
 /* Add CSS styling here */
+.body {
+  background-color: #ead2ac;
+}
+/*@media (max-width: 800px) {
+  body {
+    background-color: #b5838d;
+  }
+}*/
+.title {
+  height: 75px;
+  font-family: "Leckerli One", cursive;
+  font-weight: bold;
+  background-color: #463532;
+  color: #fb4d3d;
+  display: flex;
+  justify-content: center;
+}
+/*@media (max-width: 800px) {
+  .title {
+    background-color:white;
+    font-size: 1 rem;
+  }
+}*/
+.topnav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: "Leckerli One", cursive;
+  background-color: #b5838d;
+  padding: %;
+}
+/*@media (max-width: 800px) {
+  .topnav {
+    background-color: teal;
+  }
+}*/
+.home {
+  border-radius: 15px;
+  background-color: #4281a4;
+  color: white;
+  transition: 2s;
+}
+.home:hover {
+  background-color: white;
+  color: #4281a4;
+}
+.about {
+  border-radius: 15px;
+  background-color: #6d6875;
+  color: white;
+  transition: 2s;
+}
+.about:hover {
+  background-color: white;
+  color: #6d6875;
+}
+.projects {
+  border-radius: 15px;
+  background-color: #b76e79;
+  color: white;
+  transition: 2s;
+}
+.projects:hover {
+  background-color: white;
+  color: #b76e79;
+}
+.contact {
+  border-radius: 15px;
+  background-color: #c4b7cb;
+  color: white;
+  transition: 2s;
+}
+.contact:hover {
+  background-color: white;
+  color: #c4b7cb;
+}
+.intro h1 {
+  margin: 0 auto;
+  background-color: #fb4d3d;
+  color: #463532;
+  display: flex;
+  justify-content: center;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: bold;
+  background-color: #fb4d3d;
+}
+/*@media (max-width: 800px) {
+  .intro h1 {
+    background-color: #463532;
+    color: #fb4d3d;
+    flex-wrap: wrap;
+  }
+}*/
+.intro p {
+  height: 75px;
+  background-color: #eee4e1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*@media (max-width: 800px){
+    .intro p{
+        background-color: #fb4d3d;
+        flex-wrap: wrap;
+    }
+}*/
+.img-home {
+  max-width: 100;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /*align-self: stretch;*/
+}
+/*@media (max-width: 800px){
+    .img-home{
+        width: 100%;
+        position: absolute;
+    }
+}*/
+.gallery {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+@media (max-width: 800px){
+    .gallery{
+        flex-direction: column;
+        width: 100%;
+        background-color: #eee4e1;
+    }
+}
+h1,
+h2,
+h3 {
+  color: coral;
+  font-family: "Berkshire swash", cursive;
+  display: flex;
+}
+p {
+  color: #143642;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bottomnav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: "Leckerli One", cursive;
+  background-color: #b5838d;
+}
+/*Responive Design*/
+}
+@media (max-width: 800px) {
+  body {
+    background-color: #b5838d;
+  }
+}
+@media (max-width: 800px) {
+  .title {
+    background-color: #fb4d3d;
+    color: #463532;
+    font-size: 1 rem;
+  }
+}
+@media (max-width: 800px) {
+  .topnav {
+    background-color: teal;
+  }
+}
+@media (max-width: 800px) {
+    .intro h1 {
+      background-color: #463532;
+      color: #fb4d3d;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 800px){
+    .intro p{
+        background-color: #fb4d3d;
+        flex-wrap: wrap;
+    }
+@media (max-width: 800px){
+    .h1, .h2, .h3{
+        background-color: coral;
+        color: black;
+        flex-wrap: wrap;
+    }
+}
