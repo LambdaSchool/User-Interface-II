@@ -1,1 +1,242 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
+
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  max-width:100%; 
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  font-size:1.6rem;
+  font-family:'Roboto Mono', monospace;
+  line-height:1.25; 
+  background-color:#4f4f4f;
+  color:white;
+}
+
+h1, h2{
+  font-size:6rem;
+  letter-spacing:3px;
+  padding:4% 0;  
+  background-color:pink;
+  color:white;
+  text-align:center;
+}
+
+h1:hover{
+  color:darkblue;
+}
+
+h2:hover{
+  color:darkblue;
+}
+
+@media (max-width:500px){
+h1, h2{
+  font-size:3rem;
+}
+}
+
+section{
+  padding:4% 0;
+}
+
+header {
+  height:135vh;
+  background-color:#E0FFFF;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+header nav {
+  width:100%;
+  background-color:#69bafd;
+  display:flex;
+  justify-content:space-between;
+}
+
+.links{
+    width:60%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:1% 0;
+}
+
+nav button{
+  font-size:1.6rem;
+  text-decoration:none;
+  letter-spacing:3px;
+  background-color:pink;
+  padding:1%;
+
+}
+
+nav a:hover{
+color:#AFEEEE;
+}
+
+@media (max-width:500px){
+header{
+  height:100%;
+}
+
+header nav{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+header nav .links{
+  flex-direction:column;
+  flex-wrap:nowrap;
+  justify-content:center;
+  margin:20%;
+  padding:2% 0;
+  
+}
+.links button{
+  justify-content:space-evenly;
+  width:100%;
+  
+}
+}
+
+/*nav styles end here*/
+
+.top section{
+display:flex;
+justify-content:center;
+align-items:center;
+width:40%;
+}
+
+.hero-image{
+width:70%;
+margin:10% 15%;
+margin-top:5%
+}
+
+.hero-image:hover{
+opacity: 0.7;
+}
+
+@media (max-width:500px){
+.hero-image{
+  width:100%;
+  margin:5% 5%;
+  justify-content:center;
+}
+}
+
+/* End Of Header Styles */
+
+/* Portfolio Section Styles */
+
+#portfolio{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+justify-content:space-around;
+justify-content:space-evenly;
+}
+
+.one{
+margin:3%;
+padding:2%;
+border:2px solid white;
+text-align:center;
+max-width:100%;
+
+}
+
+.one img:hover{
+opacity:0.7;
+}
+
+.one p{
+font-weight: bold;
+border:1px dotted white;
+}
+
+@media (max-width:800px){
+#portfolio {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+justify-content:space-around;
+justify-content:space-evenly;
+}
+}
+
+@media (max-width:500px){
+#portfolio .one{
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  width:35%;
+}
+}
+
+/*end of portfolio section*/
+
+/*footer section styles below*/
+
+footer{
+height:20vh;
+background-color:#E0FFFF;
+padding: 3% 0;
+text-align:center;
+}
+
+footer nav{
+ display: flex;
+}
+
+.footermenu button{
+padding:1% 5%;
+margin:0 3%;
+margin-top:1%;
+}
+
+.fa {
+padding: 1rem;
+font-size: 3rem;
+width: 5rem;
+text-align: center;
+text-decoration: none;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+@media (max-width:500px;){
+footer nav{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  
+}
+}
+
+/*end*/
