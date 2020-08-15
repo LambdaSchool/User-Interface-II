@@ -3,7 +3,6 @@ body{
 }
 .navDiv{
     background-color: #d5dbd6;
-   
 }
 .navBar{
     display:flex;
@@ -32,49 +31,28 @@ body{
     text-decoration: none;
 }
 .myName{
-text-shadow: 1px 1px 1px ;
 margin: 0px;
 padding: 25px;
 font-family: 'Lobster', cursive;
 font-size: 46px;
+text-shadow: 1px 1px 1px ;
 }
-.bodyImgs{
-    display: flex;
-    justify-content: center;
-   
-}
-.bodyImgs img{
-   max-width: 750px;
-   max-height: 375px;
-   margin: 10px;
-}
-.bodyImgs h3{
-    margin-top: 60px;
-    padding: 50px;
-    font-family: sans-serif;
-    }
-.bodyImgs button{
-    height: 25px;
-    text-align: center;
-    margin-top: 20px;
-}
-.bodyImgs p{
-    max-width: 300px;
-    font-family: monospace;
-    text-align: justify;
-    margin-top: 30px;
+.wideImg img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   padding: 2%;
 }
 .imgGroups{
-    display: flex;
-    justify-content: center;
-    padding-left: 200px;
-    padding-right: 200px;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 50%;
 }
 .imgGroups img{
-    padding: 10px;
+    padding: 5px;
 }
 footer{
     background-color: #d5dbd6;
@@ -87,4 +65,12 @@ footer p{
 }
 footer button{
     text-align: center;
+}
+.textOver{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
 }
