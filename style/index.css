@@ -1,1 +1,195 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****END RESET****/
+@@import "<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">";
+@@import "<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">";
+
+html{
+  width: 62.5%;
+}
+
+body{
+  width:100%;
+
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  height: 9rem;
+  background-color: #E6C49C;
+}
+.container .header h1{
+  /*border: 5px solid red;*/
+  width: 70%;
+  height: 4rem;
+  font-size: 2rem;
+  font-family: 'Balsamiq Sans', cursive;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+
+}
+nav a{
+  margin: 1rem 0.5rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+
+
+}
+.menu nav a{
+  background-color: #5ED3EB;
+  border-radius: 1rem;
+  color:white;
+}
+
+.header{
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+/*  border: 5px solid red;*/
+  height: 5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+
+}
+.projects{
+width: 80%;
+margin: 2rem auto;
+display: flex;
+}
+
+.favs{
+  width: 80%;
+  display: flex;
+  flex-direction:column;
+  height: 10rem;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+ .favs p{
+  text-align: center;
+  margin-left: 5rem;
+  text-align: justify;
+  font-size:1.5rem;
+  line-height: 30px;
+  margin-top:1rem;
+
+
+}
+.favs h2{
+  font-size: 2.5rem;
+  margin-left: 5rem;
+  font-family: 'Metal Mania', cursive;
+  
+
+}
+button{
+  width: 5rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.favs button{
+  margin-left: 8rem;
+  background-color: #5ED3EB;
+  color:white;
+  text-decoration: none;
+}
+
+.middle-section{
+  width: 80%;
+  margin: 1rem auto;
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ flex-direction: row;
+
+}
+.image-section{
+  display:flex;
+  flex-direction:column;
+  margin:2rem;
+  height: 30vh;
+}
+li{
+  list-style: none;
+}
+.info{
+  text-align: center;
+}
+
+footer{
+  width:80%;
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  align-items: center;
+}
+.foot{
+  /*display: flex;*/
+  width: 80%;
+  border: 5px solid red;
+  margin:1rem auto;
+  justify-content: center;
+  height:7rem;
+}
+
+.foot .down-footer h1{
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn button{
+  background-color:#5ED3EB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:2rem;
+}
