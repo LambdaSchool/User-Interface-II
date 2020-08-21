@@ -1,1 +1,300 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+#border{
+    border: 2px solid black;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-text{
+    margin-left: 0.5%;
+    padding: 1%;
+    text-align: center;
+}
+
+.Name{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    text-align: center;
+width: 6%;
+padding: 2%;
+}
+
+.website{
+    margin-top: 1%;
+    text-align: center;
+    padding: 0.8%;
+}
+
+.site-text{
+    text-align: center;
+    padding: 0.8%;
+    margin-bottom: 1.6%;
+}
+
+.big-img-div{
+    /*padding: 0.4%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.big-img{
+}
+
+.pic-text{
+    display: flex;
+    align-items: center;
+    padding: 0.6%;
+    justify-content: space-around;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 0.8%;
+    justify-content: center;
+}
+
+.button-style{
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 1%;
+    background: wheat;
+}
+
+.imag{
+    border: red solid 2px;
+    
+}
+
+/*.footer-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.icon-size{
+    width: 13.5%;
+    margin-left: 42%;
+}
+
+.icon-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.6%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      font-size: 1.2rem;
+    }
+    a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+    
+    #border{
+        border: 2px solid black;
+    }
+    
+    .text-text{
+        margin-left: 0.5%;
+        margin-top: 1%;
+        padding: 2%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .Name{
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        border: 2px solid red;
+        justify-content: space-evenly;
+    }
+    
+    .nav-item{
+    text-align: center;
+    width: 60%;
+    padding: 2%;
+    margin: 2%;
+    /*font-size: 4rem;*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    .website{
+        margin-top: 1%;
+        text-align: center;
+        padding: 0.8%;
+        font-weight: bold;
+    }
+    
+    .site-text{
+        text-align: center;
+        padding: 0.8%;
+        margin-bottom: 1.6%;
+    }
+    
+    .big-img-div{
+        /*padding: 0.4%;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    
+    .big-img{
+        width: 142%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .pic-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        justify-content: center;
+    }
+    
+    .button{
+        display: flex;
+        align-items: center;
+        padding: 0.8%;
+        justify-content: center;
+    }
+    
+    .button-style{
+        font-size: 1.2rem;
+        border: 1px solid grey;
+        border-radius: 6px;
+        padding: 1%;
+        background: wheat;
+    }
+    
+    .imag{
+        width: 100%;
+    }
+    
+    /*.footer-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+    
+    .icon-size{
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    .icon-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.6%;
+    }
+  }
