@@ -1,1 +1,565 @@
-/* Add CSS styling here */
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* @media (max-width: 800px) {}
+Need 800px and 500px  */
+
+
+HTML {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 3%;
+  margin-top: 25px;
+  font-size: 3em;
+}
+
+
+#navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navigation a {
+  background: orangered;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5%;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+#navigation a:hover {
+  background: white;
+  color: orangered;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  font-size: 2rem;
+}
+
+#profile {
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 450px;
+  width: 450px;
+}
+
+#image {
+  display: flex;
+  justify-content: center;
+  background: #f0ead6;
+}
+
+#aboutMe {
+  text-align: center;
+  margin: 3%;
+  padding-bottom: 4%;
+}
+
+#aboutMe h2 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.button {
+  margin: 2.8%;
+}
+
+.my-button {
+  font-size: 1em;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, color 0.2s 0.3s;
+  letter-spacing: 0;
+  border-radius: 45px;
+  height: auto;
+  padding: 0.5em 2.1em;
+  background: orangered;
+  margin: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.my-button:hover {
+  cursor: pointer;
+  padding: 1% 4%;
+}
+
+.my-button:active,
+.my-button:focus,
+.my-button.active {
+  background-image: none;
+
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.beforeContent {
+  width: 100%;
+  background-color: #4c6d86;
+  border-radius: 5px;
+  ;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 7%;
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.beforeContent h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  font-size: 3rem;
+  color: white;
+}
+
+.experienceImage {
+  height: 200px;
+  width: 200px;
+}
+
+
+#experienceList h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2.5rem 2.8rem;
+  color: white;
+}
+
+#experienceList ul {
+  font-size: 2rem;
+  margin: 0 5rem;
+  color: white;
+}
+
+#backEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tools h2 {
+  margin: 2.5rem 8rem;
+}
+
+#tools ul {
+  margin: 0 8.5rem;
+}
+
+#experienceList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rem 15rem;
+  padding-bottom: 15%;
+}
+
+#container {
+  max-width: 100%;
+}
+
+#work {
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 7rem;
+  color: orangered;
+  padding-bottom: 3%;
+}
+
+.myWork {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  padding-bottom: 6%;
+}
+
+#projectImage {
+  height: 250px;
+  width: 492px;
+}
+
+.projectList h3 {
+  font-size: 5rem;
+  color: orangered;
+  font-weight: bold;
+  font-variant: small-caps;
+  width: 492px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.projectList p {
+  font-size: 2.5rem;
+  width: 492px;
+  text-align: left;
+  padding-bottom: 7%;
+}
+
+#project1,
+#project2,
+#project3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  background-color: #4c6d86;
+  width: 100%;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 3%;
+}
+
+#contact p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#email {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footerButton {
+  font-size: 2rem;
+}
+
+
+
+@media (max-width: 1510px) {
+  .projectList {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #projectImage {
+    margin: 5em;
+  }
+
+  #project1,
+  #project2,
+  #project3 {
+    flex-direction: row;
+    margin-bottom: 5em;
+    padding-top: 2em;
+    width: 100%;
+  }
+
+  #project2 {
+    background-color: #4c6d86;
+    color: white;
+    max-width: 100%;
+  }
+
+  #project2 h3 {
+    color: white;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1265px) {
+
+  #project1,
+  #project2,
+  #project3 {
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+
+
+  .projectList h3,
+  .projectList p {
+    margin: 0 auto;
+  }
+
+  #projectImage {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .my-button {
+    padding: 0.5rem 1rem;
+  }
+
+  #experienceList {
+    margin: 10rem 2rem;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #header {
+    flex-direction: column;
+    margin: 1px;
+  }
+
+  h1 {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  #navigation {
+    margin: 2rem auto;
+    font-size: 2.5rem;
+    width: auto;
+  }
+
+  #experienceList {
+    flex-direction: column;
+  }
+
+  #frontEnd,
+  #backEnd,
+  #tools {
+    margin: 2rem auto;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .projectList h3 {
+    font-size: 4rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .projectList p {
+    font-size: 2rem;
+    width: auto;
+    max-width: 450px;
+    text-align: center;
+  }
+
+  #projectImage {
+    height: 150px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .beforeContent {
+    display: none;
+  }
+
+  #aboutMe a {
+    display: none;
+  }
+
+  #header {
+    justify-content: flex-end;
+  }
+
+  #navigation {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 440px) {
+  #navigation {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    width: auto;
+  }
+
+  #profile {
+    height: 250px;
+    width: 250px;
+  }
+}
