@@ -1,1 +1,61 @@
-/* Add CSS styling here */
+/* *{
+    border: 1px solid black;
+} */
+a{
+    text-decoration:none;
+    border:1px solid black;
+    color:white;
+    font-weight: 500;
+    background-color:black;
+}
+.navinfo{
+    display:flex;
+    justify-content: center;
+    margin:2%;
+    padding:2% ;
+}
+.name{
+    text-align: center;
+    justify-content: center;
+    
+}
+.mainimg{
+    background-image:url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) ;
+    height:40vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+/* .pic{
+     width: 85%;
+    height:350px;
+    object-fit:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  */
+.lsection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    order:integer;
+}
+
+/* .a{
+    order:integer;
+}
+.b{
+    order:integer;
+}
+.c{
+    order:integer;
+}
+.d{
+    order:integer;
+}
+.e{
+    order:integer;
+}
+.f{
+    order:integer;
+} */
+    
