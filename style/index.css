@@ -1,1 +1,121 @@
-/* Add CSS styling here */
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+html {
+    font-size: 65.2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* PRIMARY CSS */
+.body {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.meta {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+}
+
+nav {
+  display: flex;
+  color: 216, 30, 91;
+  justify-content: center;
+  font-size: 2rem;
+  justify-content: space-evenly;
+}
+
+.nav__span {
+    margin: 0 1rem;
+}
+
+
+ .banner {
+    width: 100%;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects__h1 {
+    font-size: 3rem;
+}
+
+.projects__div {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.projects__img {
+    margin: 2rem 3rem;
+    box-shadow: 1rem 1rem lightgray;
+}
+
+
+
+
+
+
+
+@media (max-width : 800px) {
+  body {
+      background-color: pink;
+  }
+
+  .header__span {
+    display: none;
+
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: blue;
+    }
+
+    .projects__img {
+        width: 80%;
+    }
+
+    .header__span {
+        display: none;
+    }
+
+}
+ 
