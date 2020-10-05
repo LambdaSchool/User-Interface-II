@@ -1,1 +1,282 @@
 /* Add CSS styling here */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin General Styling */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 1px solid red;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color: #4f4f4f;
+	font-family: "Roboto", sans-serif;
+	background-color: #fffafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: 3px;
+	font-family: "Roboto Mono", monospace;
+}
+a {
+	text-decoration: none;
+}
+
+/* Begin Header Styling */
+header {
+	display: flex;
+    flex-direction: column;
+    background-color: tan;
+}
+h1 {
+	font-size: 4rem;
+}
+header nav a {
+	padding: 1%;
+	margin: 1%;
+}
+header nav a:hover {
+	color: red;
+}
+/* Top Section Styling */
+.top {
+	display: flex;
+}
+.top-pic {
+	width: 50%;
+}
+.top-text {
+	padding: 2%;
+	border: 2%;
+}
+.top-text p {
+	padding-top: 10%;
+}
+.top-text a {
+	border: 3px solid black;
+    padding: 1%;
+    background-color: dodgerblue
+}
+.top-text a:hover {
+	color: red;
+}
+.top-text h2 {
+	padding-bottom: 5%;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px dodgerblue;
+}
+
+/* Begin Middle Content Styling */
+.middle-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+    align-items: flex-stretch;
+}
+.pics {
+	width: 24%;
+	padding: 2%;
+	text-align: center;
+}
+
+/* Begin Footer Styling */
+.foot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: tan;
+}
+
+.foot .foot-text {
+	font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+.foot .foot-icon:hover {
+    color: white;
+    background-color: dodgerblue;
+}
+.foot.social{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;	
+}
+.foot-icon{
+	font-size: 4rem;	
+}
+.foot button a{
+color: white;
+background-color: black;
+padding: 
+}
+
+/* Begin Media Queries */
+@media (max-width: 800px) {
+	header {
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+	.top-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.pics {
+		width: 48%;
+		padding: 2%;
+		text-align: center;
+	}	
+}
+
+@media (max-width: 500px) {
+.top{
+	flex-direction: column;
+}
+.top-pic{
+	width: 100%;
+}
+.dog{
+	
+}
+}
