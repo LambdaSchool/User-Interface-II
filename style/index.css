@@ -1,1 +1,236 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+body{
+    max-width: 1200px;
+    margin:auto;
+    font-family: 'Roboto Mono', monospace;
+}
+.header{    
+    background-color: rgb(43, 101, 187);   
+}
+.header .name{
+    Font-size: 48px;
+    font-family:Impact, Charcoal, sans-serif;
+    text-shadow: 1px 1px wheat; 
+}
+/* adding media tags for header at 800px and 500px with changes to css */
+
+@media(max-width:800px){
+    .header{
+        display: flex;  
+        align-items: center; 
+        flex-direction: column;
+        background-color: chocolate;               
+    }
+    .buttons{
+        flex-direction: column;
+        width:100px;          
+    }
+    .header .buttons a{
+        margin:5%;
+        color:black;
+        background-color: aliceblue;
+        font-weight: bolder;
+    }
+    .name{
+        color:blue;    
+        margin: 20px;
+        text-align: center;
+}
+}
+@media(max-width:500px){
+    .header{
+        display: flex;  
+        align-items: center; 
+        flex-direction: column;
+        background-color: chartreuse;               
+    }
+    .buttons{
+        flex-direction: column;
+        width:100px;            
+    }
+    .buttons a{
+        margin:5%;
+    }
+    .header .buttons a{
+        color: rgb(47, 186, 221);
+        background-color: black;
+    }
+    .name{
+        color:black;    
+        margin: 20px;
+        text-align: center;       
+}
+}
+.buttons{   
+    display: flex;
+    justify-content:flex-start;  
+    align-content: center;     
+}
+.buttons a{
+    font-size: 24px; 
+    color:white;
+    background-color: black;
+    text-decoration: none; 
+    margin-left: 10px;
+    padding: 5px 3px 5px 4px;
+    border: 2px solid rgb(211, 185, 185);
+    border-radius: 10%;
+    text-align: center;
+}
+.buttons a:hover{
+    background-color:purple;
+}
+
+/*  media query below for title picture and text */
+@media(max-width:800px){
+    .picture{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture .section{ 
+        align-items: center;
+        background-color: bisque;
+    }
+    .picture .section h1{
+        color:blueviolet;
+        margin-top: 5%;             
+    }
+    .picture .section a{
+        color:black;
+        text-align: center;
+        margin-right: 40%;
+    }
+    .section p{
+        margin-top: 5%;
+    }
+}
+@media(max-width:500px){
+    .picture{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture .section{ 
+        align-items: center;
+        background-color: bisque;
+    }
+    .picture .section a{
+        color:black;
+        text-align: center;
+        margin-right: 40%;
+    }
+    .section p{
+        margin-top: 5%;
+    }
+}
+
+.picture{ 
+    display: flex;
+}
+.smoke{
+    max-width: auto;
+    height: 500px;
+}
+.section{
+    display: flex; 
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(135, 123, 216);
+}
+.section h1{   
+    max-width:300px;
+    height: auto;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    letter-spacing: 2px;  
+    text-shadow:1px 2px white;
+}
+.section a{
+    text-align: right;
+    font-size:30px;
+    letter-spacing: 4px;
+    color:white;
+    max-width: 30%;
+    height:auto; 
+    margin-left: 40%;    
+} 
+.section a:hover{
+    color:white;
+    text-decoration: none;
+    background-color:purple;
+    font-weight: bold;
+    text-decoration: none;
+    border:2px solid white;
+    border-radius: 20px;
+    text-align: center;
+}
+.section p{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 50px;  
+}
+.pictures{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgb(16, 49, 82);
+    padding-top: 5%;
+}
+.multiple{
+    text-align: center;
+}
+.multiple img{
+    border: 4px dotted red;
+    padding:3px;
+}
+.multiple p{
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    margin:5%;
+    background-color: rgb(233, 222, 72);
+    color: rgb(13, 6, 71);
+}
+.footer{
+    background-color: rgb(94, 27, 100);
+    display:flex;
+    justify-content: center;
+
+}
+.contact-me h1{
+    font-size: 36px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 20%;
+    max-width: 50%;    
+    text-align: center;
+    
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5% 0;
+}
+.contact-me h1, a{
+    margin:5% 0;
+}
+.contact-me a{
+    font-size:30px;
+    text-decoration: none;     
+    text-wrap: wrap;   
+    text-align:center; 
+    color:rgb(221, 208, 208); 
+    font-weight: bold;
+}
+.contact-me a:hover{
+    background-color: blueviolet;
+    color:white;
+}
+
+
