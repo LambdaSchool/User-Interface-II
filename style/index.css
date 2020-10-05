@@ -1,1 +1,166 @@
-/* Add CSS styling here */
+
+a {
+    border: pink;
+    color: pink;
+    background-color: purple;
+    font-family: fantasy;
+    padding: 12%;
+    border-radius: 25%;  
+    height: 10%;
+    margin: 10%;
+    
+}
+
+h1 {
+    font-family: fantasy;
+    padding: 5%;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 38px;
+}
+
+.topper {
+    display: flex;
+    
+    background-color: pink;
+}
+
+.body {
+    background-color: honeydew;
+    display: flex;
+    font-family: fantasy;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.Pictures1 {
+    background-color: honeydew;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Pictures2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: honeydew;
+}
+ 
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+img {
+    margin: 15px;
+    border: 10px solid purple;
+    max-width: 200px;
+    max-height: 200px;
+}
+footer {
+    background-color: honeydew;
+    flex-direction: column;
+    font-family: fantasy;
+    }
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .mainpage {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        max-width: 30%;
+    }
+    .mainpage {
+        display: flex;
+        flex-direction: column;
+    }
+    .topper {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    nav {
+            display: flex;
+            flex-direction: column;    
+    }
+
+    a {
+        border: pink;
+        color: pink;
+        background-color: purple;
+        font-family: fantasy;
+        padding: 0%;
+        margin: 0%;
+        max-width: 10%;
+        display: flex;
+        align-content: space-between;
+  
+    }
+    .Pictures1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Pictures2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bodytext {
+        background-image: url(https://www.newportmansions.org/images/content-pages/gold-room.jpg);
+        font-weight: bolder;
+        color: powderblue;
+        padding: 2em;
+        margin-top: 2em;
+}
+
+@media (max-width:800px){
+    .mainpage {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        max-width: 30%;
+    }
+    .mainpage {
+        display: flex;
+        flex-direction: column;
+    }
+    .topper {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+            display: flex;
+            flex-direction: column;    
+    }
+
+    a {
+        border: pink;
+        color: pink;
+        background-color: purple;
+        font-family: fantasy;
+        padding: 0%;
+        margin: 0%;
+        max-width: 10%;
+        display: flex;
+        align-content: space-between;
+  
+    }
+    .Pictures1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Pictures2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bodytext {
+        background-image: url(https://www.newportmansions.org/images/content-pages/gold-room.jpg);
+        font-weight: bolder;
+        color: powderblue;
+        padding: 2em;
+        margin-top: 2em;
+
+
+}
