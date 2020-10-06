@@ -1,1 +1,180 @@
 /* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}    
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /*border:1px solid grey;*/
+    background-color:#111111;
+}
+/*general styling*/
+html{
+    font-size:62.5%;
+}
+body{
+    line-height:1.5;
+    font-size:1.8rem;
+}
+h1, h2, h3{
+    color:#cccccc;
+}
+h1{
+    font-size:5rem;
+    margin:2%;
+}
+h2{
+    font-size:4rem;
+}
+h3{
+    font-size:2.5rem;
+}
+a{
+    text-decoration:none;
+    color:#cccccc;
+    font-size:2.5rem;
+}
+p{
+    color:#cccccc;
+    font-size:2rem;
+}
+/*header styling*/
+header{
+    height:25vh;
+}
+.navbar{
+    margin:0 1.25%;
+}
+header nav a{
+    padding:1%;
+}
+/*About Me Styling*/
+#about{
+    height:55vh;
+}
+.myinfo{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logopic{
+    width:40%;
+    margin:0 5%;
+    padding:0 6%;
+}
+.biography{
+    width:40%;
+    margin:0 5%;
+    padding: 0 5%;
+}
+.logopic img{
+    width:70%;
+}
+/*projects styling*/
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: baseline;
+}
+.portfolio{
+    width:20%;
+    margin:4% 6%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+h3{
+    margin:2% 0;
+}
+/*footer styling*/
+.contactme{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:2%;
+}
+.contactme a{
+    margin:1%;
+}
+/*tablet styling*/
+@media(max-width:800px){
+    h2{
+        font-size:3rem;
+    }
+    h3{
+        font-size:2rem;
+    }
+    .logopic{
+        margin:0 5%;
+        padding:0 3%;
+    }
+    .logopic img{
+        width:100%;
+    }
+    .portfolio{
+        width:33%;
+    }
+}
+@media(max-width:500px){
+    header{
+        text-align:center;
+        height:35vh;
+    }
+    .navbar nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .myinfo{
+        flex-direction:column;
+    }
+    .biography{
+        width:100%;
+        text-align:center;
+    }
+    .portfolio{
+        width:40%;
+        margin:4%;
+    }
+}
