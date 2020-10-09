@@ -1,1 +1,233 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    background: #1d1f20;
+    color: #cccccc;
+    font-family: sans-serif;
+    padding: 0.625em;
+    margin: 0;
+    /* border: 1px solid white; */
+  }
+
+.maincontainer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.headercontainer {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+header{
+    margin: 0;
+    padding: 0.625em;
+    background-color: #383b3d;
+}
+
+h1 {
+    color: #FF0082;
+    font-size: 3.125rem;
+    font-family: 'Amatic SC';
+    padding-bottom: 0.3em;
+}
+
+.raise {
+   color: #ff78bd;
+}
+  .raise:hover,
+  .raise:focus {
+  box-shadow: 0 0.500em 0.500em -0.400em var(--hover);
+  transform: translateY(-0.250em);
+}
+
+button {
+    transition: 0.25s;
+}
+
+.raise:hover,
+.raise:focus { 
+    border-color: #FF0082;
+    color: #FF0082;
+}
+  
+button {
+    background: none;
+    border: 0.100em solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.500em;
+    padding: 1em 2em;
+}
+
+.intro {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 60em;
+    max-width:100%;
+    height:auto;
+    /* justify-content: space-evenly; */
+}
+
+.intro > img {
+    flex-grow: 0;
+    margin: 0 2em;
+    margin-top: 1em;
+    max-width:100%;
+    height:auto;
+    /* width: 9.5em; */
+}
+
+.intro > p {
+    flex-grow: 1;
+    margin: 6em 2em;
+    width: 5em;
+}
+
+.aboutme {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 60em; */
+    max-width:100%;
+    height:auto;
+    /* justify-content: space-evenly; */
+}
+
+.aboutme > p {
+    flex-grow: 1;
+    margin: 6em 2em;
+    width: 5em;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 60em; */
+    max-width:100%;
+    height:auto;
+    justify-content: space-evenly;
+}
+
+.container > img {
+    margin: 1em 0;
+    max-width:100%;
+    height:auto;
+}
+
+.contentwrap {
+    padding-bottom: 7rem;    /* Footer height */
+  }
+
+.footercontainer {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 7rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0.625em 0;
+    background-color: #383b3d;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+h2 {
+    color: #FF0082;
+    font-size: 2.125rem;
+    font-family: 'Amatic SC';
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    color: #ff78bd;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC';
+    padding-bottom: 0.5em;
+}
+
+.contactcontainer {
+    max-width: 31.250em;
+    width: 100%;
+    margin: 2em auto;
+    padding: 0.625em;
+    position: relative;
+    background-color: #383b3d;
+  }
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 0.725em;
+    border: 1px solid #1D1F20;
+    /* border-radius: 0.313em; */
+    box-sizing: border-box;
+    margin-top: 0.438em;
+    margin-bottom: 0.438em;
+    /* resize: vertical; */
+}
+
+textarea {
+    height: 12.500em;
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    max-width:100%;
+    height:auto;
+    }
+}
