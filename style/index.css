@@ -1,1 +1,69 @@
-/* Add CSS styling here */
+h2,
+h3 {
+  color: palevioletred;
+}
+
+nav button {
+  margin-bottom: 20px;
+  color: purple;
+  background-color: lightskyblue;
+}
+
+.me p {
+  width: 200px;
+  color: violet;
+}
+
+.me button {
+  color: grey;
+  background-color: yellow;
+}
+
+section {
+  display: flex;
+}
+
+.me {
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.pictures {
+  flex-wrap: wrap;
+  width: 390px;
+  align-content: space-around;
+  justify-content: space-between;
+  height: 300px;
+}
+
+header,
+footer {
+  background-color: thistle;
+  width: 450px;
+}
+
+h4 {
+  color: deeppink;
+  align-self: center;
+}
+
+footer button {
+  color: blueviolet;
+  background-color: lightpink;
+  width: 80px;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures span {
+  font-size: 15px;
+}
+
+.pictures div {
+  display: flex;
+  flex-direction: column;
+}
