@@ -1,1 +1,170 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Add CSS styling below */
+
+
+/* * {
+	border:1px solid black !important;
+} */
+
+/* @media (max-width: 900px){
+	.indexmain {
+		background-color:red
+	}
+} */
+
+html {
+	margin: 0 5%;
+	background-image: url(../images/pizzadough.jpg);
+	color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: auto;
+	font-size:62.5%;
+}
+main {
+	text-align:center;
+	opacity: 70%;
+	margin: 0 0 5% 0;
+}
+
+body {
+	font-family: 'Kalam', cursive;
+	letter-spacing: .1rem;
+	line-height: 2rem;
+}
+
+
+h1 {
+	padding: 2rem;
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 15% 0 5% 0;
+	
+}
+
+h2 {
+	padding: 2rem;
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 2% 0 0 0;
+}
+
+.intro {
+	font-size: 2.5rem
+}
+
+ul {
+    display:flex;
+	justify-content: center;
+	padding: 1rem
+}
+
+footer {
+	display:flex;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+button:hover {
+	color:white;
+	background-color: black;
+}
+button {
+	padding: 1.5rem 2.5rem;
+	margin: 0 2rem;
+	background:none;
+	border-radius: 10px;
+	font-size:2rem;
+}
+
+.indexmain {
+	display: flex;
+	justify-content: left;
+	color: black;
+	border-radius: 2%;
+	margin: 1rem 0 0 0;
+}
+
+/* .mainimg {
+	
+} */
+
+.indexmain p {
+	font-size: 3rem;
+	margin: 10%;
+	line-height: 4rem;
+}
+
+.indexgallery {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.galleryimg {
+	display: flex;
+	margin:2rem 1rem;
+	/* max-width:100%; */
+
+}
+
+
+.gallerytext {
+	font-size:2rem;
+
+}
+
+.socialmedia {
+	text-align:center;
+	font-size:2rem;
+}
