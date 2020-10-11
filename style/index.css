@@ -1,1 +1,177 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start My Style */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+h2 {
+    background: slateblue;
+    height: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+}    
+.nav-container-flex {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    background: snow;
+    border: solid black;
+}   
+h1 {
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 60px;
+}    
+nav {
+    padding: 5px;
+    padding-left: 60px;
+}
+nav a {
+    text-decoration: none;
+    border: solid black 2px;
+    font-family: 'Courier New', Courier, monospace;
+    background: slategrey;
+    color: snow;
+    font-size: 20px;
+}
+.section-flex-wrapper {
+    display: flex;
+    background: slateblue;
+    height: 400px;
+    
+}
+.top-picture {
+   margin: 40px;
+   border-radius: 20px;  
+   width: 50%;
+   border: solid slategray 3px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 100px;
+}
+h3 {
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 40px;
+
+} 
+button {
+    width: 100px;
+    height: 30px;
+    background: slategray;
+    color:whitesmoke;
+    
+       
+}
+
+
+a {
+    text-decoration: none;
+    color: snow;
+    
+}
+
+a:visited {
+    color: snow;
+
+}
+
+p {
+    padding-top: 40px;
+    text-align: left;
+    font-size: 25px;
+    width: 65%;
+}
+.gallery-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50% auto;
+    justify-content: space-evenly;
+    margin: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.gallery-items {
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border: solid slategray 3px;
+}
+
+footer {
+    background: slateblue;
+    height: 120px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+h4 {
+    padding-top: 20px;
+}
+.contact-footer-button {
+    border: solid slategrey 4px;
+    background: slategrey;
+    text-emphasis: 400;
+}
