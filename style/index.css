@@ -1,1 +1,62 @@
-/* Add CSS styling here */
+
+@media only screen and (max-width:800px) {
+     .vp-size{
+        width: 25%;
+        height: auto;
+    }
+}
+
+
+
+header {
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+
+
+body .container {
+    text-align: center;
+}
+
+
+section {
+    margin: auto;
+}
+
+.project-images {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-descriptions{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header nav a {
+    padding: 5px;
+    font-family: Geneva;
+    font-size: 20px;
+    color:  white;
+    text-decoration-line: none;
+
+}
+
+header nav a:hover {
+    color: red;
+}
+
+
+footer {
+    Padding: 20px;
+    text-align: center;
+    background-color: dodgerblue;
+}
