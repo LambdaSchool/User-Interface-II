@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <title>Contact</title>
 </head>
 <body>
-    <h1> CONTACT </h1>
+    <section class="maincontainer">
+        <section class="contentwrap">
+    <header>
+        <h1>CONTACT</h1>
+            <nav>
+                <button class="raise" onclick="window.location.href='/index.html'">Home</button>
+                <button class="raise" onclick="window.location.href='/about.html'">About</button>
+                <button class="raise" onclick="window.location.href='/projects.html'">Projects</button>
+                <button class="raise" onclick="window.location.href='/contact.html'">Contact</button>
+            </nav>
+    </header>
+
+        <section class="contactcontainer">
+            <form class="contactform">
+
+                <h2>Contact Me</h2>
+                <h3>Please send any inquiries</h3>
+
+                <fieldset>
+                    <input placeholder="Name" type="text" tabindex="1" required>
+                </fieldset>
+
+                <fieldset>
+                    <input placeholder="Email Address" type="email" tabindex="2" required>
+                </fieldset>
+
+                <fieldset>
+                    <textarea placeholder="Message here" tabindex="3" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <button name="submit" type="submit" class="raise">Submit</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+            <section class="footercontainer">
+                <footer>
+                    <h2>Interested?</h2>
+                    <button class="raise" onclick="window.open('https://www.facebook.com/','_blank')">Facebook</button>
+                    <button class="raise" onclick="window.location.href='/contact.html'">Contact</button>
+                    <button class="raise" onclick="window.open('https://www.instagram.com/','_blank')">Instagram</button>
+                </footer>
+            </section>
+        </section>
+    </section>
 </body>
 </html>
