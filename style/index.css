@@ -1,1 +1,178 @@
-/* Add CSS styling here */
+
+.fullpage{ Height:1000px; 
+width:1000px;
+background:#050801}
+
+header {background-color: #050801;
+height:25%;
+}
+
+header h1 {color:#03e9f4;
+    display:flex;
+    justify-content: center;
+        font-size:80px ;
+        font-family: 'Architects Daughter', cursive;}
+
+
+
+nav {margin:0;
+    padding:0;
+    font-family: 'Architects Daughter', cursive;
+    box-sizing: border-box;}
+
+nav {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 20vh;
+    background:#050801; }
+
+a {position: relative;
+    display: inline-block;
+    padding:25px 30px;
+    margin:40px 0;
+    color:#03e9f4;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    overflow:hidden;
+}
+
+a:hover {background:#03e9f4;
+color:#050801;
+box-shadow: 0 0 5px #03e9f4
+            0 0 25px #03e9f4
+            0 0 50px #03e9f4
+            0 0 200px #03e9f4;
+transition-delay: 1s;}
+
+a span{position: absolute;
+display:block}
+
+a span:nth-child(1)
+{top:0;
+left:-100%;
+width:100%;
+height:2px;
+
+}
+
+a:hover span:nth-child(1){left:100%;
+transition:1s;
+background: linear-gradient(90deg,transparent,#03e9f4);
+}
+
+a span:nth-child(3)
+{bottom:0;
+right:-100%;
+width:100%;
+height:2px;
+
+}
+
+a:hover span:nth-child(3){right:100%;
+transition:1s;
+transition-delay: 00.5s;
+background: linear-gradient(90deg,transparent,#03e9f4);
+}
+
+a span:nth-child(2)
+{ top:-100%;
+right:0;
+width:2px;
+height:100%;
+;
+}
+
+a:hover span:nth-child(2){top:100%;
+transition:1s;
+transition-delay: 00.25s;
+background: linear-gradient(90deg,transparent,#03e9f4);
+}
+
+a span:nth-child(4)
+{ bottom:-100%;
+left:0;
+width:2px;
+height:100%;
+
+}
+
+a:hover span:nth-child(4){bottom:100%;
+transition:1s;
+transition-delay: 00.75s;
+background: linear-gradient(90deg,transparent,#03e9f4);
+}
+
+body{height:50%;
+background-color: #050801;
+}
+
+.container {height:25%;
+    width:100%;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: #050801;
+    
+}
+
+ 
+.txt{font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    color:#bdfcff;
+    padding-left: 80px;
+    text-align: center;
+    
+}
+
+.container img{ 
+    height:30rem;
+    width:85%;
+padding:10px 5px 5px 80px}
+
+
+.container2 {height:50%;
+    width:100%;
+    display:flex;
+        color:#03e9f4;
+}
+
+
+
+
+ .container2 img{ height:100%;
+width:90%;
+border: solid 5px black
+
+}
+
+ .container2 p{
+     
+     font-family: 'Architects Daughter', cursive;
+     font-size: 20px;
+  
+ }
+
+
+
+    footer{ height:8%;
+        margin:20px;
+        padding:2px;
+        border: solid 2px #03e9f4;
+        font-family: 'Architects Daughter', cursive;
+        box-sizing: border-box;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background:#050801;       
+}
+
+@media (max-width:650px){
+    header h1 {color:#3CB371}
+    nav {display:flex;
+        flex-direction: column;}
+       
+}
+              
