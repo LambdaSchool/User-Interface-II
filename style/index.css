@@ -1,1 +1,275 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start My Style */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+
+}
+
+h2 {
+    background: slateblue;
+    height: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .2rem;
+}    
+.nav-container-flex {
+    display: flex;
+    height: 12rem;
+    flex-direction: column;
+    background: snow;
+    border: solid black;
+}   
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+    padding-left: 6rem;
+}    
+nav {
+    padding: .5rem;
+    padding-left: 6rem;
+}
+nav a {
+    text-decoration: none;
+    border: solid black .2rem;
+    font-family: 'Courier New', Courier, monospace;
+    background: slategrey;
+    color: snow;
+    font-size: 2rem;
+}
+.section-flex-wrapper {
+    display: flex;
+    background: slateblue;
+    height: 40rem;
+    
+}
+.top-picture {
+   margin: 4rem;
+   border-radius: 2rem;  
+   width: 50%;
+   border: solid slategray .33rem;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10rem; 
+}
+h3 {
+    text-align: left;
+    font-size: 5rem;
+    padding-bottom: 4rem;
+
+} 
+button {
+    width: 18rem;
+    height: 3rem;
+    background: slategray;
+    color:whitesmoke;
+    
+       
+}
+
+
+a {
+    text-decoration: none;
+    color: snow;
+    
+}
+
+a:visited {
+    color: snow;
+
+}
+
+p {
+    padding-top: 4rem;
+    text-align: left;
+    font-size: 2.8rem;
+    width: 65%;
+}
+.gallery-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50% auto;
+    justify-content: space-evenly;
+    margin: 2.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+.gallery-items {
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 40rem;
+    height: 40rem;
+    border: solid slategray .33rem;
+}
+
+footer {
+    background: slateblue;
+    height: 12rem;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+h4 {
+    padding-top: 2rem;
+}
+.contact-footer-button {
+    border: solid slategrey .4rem;
+    background: slategrey;
+    font-weight: 400;
+}
+
+@media all and (max-width: 1562px) {
+    .section-flex-wrapper {
+        flex-direction: column;
+    }
+    .top-picture {
+        display: none;
+    }
+}
+@media all and (max-width: 930px) {
+   p {
+        font-size: 2.1rem;
+        padding-top: 0;
+    }
+    .gallery-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50% auto;
+        justify-content: space-evenly;
+        margin: 1.8rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+@media all and (max-width: 800px) {
+    .nav-container-flex {
+        text-align: center;
+    }
+    h3 {
+        display: none;
+    }
+    .right-side {
+        align-items: center;
+        padding-top: 5rem;
+    }
+    .projects-button {
+        display: none;
+    }
+    .gallery-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50% auto;
+        justify-content: space-evenly;
+        margin: 1.5rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .gallery-items {
+        border-radius: 2rem;
+        margin: 2rem;
+        width: 20rem;
+        height: 20rem;
+        border: solid slategray .33rem;
+    }
+    
+}
+@media all and (max-width: 500px) {
+    .nav-container-flex {
+        display: flex;
+        height: 22rem;
+        flex-direction: column;
+        background: aliceblue;
+        border: solid black;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    nav a {
+        width: 15rem;
+        height: 2.5rem;
+        
+    }   
+    .gallery-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50% auto;
+        justify-content: space-evenly;
+        margin: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .projects-button {
+        display: block;
+        align-self: center;
+       
+    }
+    p {
+        display: none;
+    }
+    .section-flex-wrapper {
+        background-image: url("https://picsum.photos/536/354");
+    }
+    
+    h3 {
+        display: inline;
+    }
+    h4 {
+        display: none;
+    }
+}
