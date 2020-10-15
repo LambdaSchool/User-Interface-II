@@ -1,1 +1,343 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+
+body {
+    background-color: rgb(5, 6, 19);
+  
+}
+.head-container {
+    background-color: rgb(5, 6, 19);
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    height: 50%;
+    box-sizing: border-box;
+    border-bottom: solid 5px #1DA1F2; 
+    
+}
+
+.name {
+    padding: 10px;
+    padding-bottom: 0%;
+    width: 40%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 100px;
+
+}
+.nav-container {
+
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+li:active{
+    background-color: #1DA1F2;
+}
+
+button {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 75%;
+    text-decoration: none;
+}
+button:active {
+    background-color:#1DA1F2;
+}
+button:hover{
+    background-color: #1DA1F2; 
+}
+a:active{
+    background-color: #1DA1F2;
+}
+a:hover {
+    color: white;
+}
+li {
+    display: inline;
+    
+}
+a {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    
+
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.main-body {
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    border: 50px solid grey;
+}
+.khan {
+    color:#1DA1F2;
+    box-sizing: border-box;
+}
+.recent {
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 50px;
+    height: ;
+
+}
+.para {
+    border: 1px solid yellow;
+    height: 50%;
+    padding: 10%;
+}
+.pic1 {
+    width: 200px;
+    height: 4px;
+    box-sizing: border-box;
+}
+.projects {
+    
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: space-between;
+    padding: 2.250em;
+    
+}
+.pic1 {
+    height: 300px;
+    width: 400px;
+
+}
+.project {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row; 
+    flex: wrap;
+    justify-content: space-between;
+    padding: 2.250em;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+    padding-right: 30%;
+}
+.lambda {
+    color: crimson;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2.250em;
+    margin: 0;
+    list-style: none;
+  }
+  .flex-item:hover {
+      border: 1px solid white;
+  }
+  h1 {
+      color: white;
+  }
+  h3{
+      display: flex;
+      flex-direction: row;
+      padding-left: 5%;
+      color: white;
+      font-family: 'Sedgwick Ave Display', cursive;
+ 
+  }
+  .about {
+      width: 50%;
+      margin-left: 25%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .aws {
+      width: 200px;
+      height: 150px;
+      box-sizing: border-box;
+  }
+  .project-gallery {
+      flex-direction: row;
+      border-top: 1px solid #1DA1F2;
+    
+  }
+  h4 {
+      color: white;
+  }
+  .project-titles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 10px 10px;
+      margin: 10px 10px 10px 10px;
+  }
+  .proj {
+      color: white;
+  }
+  .git {
+      display: inline;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100px;
+      height: 100px;
+      padding: 10px 10px 10px;
+      margin: 10px 10px 10px 10px;
+  }
+  footer {
+      
+      border-top: 1px solid #1DA1F2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+  }
+  .mywork {
+      display: flex;
+      border-radius: 75%;
+      font-size: 15px;
+      width: 300px;
+      height: 50px;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .mywork:hover {
+      color: white
+  }
+  .contact {
+    display: flex;
+    border-radius: 75%;
+    padding: auto;
+    font-size: 15px;
+    width: 500px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact:hover {
+      color: white;
+  }
+  .atags {
+      margin: auto;
+  }
+  .button1 {
+      margin: auto;
+  }
+
+
+  @media all and (max-width: 480px)
+  {
+      html {
+          width: 480px;
+      }
+      body {
+          width: 100%;
+      }
+      .nav {
+
+      }
+      .name {
+          display: flex;
+          flex-direction: row;
+          font-size: 75px;
+          padding-top: 0%;
+          margin-left: 8%;
+      }
+      .head-container {
+          display: flex;
+          flex-direction: column;
+          border-bottom-width: 100%;
+      }
+      .projects {
+          display: flex;
+          flex-direction: column;
+      }
+      .column {
+          display: flex;
+          flex-direction: column;
+      }
+      .pic1 {
+          display: none;
+      }
+      nav {
+          padding-top: 0%;
+          margin-bottom: 5%;
+      }
+      .nav-container {
+          display: flex;
+          flex-direction: column;
+
+      }
+      .button {
+          padding: auto; 
+      }
+      h2 {
+          text-align: center;
+          display: none;
+      }
+      .mywork {
+          border-radius: 0%;
+          padding-top: 5%;
+          margin-left: 5%;
+          
+      }
+      nav {
+          display: flex;
+          flex-direction: column;
+          border-radius: 0%;
+      }
+      .nav-container {
+          display: flex;
+          flex-direction: column;
+          border-radius: 0%;
+        
+      }
+      .projects {
+        display: none;
+      }
+      .lambda {
+          display: none;
+      }
+      .main-section {
+          display: none;
+      }
+      .project-gallery1 {
+          text-align: center;
+          padding-left: 38%;
+      }
+      .contact {
+          border-radius: 0%;
+          padding-top: 2.5%;
+          margin: auto;
+      }
+  }
