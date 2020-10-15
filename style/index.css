@@ -1,1 +1,110 @@
-/* Add CSS styling here */
+h2,
+h3 {
+  color: palevioletred;
+}
+
+nav button {
+  margin-bottom: 20px;
+  color: purple;
+  background-color: lightskyblue;
+}
+
+.me p {
+  width: 200px;
+  color: violet;
+}
+
+.me button {
+  color: grey;
+  background-color: yellow;
+}
+
+section {
+  display: flex;
+}
+
+.pictures {
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  background-color: thistle;
+}
+
+h4 {
+  color: deeppink;
+  align-self: center;
+}
+
+footer button {
+  color: blueviolet;
+  background-color: lightpink;
+  width: 80px;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures span {
+  font-size: 15px;
+}
+
+.pictures div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures div img {
+  width: 200px;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.under-header {
+  margin-right: 1%;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  header nav button {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .pictures div img {
+    width: 150px;
+  }
+  .pictures div {
+    margin-bottom: 20px;
+  }
+}
