@@ -1,1 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 62.5%;
+font: inherit; vertical-align: baseline;
+}
+
 /* Add CSS styling here */
+
+body{
+    
+    background-color:#01011a;
+}
+
+
+.title{
+    text-align:center;
+    border:1px solid black;
+    background:#ddc7f0;
+}
+
+h2{
+    color:white;
+    font-size:1.5rem;
+    margin:20px;
+}
+.intro{
+    display:flex;
+    justify-content:space-between; 
+}
+
+nav{
+    margin:20px;
+}
+
+nav a{
+    text-decoration:none;
+    border-radius:15%;
+}
+
+nav a:hover{
+    background:#31023b;
+    color:white;
+}
+
+.box1 {
+    border:2px solid black;
+    background-color:#ddc7f0;
+
+}
+.box2 {
+    border:2px solid black;
+    background-color:#ddc7f0;
+}
+
+.box3 {
+    border:2px solid black;
+    background-color:#ddc7f0;
+}
+
+.box4 {
+    border:2px solid black;
+    background-color:#ddc7f0;
+}
+
+header{
+    margin:20px 20px 100px 20px;
+}
+
+.spacecake{
+    background-image:url("/images/cosmictouch.jpg");
+    min-height:500px;
+    max-width:850px;
+    margin:0 auto;
+    margin-top:20px;
+    background-size:cover;
+    background-repeat:no-repeat;
+} 
+
+
+h1{
+    color:white;
+    font-size:3rem;
+    text-align:center;
+    padding:30px;
+}
+
+h3{
+    color:white;
+    font-size:2rem;
+    text-align:center;
+}
+
+.gallery{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center; 
+    margin-bottom:40px;
+}
+
+.gallery img{
+    width:20rem;
+    height:20rem;
+    margin:10px;
+}
+
+.universe{
+    color:white;
+    text-align:center;
+}
+/* long format or if I ever need to select them individually */
+/* .cosmos{
+    color:white;
+    text-align:center;
+}
+
+.nebulae{
+    color:white;
+    text-align:center;
+}
+
+.stardust{
+    color:white;
+    text-align:center;
+}
+
+.singularity{
+    color:white;
+    text-align:center;
+}
+
+.wormhole{
+    color:white;
+    text-align:center;
+}
+
+.eventhorizon{
+    color:white;
+    text-align:center;
+} */
+
+.button{
+    text-align:center;
+}
+
+button{
+    background-color:#ddc7f0;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+button:hover{
+    background:#31023b;
+}
+
+.button a{
+    text-decoration:none;
+}
+
+.button a:hover{
+    color:white;
+}
+
+footer{
+    background-color:#5c0341;
+}
+
+@media (max-width:800px) 
+{
+    nav{
+        display:flex;
+        flex-direction:row-reverse;
+}
+
+    gallery img{
+       width:10rem;
+       height:10rem;
+       margin:5px; 
+       flex-direction:wrap-reverse;
+}
+
+    h1, h2, h3{
+        color:rgb(238, 173, 227);
+    }
+
+    .universe{
+        color:rgb(238, 173, 227);
+    }
+
+
+@media (max-width:500px)
+{
+    nav{
+        flex-direction:row;
+    }
+
+    nav a{ 
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin-right:10px;
+    }         
+
+
+    h2{
+        color:rgb(2, 0, 2);
+    }
+
+    h1, h3{
+        display:none;
+    }
+    
+
+
+.universe{
+    color:rgb(2, 0, 2);
+}
+
+.spacecake{
+    min-height:20rem;
+    max-width:200rem;
+    margin:0 auto;
+    margin-top:20px;
+    background-size:cover;
+    background-repeat:no-repeat;
+} 
+}
+
+@media (hover:hover)
+{
+    h1:hover,h2:hover,h3:hover{
+        color:white;
+    }
+
+    .universe:hover{
+        color:white;
+    }  
+}
+}
