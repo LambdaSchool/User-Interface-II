@@ -1,1 +1,318 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My Code */
+ 
+*  {
+	box-sizing: border-box;
+}
+
+html body {
+    font-size: 62.5%;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    html body {
+        width: 98%;
+    }
+
+}
+
+.header h1 {
+    padding-left: 2%;
+    font-size: 3rem;
+}
+
+@media(max-width: 500px) {
+    .header h1 {
+        text-align: center;
+    }
+}
+
+.header {
+    padding: 2% 0 2% 1.5%;
+    background: gray;
+}
+
+
+
+.header h1 {
+    padding-left: 2%;
+    font-size: 3rem;
+}
+
+.header nav {
+    padding: 2% 0;
+    margin-left: 3.5%;
+    display: flex;
+    justify-content: start;
+    font-size: 1rem;
+}
+
+
+@media(max-width: 500px) {
+    .header nav {
+        width: 35%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.2rem;
+        padding-top: 3.5%;
+    }
+}
+
+.header nav a {
+    border: 2px solid black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 2% 1.5%;
+}
+
+@media(max-width: 500px) {
+    .header nav a {
+        padding: 7% 1.5%;
+    }
+}
+
+.header nav a:hover {
+    background: white;
+    color: black;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 98%;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 98%;
+    }
+}
+
+.container .aboutMe {
+    display: flex;
+    padding: 5% 0;
+}
+
+@media(max-width: 800px) {
+    .container .aboutMe {
+       flex-direction: column; 
+       justify-content: center;
+       align-items: center;
+    }
+}
+@media(max-width: 500px) {
+    .container .aboutMe {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .container .aboutMe .aImg {
+        margin: 0 auto;
+    }
+}
+
+.container .aboutMe .aInfo h2 {
+    font-size: 1.8rem;
+    padding-top: 20%;
+}
+
+@media(max-width: 800px) {
+    .container .aboutMe .aInfo h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 5% 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .aboutMe .aInfo h2 {
+        font-size: 2.5rem;
+        padding-top: 2.5%;
+    }
+}
+
+.container .aboutMe .aInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 0 15% 0 10%;
+    font-size: 1rem;
+}
+
+@media(max-width: 800px) {
+    .container .aboutMe .aInfo {
+        padding: 0 0 0 1%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container .aboutMe .aInfo p {
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 4%;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .aboutMe .aInfo {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+.container .aboutMe .aInfo button {
+    width: 40%;
+    padding: 1.5%;
+}
+
+@media(max-width: 800px) {
+    .container .aboutMe .aInfo button {
+        margin: 0 auto;
+        font-size: 1.6rem
+    }
+}
+
+@media(max-width: 500px) {
+    .container .aboutMe .aInfo button {
+        margin: 5% 0;
+        padding: 3.5% 1.5%;
+        font-size: 1.15rem;
+    }
+}
+
+.container .projects h2 {
+    font-size: 1.5rem;
+    padding: 1% 0;
+}
+
+@media(max-width: 800px) {
+    .container .projects h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .projects h2 {
+        text-align: center;
+        padding: 5% 0 25% 0;
+    }
+}
+
+.container .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 800px) {
+    .container .projects {
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .projects div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+}
+@media(max-width: 800px) {
+    .container .projects img {
+        width: 300px;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .projects img {
+        width: 200px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2.5% 0;
+    background: grey;
+    margin-top: 2.5%;
+}
+
+footer p {
+    padding: 2% 0;
+}
+
+footer button {
+    width: 25%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

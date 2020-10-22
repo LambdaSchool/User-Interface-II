@@ -1,0 +1,158 @@
+/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My Code */
+
+*  {
+	box-sizing: border-box;
+}
+
+html body {
+    font-size: 62.5%;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 2% 0 2% 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    background: grey;
+}
+
+nav a {
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 2%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2.5%;
+}
+
+.aboutMe {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2.5% 0;
+}
+
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.5% 0;
+}
+
+@media(max-width: 800px) {
+    .img {
+        width: 75%;
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 800px) {
+    img {
+        padding-bottom: 2.5%;
+    }
+}
+
+@media(max-width: 500px) {
+    .img {
+        width: 98%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    img {
+        padding-bottom: 2.5%;
+    }
+}
+.otherInfo {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5% 0;
+}
+
+@media(max-width: 500px) {
+    .otherInfo {
+        width: 98%;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.otherInfo p {
+    width: 35%;
+    padding: 2.5% 5%;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .otherInfo p {
+        width: 98%;
+        margin: 0 auto;
+        
+    }
+}
