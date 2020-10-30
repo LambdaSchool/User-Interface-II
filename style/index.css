@@ -1,1 +1,61 @@
 /* Add CSS styling here */
+
+/* HTML5 display-role reset for older browsers */
+/*General syles*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Trispace', sans-serif;
+    line-height: 1.5;
+}
+* {
+    box-sizing: border-box;
+   /* border: 1px solid black;*/
+	max-width: 100%;
+}
+.myname{
+	font-size: 5rem;
+	margin: 0 auto;
+
+}
+.links{
+	padding:2% 0;
+	display:flex;	
+}
+.headerimg{
+	width: 50%;
+}
+.aboutme{
+	display: flex;
+	width:100%
+}
+.cb{
+	width:50%;
+	line-height:2.5 ;
+}
+.gallery img{
+	width:20%;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	text-align: center;
+}
+.pics{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: flex-start;
+}
+.contact{
+	background-color: lightblue;
+	align-items: center;
+	text-align: center;	
+}
+.pictext{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
