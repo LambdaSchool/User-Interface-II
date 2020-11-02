@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+
+
+/*END OF RESET*/
+
+/* *{
+    border: 1px solid grey;
+} */
+
+/* General Styles */
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height:1.5;
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:5rem;
+    padding-right:80%;
+    padding-left:5%
+}
+section{
+    padding:4% 0;
+    width:90%;
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+}
+/*Header styles*/
+header{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    background-color:lightcyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Nav Styles */
+nav{
+    padding-left:5%;
+    justify-content: space-around;
+}
+
+/* Top Section Styles */
+.aboutMe{
+    display: flex;
+    align-content: center;
+    
+}
+
+.aboutMe img{
+    width: 75%;
+    padding-left:5%;
+
+}
+
+/* Gallery Section Styles */
+
+ .gallery{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+ }
+
+.gallery div{
+    width:20%;
+    padding-left:5%;
+}
+.gallery div img{
+    width:50%;
+    height:75%;
+}
+
+.galleryItem{
+    padding-top:4%;
+}
+
+.galleryItem p{
+    font-size: 0.5rem;
+}
+
+
+/* Footer Section Styles */
+footer{
+    margin:0 5%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:lightsteelblue;
+}
+
+/* MOBILE STYLE */
+@media(max-width:800px){
+
+.gallery {
+    flex-direction: column;
+    position: relative;
+    left:35%;
+}
+
+.aboutMe{
+    flex-direction: column;
+}
+
+header h1{
+    padding-left:40%;
+    padding-right:20%;
+}
+
+p{
+    font-size: 1.29rem;
+}
+
+nav{
+    padding-left: 30%;
+}
+
+}/*MOBILE STYLE CLOSED*/
