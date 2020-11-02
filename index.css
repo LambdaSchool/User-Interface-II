@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family:'Peddana', serif;
+
+}
+
+
+
+/*This is where the code starts*/
+
+body{
+    background-color: lightslategray;
+}
+.header {
+    width: 100%;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 6rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 3rem;
+    color:goldenrod;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bio img{
+    width: 500px;
+    padding:9%;
+    margin-left: 4%;  
+    
+}
+
+.bio h3{
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 4rem;
+    margin-bottom: 3%;
+    
+}
+.bio a{
+    margin-left:2%;
+    
+    
+    font-size: 4rem;
+    text-decoration: none;
+
+
+}
+.bio p{
+    margin-left: 2%;
+    font-size: 2rem;
+    margin-top: 3%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13%;
+    margin-bottom: 3%;
+}
+footer p  {
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+footer a {
+    font-size: 2rem;
+}
+
+.picturesection{
+    display:flex;
+    justify-content: center;
+    margin-left: 17%;
+    margin-top: 1%;
+}
+.picture {
+    
+    padding: 1%;
+}
+
+.picture p{
+    margin-right: 20%;
+    
+    font-size: 2rem;
+}
+
+button{
+    padding: 1%;
+    font-size: 2rem;
+    margin-top: 1%;
+}
+  
+
+
+
+
+/*Media Queries*/
+
+  @media(max-width:500px){
+
+      .header{ 
+         margin-left: 6%;
+         margin-top: 2%;
+         width: 100%;
+        }
+
+      .header h1{
+          font-size: 2rem;}
+
+      .navbar a{ 
+          font-size: 1rem;}
+    
+      .bio{
+            display: flex;
+            flex-direction: column;
+            }
+
+        .bio img{
+                width: 500px;
+                margin-left: -2%;
+               
+            }   
+        .bio p {
+            font-size: 1rem;
+            margin-left: 8%;
+            margin-right: 8%;
+            } 
+
+        .bio a{
+            width: 100%;
+            margin-left: 8%;
+            }
+
+        .bio h3{
+            margin-left: 8%;
+            font-size: 2rem;
+        }
+        .picturesection { 
+              margin-left: 11%;
+              margin-top: 1%;
+
+        }
+        .picturesection img{
+            width: 100px;
+            }
+        
+        
+        .picturesection p{
+            font-size: 1rem;
+        }
+        
+        button{
+            padding: none;
+
+        }
+    }
+        
+    @media (max-width:800px){
+
+    .header{ 
+        width: 100%;
+        margin-left: -15%;
+        margin-right: 8%;
+        margin-top: 2%;
+        margin-bottom: -5%;}
+
+     .header h1{
+         font-size: 2rem;
+        }
+
+     .navbar a{ 
+         font-size: 1rem;
+        }
+   
+     .bio {
+           display: flex;
+           flex-direction: column;
+           }
+
+    .bio img{
+               width:500px;
+               margin-left: -7%;
+             
+            }
+
+    .bio p {
+           font-size: 1rem;
+           margin-left: 8%;
+           margin-right: 20%;
+           } 
+
+    .bio a{
+           width: 100%;
+           margin-left: 8%;
+           }
+
+    .bio h3{
+           margin-left: 8%;
+           font-size: 2rem;
+           }
+
+    .picturesection { 
+             margin-left: 11%;
+             margin-top: 1%;
+             margin-right: 15%;
+            }
+
+    .picturesection img{
+           width: 100px;
+           }
+            
+    .picturesection p{
+           font-size: 1rem;
+           }
+       
+    button{
+           padding: none;
+          }
+
+    footer{
+           margin-right: 25%;
+          }
+
+
+}
+
+       
+        
+           
+            
+            
+    
