@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************End of Reset!*****************/
+
+*{
+	/* border:1px solid grey; */
+	background-color: rgb(180, 176, 176);
+	box-sizing: border-box;
+}
+
+header{
+	display:flex;
+	flex-flow: wrap;
+	justify-content: center;	
+	font-family: 'Archivo Narrow', sans-serif;
+	background-color: darkslategray;
+	
+}
+
+header a{
+	text-decoration: none;
+	color:black;
+	font-size: 1.5rem;
+	border-radius: 10%;
+	margin-bottom: 5px;
+	background-color: darkslategray;
+	padding:5px 5px;
+	}
+
+header h1{
+	width:100%;
+	text-align: center;
+	
+	font-size: 3rem;
+	margin-bottom: 5px;
+	background-color: darkslategray;
+	
+}
+
+.section1{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.rileyBlanket{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	background:url("https://iili.io/34Am0B.md.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+	border: 2px solid darkslategray;
+}
+
+h2{
+	font-size: 2rem;
+	margin-top: 5px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.div1{
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.div2{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section2 div img{
+	width:15%;
+	margin:2%;	
+	border: 2px solid darkslategray;
+	border-radius: 10%;
+}
+
+footer{
+	text-align: center;
+	padding:10px;
+	background-color: darkslategray;
+	font-family: 'Archivo Narrow', sans-serif;
+	
+}	
+
+footer a{
+	background-color: darkslategray;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+}
+
+.section2{
+	display:flex;
+	justify-content: space-evenly;
+	padding:0 10px;
+}
+
+p{
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+/**************Media Break!***************/
+
+@media (max-width:800px){
+
+
+
+*{
+	/* border:1px solid grey; */
+	background-color: rgb(180, 176, 176);
+}
+
+header{
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+	justify-content: center;	
+	font-family: 'Archivo Narrow', sans-serif;
+	background-color: darkslategray;
+	
+}
+
+header a{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	border-radius: 10%;
+	margin-bottom: 5px;
+	background-color: darkslategray;
+}
+
+header h1{
+	width:100%;
+	text-align: center;	
+	font-size: 3rem;
+	margin-bottom: 5px;
+	background-color: darkslategray;
+	
+}
+
+.section1{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.rileyBlanket{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	background:url("https://iili.io/34Am0B.md.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+	
+}
+
+h2{
+	font-size: 2rem;
+	margin-top: 5px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.div1{
+	display:flex;
+	flex-direction: row;
+	flex-flow: wrap;	
+}
+
+.div2{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section2 div img{
+	width:45%;
+	
+}
+
+footer{
+	text-align: center;
+	padding:10px;
+	background-color: darkslategray;
+	font-family: 'Archivo Narrow', sans-serif;
+	
+}	
+
+footer a{
+	background-color: darkslategray;
+	font-size: 1.5rem;
+}
+
+.section2{
+	display:flex;	
+	flex-direction: column;
+	padding:0 10px;
+	text-align: center;
+}
+
+p{
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+}
