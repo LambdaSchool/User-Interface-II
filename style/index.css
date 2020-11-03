@@ -1,1 +1,200 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+    padding: 0;
+    
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background-color: cadetblue;
+	margin:2% 2%;
+}
+
+.top{
+    display:flex;
+    justify-content:space-around;
+    padding:2% 2%;
+}
+
+.top #buttons {
+	width:50%;
+	display:flex;
+	text-align: center;
+	align-content: space-between;
+	font-family:'Merriweather Sans', sans-serif;
+}
+.top h2{
+	width:50%;
+	font-size:24px;
+	font-family:'Merriweather Sans', sans-serif;
+
+}
+
+#buttons a{
+	width:25% 25%;
+	display:flex;
+	margin:2% 5%;
+	padding:0% 5%;
+	justify-content:space-between;
+	font-size:24px;
+	color:#4F4F4F;
+	background-color:burlywood;	
+	border-radius:25%;
+	text-decoration:none;
+}
+
+#buttons a:hover{
+	background: white;
+	color: tomato;
+	animation: pulse 1.5s infinite;
+}
+
+
+.main{
+	font-size:48px;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	padding: 4% 2%;
+	background-image: url("https://picsum.photos/id/1022/200/300") ;
+	background-size: 100% 100%;
+	border-radius: 50%;
+	color: #fff;
+
+}
+.main .projects{
+	font-size: 36px;
+	padding:4%;
+	margin:4%;
+	display:flex;
+	flex-direction:column;
+	text-align:center;	
+}
+
+.main p{
+	padding:4% 4%;
+	font-size: 36px;
+	
+}
+
+.my_projects{
+	padding:4%;
+	margin: 2% 2%;
+}
+.my_projects a{
+	padding: 2rem;
+	border-radius:40%;
+	font-size:24px;
+	background-color: burlywood;
+	text-decoration: none;
+	font-family:'Merriweather Sans', sans-serif;
+	color:#4F4F4F;
+}
+
+.my_projects a:hover {
+	background: white;
+	color: tomato;
+	animation: pulse 1.5s infinite;
+  }
+
+
+.middle{
+	display:flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+
+.project_images{
+	display:flex;
+	justify-content:space-around;
+	padding:4% 4%;	
+}
+
+.project_images .projects{
+	display:flex;
+	flex-direction:column;
+	
+}
+.projects h2{
+	background-color: burlywood;
+	display: flex;
+	justify-content:center;	
+}
+
+.some_info{
+	display:flex;
+	justify-content:space-around;
+	background-color: cadetblue;
+}
+
+.facts{
+	background-color: burlywood;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15%;
+	max-width: 15rem;
+}
+
+
+.facts p{
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	padding:8% 8%;
+}
+
+.facts h2{
+	display: flex;
+	justify-content: center;
+	margin: 3%;
+}
+
+
+.social_media{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 1% 2%;
+}
