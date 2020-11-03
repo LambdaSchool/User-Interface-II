@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	/* padding: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /* border:1px solid grey; */
+}
+
+/*General Styles!*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.5;
+}
+h1{
+    font-family: 'PT Serif', serif;
+    font-size:10rem;
+}
+section{
+    padding:4% 0;
+    width:95%;
+    margin:0 auto;
+}
+a{
+    text-decoration:none;
+}
+/* Add CSS styling here */
+
+/* main fonts for site use
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+/* *{
+    border: 2px solid grey;
+} */
+
+/*nav section styles*/
+body{
+    /* background-image: url(/images/dogCookies.jpeg); */
+    /* background-repeat: no-repeat, repeat; */
+    background-color: antiquewhite;
+}
+h1{
+    text-shadow: 6px 2px blue;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    /* padding:2% 0; */
+    display:flex;
+    justify-content:center;
+}
+nav a{
+    font-size: 2rem;
+    border-radius:10px;
+    padding:1% 5%;
+    margin: 1px;
+    border:1px solid black;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    /* text-shadow: 3px 1px blue; */
+    font-size: 5rem;
+}
+
+/* style for intro */
+.intro h2{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.intro p{
+    width: 95%;
+    margin: auto;
+    /* border: 2px solid black; */
+    font-size: 2rem;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+.titleImg{
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+}
+.titleImg img{
+    width: 100%;
+    padding: 1px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Project images section */
+.projects{
+    
+    display: flex;
+}
+.project1{
+    width: 20%;
+    height: 70vh;
+    margin-left: 10px; 
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/maliRamp.jpeg')
+}
+.project2{
+    width: 20%;
+    height: 70vh;
+    margin-left: 10px; 
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/rottiePuppyWinking.jpeg')
+}
+.project3{
+    width: 20%;
+    height: 70vh;
+    margin-left: 10px; 
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/meAndDino.jpg')
+}
+.project4{
+    width: 20%;
+    height: 70vh;
+    margin-left: 10px; 
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/ciscoHoldandBark.jpg')
+}
+.project5{
+    width: 20%;
+    height: 70vh;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+footer .contact{
+    display: flex;
+    justify-content: center;
+    
+}
+footer .contact a{
+    width: 15%;
+    border:1px solid black;
+    border-radius:10px;
+    padding:1% 2%;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    
+}
+footer .social a{
+    /* padding: 1% 5%; */
+    color: blue;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .social a:hover{
+    color: goldenrod;
+}
+footer .social a:visited{
+    color: white;
+}
+/********* MOBILE STYLES**********/
+
+@media(max-width:800px) {/* anything less than 800px will inherit these styles */
+    h1{
+        text-align: center;
+    }
+    
+    nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    .projects{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .project1{
+        width: 40%
+    }
+    .project2{
+        width: 40%;
+    }
+    .project3{
+        width: 40%;
+    }
+    .project4{
+        width: 40%;
+    }
+    .project5{
+        width: 80%;
+        height: 20vh;
+    }
+    .contact{
+        text-align: center;
+    }
