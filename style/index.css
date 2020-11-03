@@ -1,1 +1,405 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styles/ Probably the best thing i've learn today
+make all the notes you need inside the things */
+/* my three fonts to format with:
+font-family: 'Comfortaa', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/*
+Color Palette: found some random colour pallet generater. reference them here so you dont have to tab out! 
+Periwinkle Crayola: #C9DDFF
+Orchid Crayola: #ECB0E1
+Blush: #DE6C83
+Lilac Luster: #C1AAC0
+Seagreen Crayola: #2CF6B3
+Maya Blue: #6CBEED
+*/
+
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /*border:1px solid black;*/
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:2rem;
+    font-family: 'Staatliches', cursive;
+    line-height:1.5;
+    letter-spacing: 1px;
+    background-color: #C9DDFF;
+    display:flex;
+    color:#DE6C83;
+    flex-direction: column;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:6.5rem;
+}
+section{
+    padding:0%;
+    margin:0% auto;
+}
+a{
+    text-decoration:none;
+}
+p{
+    font-size:2.3rem;
+}
+
+/* header/ navbar styles/ go take outside */
+
+.headerContainer{
+    width:100%;
+    height:20vh;
+    display:flex;
+    flex-direction: column;
+}
+.headerContainer div{
+    margin:0% 2%;
+    text-shadow: 1px 1px black;
+}
+h1:hover{
+    color:black;
+    transition:1.5s;
+}
+.navbar{
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+    margin:0 8%; /*i realized that the width of the navbar is smaller than the total size of header.container. moving margin to left or right will scoot it over. same top & bottom*/
+    padding:0%;/**/
+    color: white;
+}
+.navbar a:hover{
+    color:#6CBEED;
+    background-color: #DE6C83;
+    text-transform: 1.5s;
+}
+/* this little bit of .links gave me fits! i thought button instead of class would be so mean. learn to disable code and mark it up. throw borders anywhere to see the code. WTF padding TOP RIGHT BOTTOM LEFT*/
+
+.links{
+    padding:0% 5% 0% 5%; /* theres the short version of 'w & h' but i needed to figit with the boundaries*/
+    margin:0%;
+    border:4px dashed grey;/* modifiers to consider: dotted, dashed, grooved*/
+    color:#DE6C83;
+    font-size: 2.6rem;/*2.6rem- pls hold*/
+    text-shadow: 1px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* storage for code/ things that needed testing: 
+
+.navbar div{
+    width:50%;
+    height:0%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+.links{
+    font-stretch: ultra-expanded;
+    width:50%;
+    height:0%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+*/
+
+/*top section styles/ do some push ups*/
+.topsection{
+    width:95%;
+    height:35%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:5px solid black;
+}/*
+.mainbody{   // HTML:<div class="mainbody"></div>// found out this was an unnessasary div and just added most of the code to topsection//
+    width:100%;
+    height:35%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:5px solid black;
+}*/
+.topimage{
+    width:40%;
+    height:35%;
+    display: flex;
+    align-content: center;
+    border: solid grey;
+}
+.textbody{
+    width:45%;
+    height:35%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+.textbody h2{
+    margin-bottom: 10%;
+}
+.textbody h2:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.textbody p{
+    margin-top: 10%;
+    letter-spacing: 1.5;
+}
+.textbody p:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+.textbody div{
+    border-radius:3%;
+    width:200px;
+    height:auto;
+    padding:4%;
+    margin:0% auto;
+    font-size:4rem;
+    color:black;
+    background: #DE6C83;
+    border: 4px dashed black;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px  #DE6C83;
+}
+.textbody div:hover{
+    background:#6CBEED;
+    color:#DE6C83;
+    transition:1.5s;
+    text-shadow:1px 1px black;
+}
+
+/*img box styles/ also drink some water*/
+
+.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    height:60%;
+}
+.gallery div{
+    display:flexbox;
+    margin:4% 0;
+}
+.gallery div img:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}    
+.gallery p{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    text-shadow: 1px 1px black;
+}
+.gallery div p:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+/* this is cool targeting individually or as a group, but i found out gallery div did the exact same thing... cool story bro!
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img, .box7 img, .box8 img{
+    border: 1px solid red;<<<<------- this random border helped finding what the things were doing
+}
+*/
+/*footer styles/ go pee and eat a snack*/
+
+footer{
+    background:#ECB0E1;
+    color:black;
+    height:30%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.bottompage{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.bottompage h2:hover{
+  color: black;
+  text-shadow:2px 2px #6CBEED;
+}
+.contact{
+    width:15%;
+    height: auto;
+    border-radius:5%;
+    background-color:#ECB0E1;
+    color:black;
+    font-weight: bold;
+    font-size: 3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:1% auto;
+    padding: 1% 1%;
+}
+.contact:hover{
+    background-color:black;
+    color:#6CBEED;
+    transition: 1.5s;
+    border: 2px solid#6CBEED;
+}
+
+/* Social Media Icon Style Section*/
+
+.social-icons {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin:0 auto;
+  }  
+
+.social-icons li img {
+  width:70px;
+  height:70px;
+  display: flex;
+  justify-content: space-between;
+  margin:0% 1vw;
+}
+/**     was trying to transition the icons into different icons and got stuck
+.social-icons .li .icon1{
+  background-image:url(/assets/PNG/CircleGrey/Facebook_1.png);
+}
+.social-icons .li .icon1:hover{
+  background:url(/assets/PNG/CircleColor/Facebook.png);
+}
+
+/********************MEDIA QUERIES*************************/
+
+@media(max-width:800px){/* anything less than 800px will inherit the styles*/
+
+body{
+  font-size:1.3rem;
+  flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6{
+  font-size:4.5rem;
+}
+p{
+  font-size:2.3rem;
+}
+
+/* header/ navbar styles/ go take outside */
+
+.headerContainer{
+  height:30vh;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar{
+  width:50%;
+  height: 30%;
+  flex-direction: column;
+}
+.links{
+  font-size: 2.3rem;
+}
+
+/*top section styles/ do some push ups*/
+
+.topsection{
+  flex-direction: column;
+}
+.topimage{
+  width:50%;
+  height:50%;
+}
+
+/*footer styles/ go pee and eat a snack*/
+
+.bottompage{
+  flex-direction: column;
+}
+.contact{
+  width:25%;
+  font-size: 2.5rem;
+}
+
+/* Social Media Icon Style Section*/
+
+.social-icons {
+  flex-direction: column;
+}  
+
+} /************END OF MEDIA QUERIES*************/
