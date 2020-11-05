@@ -1,1 +1,238 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Add CSS styling below */
+
+
+*{
+  color: white;
+}
+
+html {
+	margin: 0 5%;
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e5ae09b0-a69f-4795-a0e8-6cb6a65ebd31/d8dbnac-4e140102-df75-48f0-9c53-880cce859497.jpg/v1/fill/w_1600,h_900,q_75,strp/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC9lNWFlMDliMC1hNjlmLTQ3OTUtYTBlOC02Y2I2YTY1ZWJkMzFcL2Q4ZGJuYWMtNGUxNDAxMDItZGY3NS00OGYwLTljNTMtODgwY2NlODU5NDk3LmpwZyIsIndpZHRoIjoiPD0xNjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.oyGfshKhrTNM8sHOTB9XJQPwil2e9zCFSMyQfuSZJ7M);
+	color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-size:62.5%;
+}
+body{
+  color:white
+}
+
+
+.main1 {
+	text-align:center;
+	opacity: 70%;
+	margin: 0 0 5% 0;
+}
+.main1 p {
+	font-size: 3rem;
+	line-height: 3rem;
+
+}
+
+body {
+	font-family: 'Kalam', cursive;
+	letter-spacing: .1rem;
+	line-height: 2rem;
+}
+
+
+h1 {
+	padding: 2rem;
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 5% 0 2% 0;
+	
+}
+
+nav {
+	border-bottom: solid 1px white;
+	border-top: solid 1px white;
+}
+
+h2 {
+	padding: 2rem;
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 2% 0 0 0;
+}
+
+.intro {
+	font-size: 2.5rem
+}
+
+.navcontainer {
+    display:flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+footer {
+	display:flex;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+a:hover {
+	color:white;
+	background-color: black;
+}
+a {
+	padding: 1.5rem 2.5rem;
+	margin: 0 2rem;
+	background:none;
+	border-radius: 10px;
+	font-size:2rem;
+	text-decoration: none;
+	color:white;
+	font-family: 'Staatliches', cursive;
+}
+
+#indexmain {
+	display: flex;
+	justify-content: left;
+	color: black;
+	border-radius: 2%;
+	margin: 1rem 0 0 0;
+}
+
+
+
+#indexmain p {
+	font-size: 3rem;
+	margin: 2%;
+	line-height: 4rem;
+}
+
+#indexgallery {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.galleryimg {
+	margin:2rem 1rem;
+
+}
+
+
+.gallerytext {
+	font-size:2rem;
+
+}
+
+.socialmedia {
+	text-align:center;
+	font-size:2rem;
+}
+
+
+/* MEDIA QUERY BELOW */
+
+@media all and (max-width:800px) {
+
+	html {
+		display:flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	h1 {
+		flex-wrap: wrap;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	#indexmain p {
+		display:none;
+
+	}
+	#indexmain div {
+		display: block;
+		margin: 0 auto;
+		height: 100%;
+
+	}
+
+
+	nav ul a {
+		margin: 0 auto;
+	}
+
+	.galleryimg {
+		margin:1rem;
+	
+	}
+
+	#indexgallery p {
+		text-align: center;
+	}
+
+		
+	}
+
+
+
+
+@media (max-width:300px) {
+	
+	main .name {
+		font-size:3rem;
+	}
+	
+	nav ul a {
+		font-size:1.2rem;
+	}}
