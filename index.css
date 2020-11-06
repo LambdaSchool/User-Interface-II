@@ -1,0 +1,67 @@
+
+body{
+    background-color: lavender;
+    font-family: 'Courier New';
+   
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 64px;
+}
+button{
+    background: lavender;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+
+header{
+    display: flex column;
+    text-align: center;
+    justify-content: center;
+    background-color: lightgrey;
+    
+}
+header img{
+    height: 600px;
+    width:100%;
+}
+
+.projects{
+   
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+
+  
+}
+.projects p{
+    display: flex wrap;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    align-self: center;
+    
+    
+
+}
+.projects img{
+    width: 300px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin-top: 10px;
+    height: 60px;
+    width: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+footer nav{
+    display: flex;
+    align-items: center;
+    
+}
+
