@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 6vh;
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem 0rem;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    border: 2px black solid;
+    border-radius: 0.4rem;
+    margin: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin-bottom: 2px;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.4rem;
+    padding: 2vh;
+    margin: 1.2rem;
+}
+
+.top-section .upper-image img {
+    border-radius: 50%;
+}
+
+.top-section .upper-content {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-left: 4rem;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: row wrap;
+    align-content: space-evenly;
+}
+
+.row-tiles img {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2vh;
+    margin-top: 3vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 0.4rem;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .top-section .upper-image img {
+      width: 40%;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: center;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column wrap;
+    }
+
+    .row-tiles .img {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 500px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            display: none;
+        }
+    
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+    
+        nav button {
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-radius: 0.4rem;
+            padding: 0.5rem;
+        }
+    
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+        }
+    
+        .top-section .upper-image img {
+          width: 40%;
+          align-content: center;
+        }
+      
+        p {
+          display: none;
+        }
+    
+        .bottom {
+            display: none;
+        }
+    
+        .top-section {
+            display: flex;
+            flex-direction: column wrap;
+        }
+    
+        .project-gallery {
+            display: none;
+        }
