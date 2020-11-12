@@ -1,1 +1,461 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* UTILS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1100px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.active {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/* HEADER */
+header {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 7rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.subheading h2 {
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  color: #333;
+}
+
+.description p {
+  text-align: justify;
+}
+
+/* NAV */
+nav {
+  display: flex;
+}
+
+nav a {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-left: 1px solid cadetblue;
+  transition: 0.4s;
+}
+
+nav a:last-child {
+  border-right: 1px solid cadetblue;
+}
+
+nav a:hover {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+/* PROJECTS */
+#main-project {
+  width: 100vw;
+  height: 600px;
+  background: url('../assets/pexels-eberhard-grossgasteiger-572897.jpg')
+    no-repeat center center/cover;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-project a {
+  background-color: cadetblue;
+  padding: 2rem 4rem;
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+}
+
+#main-project a:hover {
+  background-color: #fff;
+  color: #333;
+  font-size: 4.2rem;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.5);
+}
+
+#projects {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.projects {
+  width: 300px;
+  height: 600px;
+  transition: 0.4s;
+}
+
+.projects-description {
+  width: 200px;
+}
+
+.projects-description p {
+  text-align: right;
+}
+
+.projects-description p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.project1 {
+  background: url('../assets/pexels-ali-pazani-2811087.jpg') no-repeat center
+    center/cover;
+}
+
+.project2 {
+  background: url('../assets/pexels-steve-johnson-1585325.jpg') no-repeat center
+    center/cover;
+}
+
+.project3 {
+  background: url('../assets/pexels-daria-shevtsova-704569.jpg') no-repeat
+    center center/cover;
+}
+
+.project4 {
+  background: url('../assets/pexels-cottonbro-5081971.jpg') no-repeat center
+    center/cover;
+}
+
+.projects:hover {
+  transform: scale(1.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  height: 400px;
+  width: 100vw;
+  background: #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .contact a {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+
+footer .social a {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0 40px;
+}
+
+/* RESPONSIVE 1100px */
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading h1 {
+    font-size: 5rem;
+  }
+
+  .description p {
+    padding: 0 2rem;
+  }
+}
+
+/* RESPONSIVE 800px */
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  p {
+    line-height: 1.4rem;
+  }
+
+  header {
+    margin-top: 2rem;
+    height: 400px;
+  }
+
+  .heading h1 {
+    font-size: 4rem;
+    margin-top: 15px;
+  }
+
+  #main-project {
+    height: 300px;
+    margin-top: 1.4rem;
+  }
+
+  #main-project a {
+    font-size: 2rem;
+  }
+
+  #main-project a:hover {
+    font-size: 2.2rem;
+  }
+
+  #projects {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .projects {
+    height: 300px;
+    margin-top: 3rem;
+    width: 50%;
+  }
+
+  .project1 {
+    order: 5;
+  }
+
+  .project2 {
+    order: 4;
+  }
+
+  .project3 {
+    order: 3;
+  }
+
+  .project4 {
+    order: 2;
+  }
+
+  .projects-description {
+    order: 1;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .projects-description p {
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 30px;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  footer .social a {
+    font-size: 2rem;
+  }
+}
+
+/* RESPONSIVE 624px project says 500px but I had to take some liberty */
+
+@media only screen and (max-width: 624px) {
+  header {
+    height: 100%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 0.5rem 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+  }
+
+  nav a:last-child {
+    border: none;
+  }
+
+  .subheading h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  #projects {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .projects {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+    transition: 0.4s;
+  }
+
+  footer .social a {
+    font-size: 1.6rem;
+    margin: 0 20px;
+  }
+}
