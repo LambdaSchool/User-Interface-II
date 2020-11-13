@@ -1,1 +1,72 @@
 /* Add CSS styling here */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+section {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.intro {
+    display: flex;
+    text-align: center;
+    margin: 30px;
+}
+article {
+    margin: 30px;
+}
+a {
+    text-decoration: none;
+    line-height: 30px;
+    color: blueviolet;
+    font-weight: bolder;
+}
+button {
+    background-color: coral;
+}
+body {
+    color: darkorange;
+    background-color: cornflowerblue;
+    font-size: 1.5rem;
+}
+header {
+    background-color: darkblue;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
+    text-align: center;
+}
+footer button {
+    width: 135px;
+    font-size: 1.25rem;
+}
+footer a { 
+    text-align: center;
+}
+footer section { 
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 800px) {
+    body {
+        background-color: red;
+    }
+  
+}
+@media (max-width: 500px) {
+    body {
+        background-color: darkmagenta;
+       
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+}
