@@ -1,0 +1,222 @@
+/* Universal */
+
+*{
+    box-sizing: border-box;
+}
+/* Elements */
+a{
+    color: #D7D9CE;
+
+}
+body{
+    margin: 0;
+    background-color: #D7D9CE;
+    color: #091F20;
+    font-family: 'Lato', sans-serif;
+
+}
+button{
+    border: 1px solid #091F20;
+    background-color: #D7D9CE;
+    color: #040404;
+}
+footer{
+    background-color: #040404;
+    color: #D7D9CE;
+    font-size: 2.5rem;
+    height: 20rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+h1{
+    font-size: 7.2rem;
+    margin: 1rem;
+    color: #119DA4;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 3rem;
+    color: #0C7489;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    background-color: #040404;
+    color: #D7D9CE;
+    margin: 0;
+    padding: 2rem;
+}
+html{
+    font-size: 10px;
+    margin: 0;
+}
+nav{
+    display: flex;
+    margin-left: 5rem;
+}
+/* Classes */
+.aboutP{
+    font-size:2rem;
+    margin-left: 2rem;
+    width:80vw;
+}
+.active{
+    color: #D7D9CE;
+    background-color: #13505B;
+}
+.heroP{
+    font-size: 2.5rem;
+    width: 50rem;
+}
+.image{
+    background-color: black;
+    height: 25rem;
+    margin: 3rem;
+    width: 25rem;
+}
+.menButton{
+    padding: 1rem;
+    text-align: center;
+    width: 12rem;
+}
+
+
+/* ID's */
+#footBut{
+    padding: 1rem 3rem;
+}
+#footP{
+    padding-top: 4rem;
+}
+#heroButton{
+    width: 13rem;
+    height: 3rem;
+    background-color: #13505B;
+    color: #D7D9CE;
+    border: none;
+}
+#heroImage{
+    background-color: black;
+    background-image: url('./assests/imageedit_19_7192569185.jpg');
+    background-position: 90% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    margin: 2rem;
+    width: 70rem;
+}
+#heroText{
+    margin-left: 7rem;
+}
+#image1{
+    background-image: url(./assests/Team.png);
+    background-position: center;
+    background-size: cover;
+
+}
+#image2{
+    background-image: url(./assests/Glimmer\ 1\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+#image3{
+    background-image: url(./assests/Monica\ 1\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+#image4{
+    background-image: url(./assests/pomo.png);
+    background-position: center;
+    background-size: cover;
+}
+#image5{
+    background-image: url(./assests/Simon.png);
+    background-position: center;
+    background-size: cover;
+}
+#image6{
+    background-image: url(./assests/Tatu\ 1\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+#image7{
+    background-image: url(./assests/tic.png);
+    background-position: center;
+    background-size: cover;
+}
+#image8{
+    background-image: url(./assests/trivia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#section1{
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 12vw;
+    }
+    h2{
+        font-size: 7.5vw;
+    }
+
+    header{
+        background-color: #D7D9CE;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+    .menButton{
+        padding: 1.5rem;
+        width: 15rem;
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #heroImage{
+        width: 90vw;
+        margin: 2rem auto;
+        height: 65vw;
+    }
+    #heroText{
+        margin:  0;
+    }
+    #heroButton{
+        padding: 1.5rem;
+        width: 15rem;
+        font-size: 1.75rem;
+        height: inherit;
+    }
+    .heroP {
+      width: inherit;
+      margin: 4rem !important;
+      text-align: center;
+    }
+    #section1{
+        text-align: center;
+
+    }
+    .image{
+        margin: 0;
+        margin-bottom: 7rem;
+        margin-right: 1px;
+        margin-left: 3px;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+
+  }
