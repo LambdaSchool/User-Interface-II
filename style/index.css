@@ -1,1 +1,317 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, summary,
+time, mark, audio, video {
+    margin: 0; 
+	padding: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* CSS RESET */
+/* general styles */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+ font-size: 1.6rem;
+ font-family: 'Noto Sans TC', sans-serif;
+ line-height: 2; 
+}
+
+/*HEADER SECTION*/
+
+header {
+    background-color: #d9bebd;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-left: 2%;
+    box-sizing: border-box; 
+    padding: 2%;  
+}
+
+nav {
+    display: flex;
+    width: 22%; 
+    padding-bottom: 2%; 
+    padding-left: 6%;  
+}
+
+nav a{ 
+    text-decoration: none;
+    border: 2px black solid; 
+    border-radius: 1%;
+    text-align: center; 
+    font-size: 2rem;
+    padding: 5% 10%; 
+}
+
+/* TOP PROFILE SECTION */
+
+.main {
+    display: flex; 
+    margin: 2%; 
+    align-content: flex-end;
+}
+
+.main-left {
+    width: 50%; 
+    height: 50%; 
+    margin: 0 auto;
+    display: flex; 
+}
+
+.main-right {
+    width: 40%; 
+    padding-top: 10%; 
+    padding-right: 5%; 
+    display:flex; 
+    flex-direction: column-reverse; 
+}
+
+h2 {
+    font-size: 2.5rem; 
+}
+
+/* project preview section */
+
+section .project-previews {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.project-previews img {
+    width: 23%; 
+    height: 30vh; 
+    margin-bottom: 2%; 
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0; 
+    background-color:  #d9bebd; 
+    padding: 7% 40%; 
+}
+
+.footer-container {
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.footer-text {
+    font-size: 1.8em; 
+    margin: 2% auto; 
+}
+
+/* BUTTONS */
+button.footer-button {
+    display: flex; 
+    margin: 2% auto; 
+    padding: 5% 10%;    
+    font-size: 1.2em;  
+}
+
+button.my-projects {
+    padding: 2% 5%;    
+    font-size: 1.2em;  
+}
+
+/* *********** MEDIA QUERIES: 800PX ***************/
+
+/*HEADER SECTION*/
+@media(max-width: 800px){
+
+header {
+    background-color: #d9bebd;
+    padding-bottom: 3%;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 2%;  
+    display:flex;
+    justify-content: center;
+}
+
+nav {
+    align-content: center;
+    justify-content:center;
+    flex-direction: column;
+    margin:0 auto;
+    padding: 0; 
+}
+
+nav a{ 
+    text-decoration: none;
+    border: 2px black solid; 
+    border-radius: 1%;
+    text-align: center; 
+    font-size: 2rem;
+    padding: 5% 10%; 
+    display:flex;
+    justify-content: center;
+}
+
+/* TOP PROFILE SECTION */
+
+.main {
+    display: flex; 
+    flex-wrap: wrap;
+    max-width:100%;
+}
+
+.main-left {
+    width: 90%; 
+    height: 60vh; 
+}
+
+.main-right {
+    width: 100%; 
+    padding:2% 0; 
+}
+
+.main-right-text {
+    text-align:center;
+    padding: 2% 0; 
+}
+
+h2 {
+    font-size: 2.5rem; 
+    padding: 2% 0; 
+}
+
+.main-right-text p{
+margin: 0 auto; 
+width: 60%;
+padding-top: 2%; 
+}
+
+/* project preview section */
+
+section .project-previews {
+    display: flex; 
+    flex-wrap: wrap; 
+    max-width: 100%;
+    align-content: space-around;
+}
+
+.project-previews img {
+    width: 35%; 
+}
+
+/* FOOTER */
+
+footer {
+    padding: 7% 20%; 
+}
+.footer-text {
+    font-size: 2em; 
+    margin: 0 auto; 
+    width: 100%;
+    text-align: center;
+}
+
+/* BUTTONS */
+button.footer-button {
+    display: flex; 
+    margin: 2% auto; 
+    padding: 5% 10%;    
+    font-size: 1em;  
+    text-align: center;
+    max-width:100%;
+}
+
+button.my-projects {
+    padding: 2% 5%;    
+    font-size: 1.2em;  
+}
+
+} /*THIS IS THE CLOSING BRACKET!!!!!*
+
+/* *********** MEDIA QUERIES: 500PX ***************/
+
+/*HEADER SECTION*/
+@media(max-width: 500px){
+
+    h1 {
+        font-size: 3rem;
+    }
+    nav a{ 
+        font-size: 1rem;
+    }    
+    /* TOP PROFILE SECTION */
+
+    .main-left {
+        width: 90%; 
+        height: 35vh; 
+    }
+
+    .main-right-text p{
+    margin: 0 auto; 
+    font-size: 1rem;
+    padding-top: 5%; 
+    }
+    
+    /* project preview section */
+
+    .project-previews img {
+        width: 35%; 
+        height: 20vh;
+        justify-content: space-evenly;
+        margin: 3%;
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        padding: 7% 20%; 
+    }
+
+    .footer-text {
+        font-size: 1.2em; 
+        margin: 0 auto; 
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* BUTTONS */
+    button.footer-button {
+        margin: 2% auto; 
+        font-size: .7em;  
+        text-align: center;
+    }
+    
+    button.my-projects {
+        padding: 1% 3%;    
+        font-size: .7em;  
+    }
+} 
+/* THIS IS THE CLOSING BRACKET!!!!! */
