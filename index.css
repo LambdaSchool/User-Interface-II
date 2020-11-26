@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+* {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: "Hijrnotes Personal Use Only";
+    font-size: 200%;
+    padding: 2%;
+    
+}
+
+.navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.navigation .link {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    color: black;
+    margin: 2%;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 5%;
+    border: 2px solid black;
+  
+
+}
+
+.navigation .link:hover
+{
+    opacity: 0.5;
+}
+
+.navigation a {
+    display: flex;
+    justify-self: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    display: flex;
+    width: 45%;
+    height: 45%;
+    
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.image {
+    height: 25%;
+    width: 25%;
+    margin: 2%;
+}
+
+.image:hover {
+    opacity: 0.5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+footer .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: black;
+    margin: 2%;
+    border-radius: 5%;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+footer .link:hover {
+    opacity: 0.5;
+}
