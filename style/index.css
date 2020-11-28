@@ -1,1 +1,254 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+}
+
+h1, h2 {
+    font-size: 4rem;
+    margin-bottom: 0.9375em;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1.8rem;
+}
+
+
+.header {
+	max-width: 100%;
+	padding: 1.25em 5%;
+	margin-bottom: auto;
+	background: teal;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.625em 2%;
+}  
+
+.header nav button {
+    color: black;
+	text-decoration: black;
+	background-color: violet;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.625em 2%;
+   font-size: 1.6rem;
+   margin: 0.625em;
+  }
+
+.container-2 {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.top-content {
+    display: flex;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+	padding: 0.625em 2%;
+}
+
+.one {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 70%;
+    margin: auto;
+}
+
+img#river {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.middle-content {
+	margin-bottom: 30px;
+	height: 75%;
+	max-width: 100%;
+	padding: 0 2%;
+	margin: 0.625em;
+	padding: 0.625em;
+
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.box{
+	box-sizing: border-box;
+	width: 25%;
+	height: 50vh;
+}
+
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+footer {
+	margin-top: 2%;
+	max-width: 100%;
+	padding: 1.25em 5%;
+	background: teal;
+}
+
+footer nav {
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    padding: 1.25em 2%;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+	.header nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.top-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.box {
+		width: 50%;
+	}
+
+	footer {
+		width: 100%;
+	}
+	footer nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+
+
+}
+
+@media (max-width: 500px) {
+	.header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.top-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.box {
+		width: 75%;	
+	}
+	.boxes {
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	footer {
+		width: 100%;
+	}
+
+	footer nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
