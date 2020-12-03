@@ -1,1 +1,238 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    color: purple;
+}
+
+.buttonRow {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	justify-content: space-evenly;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.nameContainer{
+	display:flex;
+	justify-content:center;
+	font-size:3.5em;
+	margin:5%;
+}
+
+.navigation{
+	display:flex;
+	justify-content:center;
+}
+
+.button{
+	border:1px solid black;
+	background-color: lightgray;
+	padding:1%;
+}
+
+.introText{
+	display:flex;
+	justify-content:center;
+	margin: 3% 0% 0% 0%;
+	font-size:2.5em;
+}
+
+.introParaText{
+	display:flex;
+	justify-content:center;
+	margin: 2% 0% 0% 0%;
+}
+
+.heroSection{
+	background-size:cover;
+	max-width:100%;
+	background-position:fixed;
+	margin:2% 0% 0% 0%;
+}
+
+.pokeBallImg{
+	width:100%;
+	height:40vh;
+	object-fit:cover;
+}
+
+.projectSection{
+	margin: 2% 0% 0% 0%;
+	display:flex;
+	max-width:100%;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.projectText{
+	width:20%;
+	text-align:center;
+	margin:0% auto;
+}
+
+.footerContainer{
+	display:flex;
+	background-color:lightgray;
+	justify-content:center;
+}
+
+
+
+/*.header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 6vh;
+	background-color: #F9E7DC;
+	justify-content: center;
+	align-items: center;
+	font-size: 100%;
+	text-decoration: none;
+
+}
+
+.mainImg-Txt {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	justify-content: space-evenly;
+
+}
+
+.mainImg-Txt img {
+    width: 500px;
+	height: 30vh;
+	object-fit: cover;
+}
+
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: auto;
+	align-items: left;
+	margin: 5% 0%;
+
+}
+
+.textContainer button {
+	width:100%;
+}
+.projectImgs {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+.projectImgs img {
+	width: 300px;
+	height: 30vh;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	background-color: #F9E7DC;
+}
+
+@media (max-width:768px) {
+	.header {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		height: 40vh;
+		justify-items: center;
+	}
+
+	.header h1 {
+		font-size: 2rem;
+		padding-top: 5%;
+		padding-bottom: 1%;
+	}
+
+	.buttonRow {
+		flex-direction: column;
+		width: 10%;
+	}
+
+	.buttonRow a {
+		background-color: orange;
+		border: solid gray;
+		padding: 2%;
+	}
+
+	.header button {
+		padding: 2%;
+	}
+
+	.footer {
+		flex-direction: column;
+		height: 20vh;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.footer button {
+		padding: 2%;
+	}
+}*/
