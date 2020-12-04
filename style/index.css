@@ -1,1 +1,66 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+/*font-family: 'East Sea Dokdo', cursive;*/
+
+*{
+	font-family: 'East Sea Dokdo', cursive;
+	font-size:25px ;
+	color:darkblue;
+	
+}
+
+
+
+header {
+	text-align: center;
+}
+h1{
+	font-size:80px;
+}
+nav a{
+	text-decoration:none ;
+    display:inline-block ;
+    text-align: center;
+    padding:1% 2% ;
+	color: black;
+	border: 2px solid;
+	}
+	a:hover {
+		background-color:blue;
+		color: white;
+	}
+.main {
+background-image: url(https://images.unsplash.com/photo-1519124142585-bc4d4d7ddb45?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+height:400px;
+width: 100%;
+display: flex;
+justify-content: center;
+background-repeat: no-repeat;
+}
+.container {
+	width:100% ;
+	display: flex;
+	flex-direction: row wrap;
+	max-width: 100%;
+	justify-content:space-between ;
+	align-items: stretch;
+}
+.image {
+	height:600px ;
+	width:80px;
+	display:flex;
+	justify-content:space-between;  
+
+	
+}
+ .text p{
+	 margin-top:170px ;
+	display:flex;
+	justify-content:flex-end ;
+	width: 400px;
+	height:200px ;
+	text-align: center;
+}
+footer {
+	background-color: rgb(192, 192, 192);
+	text-align: center;
+}
