@@ -1,1 +1,239 @@
-/* Add CSS styling here */
+/*CSS Font */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* border: 1px solid black; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Oxygen', sans-serif;
+	overflow-x: hidden;
+}
+
+* {
+	max-width: 100%;
+}
+html{
+	font-size:62.5%;
+}
+body{
+	line-height:1.5;
+	font-size:1.8rem;
+	color:#4F4F4F;
+	box-sizing:border-box;
+	background-color:#e1f7f2;
+}
+h1,h2,h3,h4,h5,h6{
+	letter-spacing:3px;
+}
+a{
+	text-decoration:none;
+	color:#4F4F4F;
+}
+
+/* Code Begins*/
+/*Header and Navigation*/
+header{
+	background-color:#b4fae3;
+}
+
+.header{
+	width:100%;
+	height:110px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-left:20px;
+	align-items:space-evenly;
+}
+
+h1{
+	font-size:3rem;
+	font-weight:bold;
+}
+.header nav{
+	margin-left:30px;
+	padding-top:10px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+nav a{
+	font-weight:bold;
+	padding: 5px;
+	transition:.3s;
+}
+
+nav a:hover{
+	background-color: #03fcdb;
+}
+/*Bio and main project*/
+.bio{
+	display:flex;
+	height: 400px;
+	align-items:flex-end;
+	
+}
+.bio div{
+	width:50%;
+}
+.main_img{
+	background-image:url("https://picsum.photos/id/1015/6000/4000");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:95%;
+	margin: 7px;
+}
+.bio_info{
+	display:flex;
+	flex-direction:column;
+	padding: 3% 5%;
+	justify-content:flex-end;
+	align-items:flex-start;
+}
+button{
+	display:inline-block;
+	margin: 10px 0;
+	width:200px;
+	padding: 10px;
+}
+
+/*Image Gallery*/
+.gallery{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	text-align:center;
+}
+.row1{
+	display:flex;
+	flex-flow: row nowrap;
+	height: 50%;
+	width: 100%;
+	padding:10px;
+	justify-content: space-evenly;
+}
+
+.row2{
+	display:flex;
+	flex-flow: row nowrap;
+	height: 50%;
+	width: 100%;
+	padding:10px;
+	justify-content: space-evenly;
+}
+
+img{
+	height:200px;
+	width:200px;
+}
+/*Footer*/
+footer{
+	background-color:#b4fae3;
+	height: 110px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.contact_info {
+	font-size: 2rem;
+	display:flex;
+	flex-direction:column;
+}
+
+/*Media Queries*/
+
+@media (max-width:799px){
+	.gallery{
+		max-width: 95%;
+	}
+	.row1{
+		height: 40%;
+		width: 90%;
+		padding: 5px;
+	}
+	.row2{
+		height: 40%;
+		width: 90%;
+		padding: 5px;
+	}
+	img{
+		width:70%;
+		height: 50%;
+	}
+}
+
+@media (max-width:500px){
+	/*Header Section*/
+	.header{
+		margin-left: 0px;
+		height: 200px;
+		text-align: center;
+		justify-items: center;
+		align-content: center;
+	}
+	
+	.header nav{
+		margin-left: 0;
+		flex-direction: column;
+		justify-content: column;
+		font-size: 2rem;
+		padding: 0;
+	}
+	/*Bio Section*/
+	.bio{
+		flex-direction: column;
+		align-items: center;
+		height: 60vh;
+	}
+	.bio div{
+		width: 95%;
+	}
+	.main_img{
+		height: 50%;
+	}
+	.bio_info{
+		justify-content: center;
+		align-items: center;
+		padding: 1% 0;
+	}
+	.bio_info h2{
+		font-size: 3rem;
+	}
+	/*Gallery*/
+	.gallery{
+		flex-wrap: wrap;
+	}
+	.row1{
+		flex-flow:row wrap;
+		padding: 0;
+	}
+	.row2{
+		flex-flow:row wrap;
+		padding: 0;
+	}
+}
