@@ -1,1 +1,161 @@
-/* Add CSS styling here */
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 60px;
+}
+
+h2{
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right: 60%;
+    padding: 18px;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav a{
+    font-size: 25px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding: 18px;
+    border-radius: 35px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+    .home{
+    color: white;
+    background-color: midnightblue;
+    }
+
+    .about{
+        color:white;
+        background-color: darkgoldenrod;
+    }
+    
+    .contact{
+        color:white;
+        background-color: darkcyan;
+    }
+
+    .projects{
+        color:white;
+        background-color: gold;
+    }
+
+    .mainpicture{
+        width: 45%;
+    }
+
+    .rightside{
+        width: 45%;
+    }
+    .footer{
+        background-color: moccasin;
+        color: black;
+    }
+
+    .middle{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .topside{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .bottomside{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .pic1{
+        width: 20%;
+    }
+    .pic2{
+        width: 20%;
+    }
+    .pic3{
+        width: 20%;
+    }
+    .pic4{
+        width: 20%;
+    }
+    .pic5{
+        width: 20%;
+    }
+    .pic6{
+        width: 20%;
+    }
+    .pic7{
+        width: 20%;
+    }
+    .pic8{
+        width: 20%;
+    }
+
+    p{
+        font-style: inherit;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer{
+        background-color: cornflowerblue;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+    }
+    .button{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Media Queries */
+
+    /* Tablet View */
+    @media(max-width:800px){
+        h2{
+            margin-right:33%;
+            text-align: center;
+        }
+    }
+
+    /* Phone View */
+
+    @media(max-width:500px){
+        nav{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        nav a{
+            width: 30%;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            margin-right: 22%;
+            margin-left: 22%;
+            font-size: 25px;
+            text-align: center;
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mainpicture{
+            width: 80%;
+        }
+        .rightside{
+            width: 80%;
+        }
+    }
