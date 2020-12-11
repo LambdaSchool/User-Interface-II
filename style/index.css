@@ -1,1 +1,151 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.myname{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 27px;
+    font-family: 'langar', cursive;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.navbar a{
+    background-color: black;
+    color: white;
+    border: solid red;
+}
+
+
+.mysite{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 27px;
+    font-family: 'langar', cursive;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'langar', cursive;
+}
+
+.imgs{
+    display: flex;
+    
+}
+
+.imgs p{
+    margin-top: 180px;
+    margin-left: 100px;
+    font-family: 'Nerko One', cursive;
+}
+
+
+.footer{
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 50px;
+    background-color: lightseagreen;
+}
+
+.socialM{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socialM a:hover{
+    opacity: 0.4;
+}
+
+.socialM a:nth-first-child{
+    background: #55ACEE;
+    color: white;
+    font-size: 5px;
+    margin-left: 50px;
+}
+
+.socialM a:nth-child(2){
+    margin-left: 100px;
+}
+
+.socialM a:nth-child(3){
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
