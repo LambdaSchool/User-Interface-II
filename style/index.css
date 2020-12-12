@@ -1,1 +1,99 @@
 /* Add CSS styling here */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited{
+    color: none;
+}
+
+.top-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 140px;
+    
+}
+
+.my-name{
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.my-info p{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.tabs{
+   display: inline-flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 400px;
+}
+
+.nav-btn{
+    background-color: white;
+}
+
+.nav-btn{
+    padding: 10px;
+}
+
+.about{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.about img{
+    width: 400px;
+    height: 100%;
+    margin-right: 20px;
+}
+.about p{
+    align-content: flex-start;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects img{
+    width: 260px; 
+    height: 260px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-flow: column;
+}
+
+.footer h2{
+    justify-content: center;
+    padding: 30px;
+    margin: auto;
+}
+
+.footer a{
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+
+
