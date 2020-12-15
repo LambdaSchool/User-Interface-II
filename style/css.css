@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifgit;
+}
+#body {
+  background-image: url("img/road-1072823.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+#nav1 {
+  position: absolute;
+  top: 0;
+  background-color: rgba(136, 48, 0, 0.7);
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+}
+
+#name {
+  color: silver;
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  animation: name 8s linear;
+  animation-fill-mode: forwards;
+}
+#jr {
+  top: -20%;
+  z-index: 1;
+  position: absolute;
+  animation: jun 3s linear;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+#pat {
+  animation: jean 8s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+
+  top: 50%;
+}
+@keyframes jean {
+  0% {
+    top: -20%;
+  }
+  100% {
+  }
+}
+
+#not {
+  left: -20%;
+  z-index: 1;
+  position: absolute;
+  animation: not 2s linear;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes name {
+  0% {
+    top: -10%;
+  }
+  30% {
+    transform: translateX(60px);
+  }
+
+  70% {
+    transform: translateX(-60px);
+  }
+  99.99% {
+    color: silver;
+  }
+
+  100% {
+    transition: color rgb(136, 48, 0) 300ms linear;
+
+    transform: translateX(0px);
+  }
+}
+@keyframes jun {
+  0% {
+  }
+  99.99% {
+    color: black;
+  }
+  100% {
+    color: silver;
+    top: 43%;
+  }
+}
+@keyframes not {
+  0% {
+  }
+  99.99% {
+    color: black;
+  }
+  100% {
+    color: gold;
+    transform: translateX(970px);
+    top: 48%;
+  }
+}
+
+section {
+  position: relative;
+  z-index: 0;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url("/Users/apple/Documents/Web Dev/PersonalSite/img/road-1072823.jpg");
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+section .set div {
+  position: absolute;
+  display: block;
+}
+section .set div:nth-child(1) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+section .set div:nth-child(2) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(3) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: 0s;
+}
+section .set div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(5) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10s;
+}
+section .set div:nth-child(6) {
+  left: 0%;
+  animation: animate 12s linear infinite;
+}
+section .set div:nth-child(7) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+  animation-delay: -10s;
+}
+section .set div:nth-child(8) {
+  left: 60%;
+  animation: animate 18s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
+.set2 {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+.set3 {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(2px);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+#social-test {
+  display: flex;
+  width: fit-content;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.social {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: fit-content;
+  display: flex;
+}
+.social li {
+  display: inline-block;
+  margin: 3%;
+}
+.social li a {
+  color: rgba(256, 256, 256, 0.6);
+  border-radius: 6px;
+  list-style-type: none;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  padding: 1%;
+  border: 1px solid rgba(256, 256, 256, 0.6);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease 0.3s;
+}
+li a:hover {
+  color: rgba(256, 256, 256, 1);
+  border: 1px solid rgba(256, 256, 256, 1);
+}
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+.credits,
+.credits a {
+  font-size: 20px;
+  font-family: Open Sans;
+  color: rgba(256, 256, 256, 0.6);
+}
+#face {
+  color: #3b5998;
+}
+#twit {
+  color: #00acee;
+}
+
+#you {
+  color: red;
+}
+#insta {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+h1 {
+  font-size: 3rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  margin-left: 45%;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  width: fit-content;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  font-size: 1.3rem;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav a {
+  color: silver;
+}
+#nav:hover {
+  transform: rotate(360deg);
+}
+li.nav:hover {
+  transform: rotate(360deg);
+}
+.s2 {
+  font-size: 1.5rem;
+  color: silver;
+}
+.s3 {
+  font-size: 1.5rem;
+  color: silver;
+}
