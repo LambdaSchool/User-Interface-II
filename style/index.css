@@ -1,1 +1,269 @@
 /* Add CSS styling here */
+
+/******* Add CSS Meyer Reset *******/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    /* background-color: tan; */
+    line-height: 1;
+    color: #945555;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******* General Styles *******/
+
+body p{
+    font-family: Space Mono;
+    
+}
+
+
+/******* Header Section Styles *******/
+
+.my-name {
+    font-family: Roboto;
+    font-size: 65px;
+    margin: 20px;
+}
+
+.nav-bar .item {
+    
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    /* height: 50px; */
+    width: 120px;
+    /* color: black; */
+    font-family: Roboto;
+    text-align: center;
+    padding: 20px;
+
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.nav-bar{
+    /* border: 1px solid green; */
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+}
+
+/******* Main Section Styles *******/
+.main-content-container {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;    
+}
+
+.main-image {
+    width: 600px;
+}
+
+.main-right {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 400px;
+    margin-right: 120px;
+    padding-top: 75px;
+}
+
+h2 {
+    font-size: 42px;
+    font-family: Roboto;
+    padding-bottom: 25px;
+}
+
+.main-paragraph p {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+
+/******* Gallery Section Styles *******/
+
+.gallery-container .boxes {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+span {
+    display: inline-block;
+    /****??? - How do I get text to show - ???***/
+
+}
+
+
+/******* Footer Styles *******/
+
+.footer-container {
+    /* border: 1px solid black; */
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.contact-me-container {
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    width: 25%
+}
+
+.like-me {
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+} 
+
+/****  Media Query Styles ****/
+
+@media (max-width: 800px)
+{
+    body {
+        /* background-color: orange; */
+      }
+
+      .nav-bar{
+        /* border: 1px solid green; */
+        display: flex;
+        margin: 20px;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .main-content-container {
+        /* border: 1px solid yellow; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+    }
+  
+    .main-right {
+        /* border: 1px solid purple; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        margin-left: 15%;
+        padding-top: 75px;   
+    }
+   h2 button {
+       margin: 0 auto;
+       justify-content: center;
+        /****??? - How do I center this - ???***/
+   }
+    .gallery-container {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 60px 60px 60px;
+        /* padding-right: 60px; */
+        align-content: center;
+    }
+}
+
+
+@media (max-width: 500px)
+{
+    body {
+        /* background-color: olive; */
+      }
+  
+  .nav-bar{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    align-items: center;
+}
+
+.main-right {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-left: 15%;
+    padding-top: 75px;   
+}
+
+.main-paragraph {
+    margin: 0 auto;
+}
+
+.gallery-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 60px 60px 60px;
+}
+
+.boxes {
+    /* border: 5px solid red; */
+    width: 25px;
+    height: 25px;
+    /****??? - How do I size my boxes - ???***/
+}
+
+}
+
