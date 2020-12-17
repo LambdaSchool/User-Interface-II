@@ -1,1 +1,97 @@
-/* Add CSS styling here */
+* Add CSS styling here 
+*  {
+    border: 1px solid black;
+    
+}
+
+.container-header{
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+
+   font-family: 'Langar',
+   cursive;
+   ;
+}
+h1{
+    text-align: center;
+    font-family: 'Langar';
+    color:purple;
+    font-size: 50px;
+}
+.main-img img{
+    display: flex;
+    justify-content: space-around;
+    
+}
+img{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+display:flex;
+justify-content: center;
+margin: 20px;
+border-radius: 40px;
+background-color: yellow;
+}
+nav a{
+    Display: flex;
+    justify-content: space-between;
+    margin:10px;
+    border: 1px;
+    text-decoration: none;
+    background-color:pink;
+    border-radius: 40px;
+    font-size: 30px;
+    color: purple;
+} 
+.main-img img{
+    width:100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.img-container { 
+     display: flex;
+    justify-content:space-between; 
+    margin:20px;
+    
+ } 
+
+ .img-container div{
+     width: 10%;
+ }
+.second-container{
+    display:flex;
+    justify-content: center;
+}
+.about-me {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+p{
+    float: right;
+    font-family: cursive;
+    color:black;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color:violet;
+    background-color: red;
+    border-radius:25%;
+    
+}
+@media(max-width: 800px) {
+    .heading{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
