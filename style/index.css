@@ -1,1 +1,14 @@
-/* Add CSS styling here */
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    
+}
+.navitem{
+    flex-direction:column;
+    width:50px;
+    height:20px;
+    border:1px solid black;
+    margin:1px;
+    background-color:blue;
+}
