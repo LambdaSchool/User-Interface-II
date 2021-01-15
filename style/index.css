@@ -1,1 +1,138 @@
-/* Add CSS styling here */
+
+
+  *{
+    box-sizing:border-box; 
+    max-width:100%;
+}
+
+  body {
+      margin: 0 20px;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+  }
+  nav button{
+    color:black;
+    width: 200px;
+    height: 50px;
+    background:white;
+  } 
+  nav button:hover{
+    background-color:black;
+    color:white;
+  }
+  nav button a{
+    color: inherit;
+    text-decoration:none;
+  }
+
+  .introBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+  }
+  .paragraphBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    padding: 0 20px;
+  }
+
+  .mainImage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    margin: 20px 0;
+  }
+  .mainImage img {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  .imageBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    margin: 20px 0;
+  }
+
+  .imageBar img {
+    width: 18%;
+    margin: 0 1%;
+  }
+  
+  .imageBar .textFootnote {
+    width: 18%;
+    margin: 0 1%;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    background: grey;
+    height: 100px;
+  }
+  footer button{
+    width: 200px;
+    height: 50px;
+    background: lightgray;
+    border: 1px solid black;
+  } 
+  footer button a{
+    color:black;
+    text-decoration: none;
+  }
+  /*Tablet View*/
+@media (max-width:800px){
+
+  .imageBar .textFootnote {
+    width: 100%;
+    margin: 0 1%;
+    text-align: center;
+  }
+}
+/*Phone View*/
+@media (max-width:500px){
+  nav{
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+  }
+  nav a{
+      width:50%;
+      margin:2% 0;
+  }
+  .imageBar{
+    flex-flow:row wrap;
+    justify-content: space-between;
+    width:100%;
+  }
+  .imageBar img{
+    width:45%;
+    margin: 5% 0;
+  }
+}
