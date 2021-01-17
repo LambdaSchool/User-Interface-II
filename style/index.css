@@ -1,1 +1,307 @@
-/* Add CSS styling here */
+/* Responsive Accessibility Control  */
+
+/* Responsive 500px*/
+
+  
+  @media(max-width: 500px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 2%;;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+    .container header nav {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      margin-left: 0 auto;
+      
+    }
+
+    .
+    
+   .container header nav a {
+        display: flex;
+        flex-direction: space-evenly;
+        align-items:center;
+        margin-bottom: 10%;
+
+    }
+
+    .container .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .container .gallery1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
+    .container header h1{
+        display: none;
+        }
+  }
+
+  /* Responsive 800px*/
+
+  
+  @media(max-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2%;;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+    .container header nav {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      margin-left: 0 auto;
+      
+    }
+
+    .
+    
+   .container header nav a {
+        display: flex;
+        flex-direction: space-evenly;
+        align-items:center;
+        margin-bottom: 10%;
+
+    }
+
+    .container .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    .container .gallery1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    .container header h1{
+        display: none;
+        }
+  }
+
+  
+
+
+
+/* body */
+body{
+    background-image: url(https://photos.smugmug.com/Collages/i-TTTXbTD/0/4714b418/X3/ImageFractal%20SKULL%204-X3.png);
+    background-position: left;
+}
+/* Navigation grouping */
+.navies{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;  
+    
+}
+/* Nav section & buttons */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+    
+    
+    }
+
+.homeButton{
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color:#261d1f;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Press Start 2P', cursive;
+    margin-right: 2%;
+    margin-left:2%;
+    
+    
+
+}    
+.aboutButton{
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color:#f2561d;
+    border: none;
+    border-radius: 15px;
+    margin-right: 2%;
+    margin-left:2%;
+    font-family: 'Press Start 2P', cursive;
+    
+    
+  }
+  .contactButton{
+      padding: 15px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: white;
+      background-color: #50bfbf;
+      border: none;
+      border-radius: 15px;
+      margin-right: 2%;
+      margin-left:2%;
+      font-family: 'Press Start 2P', cursive;
+      
+      
+
+  }
+  .projectsButton{
+      padding: 15px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: white;
+      background-color: #f2955e;
+      border: none;
+      border-radius: 15px;
+      margin-right: 20%;
+      margin-left:2%;
+      font-family: 'Press Start 2P', cursive;
+      
+      
+  }
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5%;
+    
+
+}
+
+.header h1{
+    margin-bottom: 2%;
+    margin-left: 5%;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color:#261d1f;
+    border: none;
+    border-radius: 15px;
+    margin-right: 2%;
+    margin-left:2%;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+/* slide-show controls */
+.slideshow{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+
+}
+/* top intro message */
+.introText{
+    margin-top:5%;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color:#261d1f;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Press Start 2P', cursive;
+    margin-right: 20%;
+    margin-left:20%;
+}
+/* links */
+a{
+    color:rgb(101, 245, 255);
+}
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: .06%;
+    color: rgb(245, 252, 255);
+    font-family: 'Press Start 2P', cursive;
+    font-size:16px;
+    font-weight:bolder;
+    text-emphasis: shadow 20px;
+    text-shadow:  #f2955e;
+    
+    
+
+    
+}    
+
+/* gallery options */
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 4%;
+}
+/* bottom galleries */
+.gallery1{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.text{
+    font-family: arial;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.text a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1 px black;
+}
+/* footer nav options */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-right: 6.5%;
+}
