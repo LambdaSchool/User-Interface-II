@@ -1,1 +1,236 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/*border: 0;*/
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    line-height: 1;
+}
+
+*{
+    background-color:black;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+header {
+    display: flex;
+}
+    /*width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    font-size: 60px;
+}*/
+
+.myname {
+    font-size: 100px;
+    color:white;
+    width: 100%;
+    color: white;
+    padding: 2%;
+    }
+.myname h1 {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 3.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content:space-evenly;
+    width:70%;
+    font-size: 3rem;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: -50px;
+    }
+
+nav a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    transition: 1s;
+    font-size: 1.5rem;}
+
+.box1 {
+    display: flex;
+    height:40vh;
+    justify-content: center;
+    margin-top: 2%;
+    box-sizing: content-box;
+
+}
+
+section.box2 {
+    display: flex;
+    height: 0%;
+    margin-bottom:5%;
+    margin-top:5%;
+    
+
+}
+
+.box2 h2 {
+    display: flex;
+    color: white;
+    margin-left: 70px;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-basis: 33.33%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15%;
+    margin-right: 10%;
+
+}
+
+.gallery img {
+            height: 30vh;
+    
+}
+
+footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:black;
+        color: white;
+        height: 100px;
+}
+
+footer button{
+    border:none;
+    color: white;
+    font-size: 30px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    color: black;
+    transition: 1s;
+}
+
+@media (max-width:800px){
+    header .myname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .myname nav {
+        flex-direction: column;
+    }
+    .one {
+        display:flex;
+        flex-basis:50%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+    }
+}
+@media (max-width:500px){
+    header .myname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .myname nav {
+        flex-direction: column;
+    }
+    header .myname h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .gallery {
+        display:flex;
+        flex-basis:100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+
+/*a {
+    padding: 8px 16px;
+    float: left;
+    width:70%;
+    border: none;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+}*/
+
+/*
+
+.gallery{
+    display: flex;
+    width:100%;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main{
+    color: white;
+    flex-direction: column;
+    margin-top: -200px;
+    font-size: 60px;
+
+
+}*/
+
+/*.gallery1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:10px;
+    margin-bottom: 300px;
+    margin-top:100px;
+    
+}
+
+.bottomnav{
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}*/
