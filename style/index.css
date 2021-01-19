@@ -1,1 +1,574 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/* border: 0;   */
+font: inherit;  
+vertical-align: baseline;  
+}
+*{
+    box-sizing:border-box; /*this rule says, if I give an element a width I want it to respect that width - if I add padding or a border, apply it within the width given not in addition to it*/
+   /* border:1px solid grey; */
+    max-width:100%; /*this says you can never be bigger than your parent*/
+}
+/* Font Application */
+h1, h2{
+    font-family: 'Overpass';
+}
+a, p{
+    font-family: 'Roboto Mono';
+}
+/* Nav Link + Header
+Hopefully make this look acceptable most nav links look like buttons but you can achieve the same affect with a navlink
+*/
+@media(max-width: 500px){
+    .header{
+        margin: 10% 10%;
+        padding: 5%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+   
+    }
+    h1{
+        color: #4f4f4f;
+        margin-left: 2%;
+        margin-top: 2%; 
+        font-size: 3rem;
+    }
+  .navContainer > nav{
+        padding: 2%;
+        display:flex;
+        flex-direction: column;
+    }
+    .hNav{
+        background: #4f4f4f;
+        color: white;
+        padding: 4%;
+        display:flex;
+        flex-flow: coloumn;
+        justify-content: center;
+        align-content: center;
+        text-decoration: none;
+    }
+    .hNav:hover{
+    opacity:0;
+    transition-duration: 0.5s;
+    }
+  /* Mobile Intro body */
+  .body{
+        border-bottom: 3px solid #4f4f4f;
+        border-top: 3px solid #4f4f4f;
+    }
+  .bodyContainer .imgContainer{
+      display:flex;
+      justify-content: center;
+  }
+    img{
+        border: 3px solid #4f4f4f;
+        margin: 5%;
+        height: 20rem;
+        width: 15rem;
+       
+    }
+    .intro{
+        border: 3px solid #4f4f4f;
+        margin: 8% 4%;
+        padding: 6%;
+        display:flex;
+        flex-flow: column;
+    }
+    .intro h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h2 a, p{
+        text-decoration: none;
+        color: #4f4f4f;
+    
+    }
+    h2 a:hover{
+    opacity: 0;
+    transition: 1.5s;
+    }
+  /* Mobile Gallery */
+  .gallery{
+    margin: 2% 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    border: 2px solid #4f4f4f;
+    width: 75%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    
+}
+.gallery .box{
+    border: 2px solid #4f4f4f;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 1%;
+    margin: 1%;
+    height: 25px;
+ 
+}
+.box a{
+    display: flex;
+    color: #4f4f4f;
+    text-shadow:#2a3439;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+   
+}
+
+.box:hover{
+    opacity:0.25;
+    transition-duration: 0.5s;
+}
+  /* Footer should work the same because it scales to the size of the page regardless */
+  
+  footer{
+    background: #4f4f4f;
+    display:flex;
+    flex-flow: row wrap;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+}
+
+
+/*Desktop View and Tablet view look acceptable as the page scales to the size width of the browser */
+
+@media(min-width: 501px){
+    /* This is minimum width that tbe browser doesn't break the code */
+    /* Nav Link + Header
+Hopefully make this look acceptable most nav links look like buttons but you can achieve the same affect with a navlink
+*/
+
+.header{
+    border: 3px solid #4f4f4f;
+    margin: 10% 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    color: #4f4f4f;
+    margin-left: 2%;
+    margin-top: 2%; 
+    font-size: 3rem;
+}
+.navContainer > nav{
+    width: 50%;
+    padding: 2%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.hNav{
+    background: #4f4f4f;
+    color: white;
+    width: 100px;
+    padding: 4%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+.hNav:hover{
+opacity:0;
+transition-duration: 0.5s;
+}
+/* Intro Pic and body
+Just a picture of myself and scaling it
+*/
+.body{
+    border-bottom: 3px solid #4f4f4f;
+    border-top: 3px solid #4f4f4f;
+    display:flex;
+    flex-flow: row wrap;
+   justify-content: center;
+   align-content: baseline;
+}
+img{
+    border: 3px solid #4f4f4f;
+    float:left;
+    margin: 5%;
+    height: 20rem;
+    width: 15rem;
+   
+}
+.intro{
+    border: 3px solid #4f4f4f;
+    margin: 8% 4%;
+    padding: 6%;
+    display:flex;
+    flex-flow: column;
+}
+.intro h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+h2 a, p{
+    text-decoration: none;
+    color: #4f4f4f;
+
+}
+h2 a:hover{
+opacity: 0;
+transition: 1.5s;
+}
+
+/* Project Gallery 
+So my intention with this is to have the link to my projects show up when the boxs are hovered over
+Still messing around with the scaling
+*/
+
+.gallery{
+    margin: 2% 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    border: 2px solid #4f4f4f;
+    width: 75%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    
+}
+.gallery .box{
+    border: 2px solid #4f4f4f;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 1%;
+    margin: 1%;
+    height: 100px;
+    width: 100px;
+    background: url(https://picsum.photos/200/200);
+
+}
+
+/* Hover Code for Project Gallery*/
+.box a{
+    display: flex;
+    color: #4f4f4f;
+    text-shadow:#2a3439;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+   
+}
+
+.box:hover{
+    opacity:0.25;
+    transition-duration: 0.5s;
+}
+
+
+/* Footer Content
+Here establishing the width of my footer
+along with it's contents
+
+*/
+
+footer{
+    background: #4f4f4f;
+    display:flex;
+    flex-flow: row wrap;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+}
+/* Revamped for Tablets */
+@media(min-width: 800px){
+    .gallery{
+        margin: 2% 0;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    .boxes{
+        border: 2px solid #4f4f4f;
+        width: 75%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        
+    }
+    .gallery .box{
+        border: 2px solid #4f4f4f;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 1%;
+        margin: 1%;
+        height: 200px;
+        width: 200px;
+       background: url(https://picsum.photos/200/200)
+    }
+
+.box a{
+    display: flex;
+    color: #4f4f4f;
+    text-shadow:#2a3439;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.5rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+}
+
+
+/* About Section */
+/* About Section Mobile Scaling */
+@media(max-width: 500px){
+.aboutBody{
+    width: 100%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+}
+
+.aboutContainer{
+    border: 1px solid #4f4f4f;
+    margin: 5%;
+    padding: 4%;
+    width: 50%; 
+}   
+  .aboutContainer p{
+    font-size: 0.5rem;
+  }
+
+.hobbyContainer{
+    border: 1px solid #4f4f4f;
+    margin: 2%;
+    padding: 4%;
+    text-align: center;
+}
+.aboutBody h2{
+    text-align: center;
+    padding: 2%;
+}
+.gifContainer img{
+    width: 200px;
+    height: 200px;
+}
+.gifContainer{
+    margin-right: 8%;
+    padding: 2%;
+  }
+}
+/* About Section */
+.aboutBody{
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+}
+
+.aboutContainer{
+    border: 1px solid #4f4f4f;
+    margin: 5%;
+    padding: 4%;
+    width: 50%; 
+}   
+  
+
+.hobbyContainer{
+    border: 1px solid #4f4f4f;
+    margin: 2%;
+    padding: 4%;
+    text-align: center;
+}
+.aboutBody h2{
+    text-align: center;
+    padding: 2%;
+}
+.gifContainer img{
+    width: 200px;
+    height: 200px;
+}
+.gifContainer{
+    margin-right: 8%;
+    padding: 2%;
+  }
+
+/* Project Gallery */
+
+
+@media(max-width: 500px){
+    .galBox a{
+        display: flex;
+        color: #4f4f4f;
+        text-shadow:#2a3439;
+        text-decoration: none;
+        opacity: 1;
+        font-size: 1rem;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+        .projectGallery{
+            display:flex;
+            justify-content: center;
+            align-content:center;
+        }
+   
+        .galleryBoxContainer{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+   
+        .galBox{
+            border: 1px solid #4f4f4f;
+            height: 8rem;
+            width: 8rem;
+            padding: 1%;
+            margin: 2%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-content: center;
+        }
+        .galBox:hover{
+            opacity:0.25;
+            transition-duration: 0.5s;
+        }
+   
+   
+    }
+   
+/* Tablet Size  + PC scaling*/
+@media(min-width: 501px){
+    .galBox a{
+        display: flex;
+        color: #4f4f4f;
+        text-shadow:#2a3439;
+        text-decoration: none;
+        opacity: 1;
+        font-size: 1rem;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+        .projectGallery{
+            display:flex;
+            justify-content: center;
+            align-content:center;
+        }
+        
+        .galleryBoxContainer{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+        
+        .galBox{
+            border: 1px solid #4f4f4f;
+            height: 8rem;
+            width: 8rem;
+            padding: 1%;
+            margin: 2%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-content: center;
+        }
+        .galBox:hover{
+            opacity:0.25;
+            transition-duration: 0.5s;
+        }
+    
+
+@media(min-width: 800px){
+    .galBox{
+        height: 15rem;
+        width: 15rem;
+        padding: 1%;
+        margin: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-content: center;
+    }
+    .projectGallery{
+        display:flex;
+        justify-content: center;
+        align-content:center;
+    }
+    
+    .galleryBoxContainer{
+        display:flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
