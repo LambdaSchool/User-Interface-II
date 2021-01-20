@@ -1,1 +1,180 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    margin: 30px 10px 10px 10px
+}
+
+a {
+    text-decoration: none;
+    background-color: none;
+}
+
+a: active {
+    text-decoration: none;
+}
+
+a: visited {
+    text-decoration: none;
+    }
+
+.cta {
+    height: 20%;
+    margin-bottom: 50px;
+    border-bottom: 3px solid black;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav .item{
+    width:100px;
+    height:40px;
+    background:white;
+    border:1px solid black;
+    margin:1px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 15px; 
+    border-radius: 10px;
+}
+
+.rhinoTop {
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.rhinoPic {
+    width: 40%;
+    margin-right: -2%;
+}
+
+.rhinoPic img {
+    width: 100%;
+}
+
+.rhinoText {
+    width: 30%;
+    padding: 6.5% 0;
+}
+
+.rhinoButton {
+    border: 1px solid black ;
+    border-radius: 10px;
+    padding: 0.4% 0;
+    text-align: center;
+    width: 90px;
+    background: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.content div {
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+.rhinoBottom {
+    width: 80%
+}
+
+.footer {
+    border-top: 3px solid black;
+    padding-top: 50px;
+    font-size: 150%;
+    text-align: center;
+}
+
+.footer div {
+    width: 170px;
+    font-size: 80%;
+    padding: 15px 32px;
+    border: 1px solid black;
+    content: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    transform: 1s;
+    border-radius: 10px;
+}
+
+.footer div:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+nav .nav div:hover {
+        background-color: lightblue;
+        cursor: pointer;
+}
+
+
+
+
+@media(max-width: 800px) {   
+    .rhinoTop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rhinoPic {
+        width: 85%;
+    }
+
+    .rhinoText {
+        width: 85%;
+    }
+
+    .rhinoText h2 {
+        text-align: center;
+    }
+
+    .rhinoText .rhinoButton {
+        margin: auto;
+    }
+
+    .content div {
+        width: 40%;
+    }
+
+    
+}
+
+
+
+@media(max-width: 500px) {
+    h1 {
+        text-align: center;
+    }    
+    
+    .container .nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0 35%;
+        }
+
+    .rhinoTop {
+        display: flex;
+        flex-direction: column;
+    }
+    }
