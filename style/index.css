@@ -1,1 +1,172 @@
 /* Add CSS styling here */
+/* 
+font-family: 'Bodoni Moda', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+
+/* General Styles */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 5rem;
+}
+h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+}
+
+section {
+    padding: 4% 0;
+    margin: 0 auto;
+}
+
+/* Header work */
+
+header {
+    background-color: #dbe2ef;
+}
+
+h1 {
+    margin-left: 3%;
+}
+
+nav {
+    margin-left: 4%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #112d4e;
+    display: inline-block;
+    padding: 1% 2%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2% 0;
+}
+
+/* about me section */
+
+.aboutMe {
+    display: flex;
+
+}
+
+.aboutMe .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    width: 70%;
+}
+
+.topText {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.projectButton {
+    width: 15%;
+}
+
+
+/* Projects section */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects div {
+    width: 20%;
+    margin: 2% 2%;
+}
+
+footer {
+    background-color: #dbe2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    margin: 2% 0;
+}
+
+footer a {
+    margin-bottom: 2%;
+}
