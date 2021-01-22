@@ -1,1 +1,248 @@
-/* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: silver;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-container {
+  padding-bottom: 5vh;
+}
+
+button {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: cyan;
+}
+
+div img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  padding: 40px;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.header-image {
+  background-image: url(https://images.unsplash.com/photo-1609995114465-f017e9659435?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=80);
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  height: 600px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100vw;
+  background-size: cover;
+}
+
+.header-text {
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(74, 236, 115);
+  font-size: 5em;
+  padding: 30px;
+  font-weight: bolder;
+}
+
+header h3 {
+  color: rgb(74, 236, 115);
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 25px;
+}
+
+header button {
+  height: 60px;
+  font-size: large;
+}
+
+.nav {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background-color: darkslategrey;
+  align-content: center;
+}
+
+.nav button {
+  float: right;
+  margin: 8px;
+  height: 30px;
+  width: 90px;
+}
+
+.nav span {
+  font-size: 3rem;
+  color: azure;
+  padding-left: 15px;
+  width: fit-content;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  background-color: darkslategray;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer button {
+  height: 40px;
+  width: 100px;
+}
+
+footer img {
+  height: 45px;
+  width: 45px;
+}
+
+.project1:hover {
+  opacity: .1;
+}
