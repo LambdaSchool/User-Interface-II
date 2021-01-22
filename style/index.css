@@ -1,1 +1,206 @@
-/* Add CSS styling here */
+* {
+   overflow-x: hidden;
+}
+
+body {
+   font-family: "Sofia", sans-serif;
+   font-size: 15px;
+   text-shadow: 3px 3px 3px #ababab;
+   background-color: skyblue;
+ }
+
+.container {
+   display: flex-start;
+   flex-wrap: wrap;
+   background-color: midnightblue;
+   text-indent: 25px;
+}
+
+.heading {
+   color: #FF0000;
+}
+
+.navigation {
+ display: flex-start;
+ flex-wrap: wrap;
+ background-color: midnightblue;
+ padding-left: 50px;
+ padding-bottom: 15px;
+}
+
+nav {
+    justify-items: flex-start;
+    display: inline-flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    overflow: hidden;
+  }
+
+ #headerImage {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 500px;
+    padding-left: 25px;
+    
+ }
+
+ #headerText {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    padding-left: 50px;
+ }
+
+h2 {
+   text-align: start;
+   color: firebrick;
+}
+
+.projectButton {
+	-moz-box-shadow:     ;
+	-webkit-box-shadow:     ;
+	box-shadow:     ;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a) );
+	background:-moz-linear-gradient( center top, #44c767 5%, #5cbf2a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a');
+	background-color:#44c767;
+	-webkit-border-top-left-radius:18px;
+	-moz-border-radius-topleft:18px;
+	border-top-left-radius:18px;
+	-webkit-border-top-right-radius:18px;
+	-moz-border-radius-topright:18px;
+	border-top-right-radius:18px;
+	-webkit-border-bottom-right-radius:18px;
+	-moz-border-radius-bottomright:18px;
+	border-bottom-right-radius:18px;
+	-webkit-border-bottom-left-radius:18px;
+	-moz-border-radius-bottomleft:18px;
+	border-bottom-left-radius:18px;
+text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial Black;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+height:39px;
+	line-height:39px;
+width:106px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #2f6627;
+}.projectButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767) );
+	background:-moz-linear-gradient( center top, #5cbf2a 5%, #44c767 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767');
+	background-color:#5cbf2a;
+}
+
+.projectButton:active {
+	position:relative;
+	top:1px;
+}
+
+#topGalleryContainer {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: nowrap;
+}
+
+.topProjectGalleryImages {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: nowrap;
+   padding: 10px;
+}
+
+#topProjectGalleryCaptions {
+   display: flex;
+   flex-direction: row;
+}
+
+.caption {
+   padding: 0 125px 0 125px;
+   display: inline-flex;
+   justify-content: space-evenly;
+}
+
+
+#bottomGalleryContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bottomProjectGalleryImages {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 10px;
+}
+
+#bottomProjectGalleryCaptions {
+   display: flex;
+   flex-direction: row;
+   padding-bottom: 50px;
+}
+
+.caption {
+   padding: 0 125px 0 125px;
+   display: inline-flex;
+   justify-content: space-evenly;
+}
+
+h3 {
+   text-align: center;
+   padding-top: 25px;
+   color:greenyellow;
+}
+
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#footer {
+   background-color: midnightblue;
+}
+
+#footerButton {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5px;
+   padding-bottom: 50px;
+}
