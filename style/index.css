@@ -1,1 +1,142 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Reset */
+
+
+
+.top-nav {
+    /* display: flex; 
+     justify-content: space-evenly; 
+     flex-flow: row wrap; 
+     background-color: aquamarine; 
+    height: 2em; */
+}
+
+h1 {
+    text-align: center;
+    padding: 1.2em 35%;
+    font-size: 1.7em;
+}
+
+.top-nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 35%;
+    padding-
+}
+.top-nav a{
+    display: flex;
+    width: 10%;
+    border: 2px solid black;
+    background-color: burlywood;
+    color: white;
+    justify-content: space-evenly;
+    flex-flow: row;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+}
+
+.intro img{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+.intro p{
+    text-align: center;
+    display: flex;
+    width:30%;
+    flex-flow: row wrap;
+    padding-top: 5%;
+    font-size: 1.5em;
+}
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.projects p{
+  height: 15em;
+  width: 7em;
+  text-align: center;
+  padding-top: 5em;
+}
+.projects img{
+    height: 15em;
+    width: 7em;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+footer {
+ /* For when more links are added:
+  display: flex;
+  justify-content: space-evenly; */
+  height: 15%;
+  background-color:aquamarine;
+  display: flex;
+}
+
+footer a{
+  display: flex;
+  width: 10%;
+  border: 2px solid ;
+  background-color: burlywood;
+  color: white;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-decoration: none;
+  padding-top: .4em;
+}
