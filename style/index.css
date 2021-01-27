@@ -1,1 +1,193 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Bodoni Moda', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    border: 100%;
+    box-sizing:border-box;
+}
+header{
+    background:border-box;
+    background-color: rgb(252, 223, 239);
+}
+.MyName h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(232, 230, 255);
+    padding: 20px 20px;
+}
+Header nav{
+    /* border: 1px solid grey; */
+    display:flex;
+    justify-content: center; 
+}
+a:hover{
+    background-color: darkslategrey;
+    color: white;
+    transition: 2s;
+}
+nav a{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration:none;
+    color:rgb(12, 130, 156);
+    font-size: 1.5rem;
+    padding:5px 20px;
+    background-color: rgb(212, 255, 226);
+}
+.MySite h2{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+.IntroContent p{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding:40px 40px 40px 40px;
+    width: auto;
+    background-color: rgb(255, 229, 217);
+}
+.heroImage {
+    width: 100%;
+}
+.image{
+    background:url(https://picsum.photos/200/300);
+    display: flex;
+}
+section container{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+section .image{
+    display: flex;
+    width:35%;
+    margin: 5px;
+}
+section div{
+    display: flex;
+}
+section .rightText p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10%;
+}
+section div p{
+    text-align:center;
+    padding: 10px;
+}
+footer{
+    background-color: cornsilk;
+    font-size: 2rem;
+    padding:5%;
+}
+footer p{
+    display: flex;
+    justify-content:center;
+}
+footer .button{
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+}
+footer button{
+    background-color: rgb(212, 255, 226);
+    border: none;
+    color: rgb(12, 130, 156);
+    font-weight: bold;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media (max-width:800px){
+    section div{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .MySite{
+        text-align: center;
+    }
+}
+@media (max-width:500px){
+    section div{
+        display: flex;
+        flex-flow: wrap;
+    }
+    nav{
+        width: 100%;
+        flex-flow: column;
+    }
+    .MyName{
+        flex-flow: wrap;
+        text-align: center;
+    }
+}
