@@ -1,1 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* Add CSS styling here */
+body {
+    border: 2rem solid darkolivegreen;
+    padding: 5rem;
+}
+h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: Papyrus, cursive;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.nav a {
+    background-color: darkolivegreen;
+    color: white;
+    margin: 2rem;
+    border-radius: 20%;
+    padding: 1em;
+    font-size: 1.5rem;
+    transition-duration: .04s;
+    text-decoration: none;
+    width: 5rem;
+    text-align: center;
+}
+.information p{
+	font-size: 2rem;
+	width: 60rem;
+	text-align: center;
+    margin: 0 auto;
+    padding: 3rem;
+    border: .5rem dotted darkolivegreen;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-family: cursive;
+}
+.information a {
+    display: flex;
+    justify-content: center;
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 2% / 20%;
+    padding: 1em;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: snow;
+    color: darkolivegreen;
+    text-transform: uppercase;
+}
+ .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+.projects img {
+    border: .5rem solid transparent;
+}
+.projects img:hover {
+    border: .5rem dotted darkolivegreen;
+}
+h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+    margin-bottom: 2rem;
+    font-family: Papyrus;
+}
+.footer a {
+    display: flex;
+    justify-content: center;
+    background-color: darkolivegreen;
+    color: white;
+    margin: 2rem;
+    border-radius: 2% / 20%;
+    padding: .5em;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 10rem;
+    margin: 1rem auto;
+}
+.fa-instagram {  
+    background: #125688;  
+    color: white;  
+}
+.fa-facebook {  
+    background: #3B5998;  
+    color: white;  
+}
+/* media */ 
+@media(max-width:1500px) {
+    h1 {
+        font-size: 3.5rem;   
+    }
+    .information p {
+        font-size: 2rem;
+        width: 40rem;  
+    }
+}
+@media(max-width:931px) {
+    .information p {
+        font-size: 2rem;
+        width: 30rem;
+    }
+    h3 {
+        font-size: 2.5rem;  
+    }
+}
+@media(max-width:800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav a {
+        margin: 1rem;
+        border-radius: 20%;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 3rem;
+    }
+    .information p {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+    .projects {
+        margin-top: 2rem;
+    }
+    img {
+        width: 80%;
+        height: auto;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:620px) {
+    .information p {
+        font-size: 1.5rem;
+        width: 70%;  
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
+@media(max-width:500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav a {
+        margin: 1rem;
+        border-radius: 20%;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 3rem;
+    }
+    .information p {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem;
+        border: .3rem dotted darkolivegreen;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .information a {
+        margin-top: 2rem;
+    }
+    .projects {
+        margin-top: .5rem;
+    }
+    .projects img {
+        border: .3rem solid transparent;
+    }
+    .projects img:hover {
+        border: .3rem dotted darkolivegreen;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h3 {
+        font-size: 2rem; 
+    }
+}
+@media(max-width:415px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav a {
+        margin: .2rem;
+        border-radius: 20%;
+        padding: .5rem;
+        font-size: 1rem;
+        width: 5rem;
+    }
+    .information p {
+        width: 80%;
+        font-size: 1.4rem;
+        padding: 1rem;
+        border: .3rem dotted darkolivegreen;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .information a {
+        margin-top: 2rem;
+        border-radius: 2% / 20%;
+        padding: .5em;
+        font-size: 1.5rem;
+    }
+    img {
+        width: 120%;
+        height: auto;
+    }
+    h3 {
+        font-size: 1.5rem; 
+    }
+    .footer a {
+        margin: 2rem;
+        border-radius: 2% / 20%;
+        padding: .5em;
+        font-size: 1.5rem;
+        text-decoration: none;
+        width: 10rem;
+        margin: 1rem auto;
+    }
+}
