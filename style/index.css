@@ -1,1 +1,357 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@rosecrowned 
+rosecrowned
+/
+User-Interface-II
+forked from LambdaSchool/User-Interface-II
+0
+01.5k
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+User-Interface-II/style/index.css
+@rosecrowned
+rosecrowned current working unit 4 project
+Latest commit 5045fbc 10 hours ago
+ History
+ 2 contributors
+@zoelud@rosecrowned
+208 lines (173 sloc)  3.6 KB
+  
 /* Add CSS styling here */
+
+
+
+/*
+ CSS RESET
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  
+
+/* Begin actual styling */
+
+body {
+ 
+    background-color: black;
+    color: lightpink;
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+h1 {
+    display: block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 4em;
+    padding-bottom: .25em;
+}
+
+h2 { 
+    display: block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: .5em;
+    
+}
+
+
+nav {
+    display: block;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+nav a {
+    display: flex;
+    align-content: center;
+    background: white;
+    padding: 1em;
+    border-radius: 15%;
+    text-decoration: none;
+    color:black;   
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-weight: bold;
+    opacity: 1;
+    transition: 1.25s;
+    
+}
+
+nav a:hover{
+    color: black;
+    background: pink;
+    
+}
+
+.primary-banner {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    height: 15em;
+    max-width: 835px;
+    margin: 1em auto;
+    border: 2px solid white;
+    background-image: url(/style/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.intro-text {
+    display: flex;
+    align-content: center;
+    justify-content: center;  
+    padding:0 5%;
+}
+
+
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 2px dashed white;
+    width: 100%;
+    
+    
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.group2 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.project-links  {
+    display: flex;
+    align-content: center;
+    padding: 2rem;
+}
+
+.project-links a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 10rem;
+    height: 15rem;
+
+}
+
+.links {
+    margin: 2rem;
+}
+
+#proj-description {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: auto;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-size: 2rem;
+    
+}
+
+#one {
+    background-image: url(/style/project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#two {
+    background-image: url(/style/project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#three {
+    background-image: url(/style/project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#four {
+    background-image: url(/style/project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer i {
+    padding: 2em;
+}
+
+address {
+    text-size:50%;
+}
+
+/* Styling for 800px screens*/
+
+@media (max-width: 800px) {
+    body {
+        background: pink;
+        color: black;
+        font-size: .75rem;
+        max-width: 70%;
+
+    }
+
+        h1 {
+            1.5rem;
+        }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: fit-content;
+        border-radius: 25%;
+        margin: 0rem auto;
+    }
+    
+    nav a {
+        border-radius: 20%;
+        margin: .25rem;
+        justify-content: center;
+    }
+
+    nav.a hover {
+        background: black;
+        color: pink;
+    }
+
+    .primary-banner {
+        height: 10em;
+        width: 35em;
+        justify-content: center;
+    }
+
+    .project-links {
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-items: space-between;
+     margin: 0 auto;
+     
+     
+
+    }
+ 
+
+    #project-description {
+        align-items: center;
+        justify-content: center;
+        
+        
+
+    }
+}
+
+
+
+/* 500px Screen width */
+@media (max-width: 500px) {
+    body {
+        background: ;
+        color: grey;
+        font-size: .5rem;
+
+    }
+
+
+
+
+}
