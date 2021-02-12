@@ -1,1 +1,158 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid black;
+    color: white;
+}
+
+@font-face {
+    font-family: ;
+    src:
+}
+
+.container {
+    margin: auto;
+    padding: 5px;
+    border: 12px ridge #ffd700;
+    background-color: #7851a4;
+}
+.header {
+    display: flex-wrap;
+    width: 100%;
+    background: #f23224;
+}
+
+.header #headerName {
+    display: flex;
+    padding-left: 2%;
+}
+
+.header h2 {
+    font-size: 3rem;
+    color: #f0ead6;
+}
+
+.navBar {
+    align-items: center;
+    display: flex;
+    padding: 10px 30px;
+}
+
+.navBar a {
+    padding: 10px 10px;    
+    border: 1px solid #f0ead6;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: #f0ead6;
+}
+
+.navBar a:hover {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    background-color: #7851a4;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.main img {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.main.test {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    justify-content: flex-start;
+}
+
+.main.test h2 {
+    padding-left: 5%;
+}
+
+.main.info {
+    width: 30%;
+}
+
+.button {
+    justify-content: flex-start;
+    padding-left: 4%;
+}
+
+.button {
+    padding: 10px 10px;    
+    border: 1px solid #f0ead6;
+    border-radius: 3px;
+    padding: 5px 20px;
+    background-color: #f23224;
+    color: #f0ead6;
+}
+
+.button a:hover {
+    color: #7851a4;
+    border: 1px solid #f23224;
+    background-color: #ffd700;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.images {
+    max-width: 20%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.gallery.images {
+    max-height: auto;
+    justify-content: center;
+}
+
+.gallery.images h4 {
+    align-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f23224;
+    height: 25%;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+}
+
+.footer h3 {
+    align-content: center;
+    padding: 5%;
+    width: auto;
+    font-size: auto;
+    display: block;
+}
+
+.container.footer a {
+    padding: 10px 10px;    
+    border: 1px solid #f0ead6;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: #f0ead6;
+    padding: 5%;
+    width: auto;
+}
+
+.container.footer a:hover {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    background-color: #7851a4;
