@@ -1,1 +1,168 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+/* 	border: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+*{
+box-sizing: border-box; /*be the width that I tell you to be, if I give you padding or a border apply within your given width*/  
+  max-width:100%;/*you can never be bigger than your parent*/
+  /*border:1px solid grey;*/
+  font-family: 'Roboto Mono', monospace;
+}
+/*General Styles*/
+html{
+  font-size:62.5%;
+}
+body{
+  font-size:1.6rem;
+  line-height:1.5; /*doesn't need a unit of measurement*/
+  color:#4F4F4F;
+}
+.stuff{
+    display:flex;
+    flex-direction: column;
+
+}
+header{
+    background-color: darkgray;
+    padding-top:5%;
+    
+}
+    .top{
+        display:flex;
+        font-size: xx-large;
+        padding-left: 3%;
+ 
+    }
+    .links{
+        display: flex;
+        box-sizing: border-box;
+        margin:0 5%
+    }
+    .first{
+        border: 1px solid black;
+        padding: 1%;
+        color: black;
+        background-color: blanchedalmond;
+        text-decoration: none;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+.bigPictureText{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    flex-direction: column;
+    padding-top:1%
+}
+    .parent{
+        display:flex;
+        justify-content: space-around;
+    }
+    .left{
+        display:flex;
+        width:45%;
+    }
+    .right{
+        display: flex;
+        flex-wrap:wrap;
+        width: 45%;
+    }
+        .text{
+             width: 100%;
+
+        }
+        .right h2{
+            font-size: xx-large;
+        }
+        .second{
+            display:flex;
+            width:40%;
+            padding-top:6%;
+            padding-left:5%;
+            border: 1px solid black;
+            background-color: grey;
+            text-align: center;
+            margin
+            
+        }
+    .manyBox{
+        display:grid;
+        grid-template-areas: "box1 box1 box1 box1"
+                             "box1 box1 box1 box1";
+        
+                             justify-self: stretch;
+        
+    }
+    .eight{
+        padding-top: 4%;
+        width:80%;
+        height:70%;
+    }
+    .fullbox{
+        text-align: center;
+    }
+    .box1{
+        background-color: aqua;
+        margin:2%;
+        height:150px
+        }    
+    
+.p{
+    display:flex;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    flex-flow:row wrap;
+    justify-content: center;
+    padding-top:10%;
+    padding-bottom:10%;
+    background-color: grey;
+}
+    .end{
+        width:100%;
+        text-align: center;
+    
+    }
+    .third{
+        display:flex;
+        width:50%;
+        justify-content: center;
+        margin:0 40%;
+        background-color: darkgrey;
+    
+    }
