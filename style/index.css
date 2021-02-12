@@ -1,1 +1,123 @@
 /* Add CSS styling here */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+/* general style */
+
+html{
+    font-size:62.5%;
+    }
+
+    body {
+        font-size:1.6rem;
+        line-height: 1.5;
+        background-color:
+        font-family: 'Playfair Display', serif;
+    }
+
+
+    h1, h2, p{
+        font-size:5rem;
+        font-family: PlayFair Display;
+        color:grey;
+        text-align:center;
+    }
+
+
+    /* header section styles */
+
+
+    nav{
+        padding:2% 0;
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        padding:1%;
+        width:10%;
+        text-align: center;
+        text-decoration: none;
+        color:grey;
+        border:solid 2px grey;
+        font-family: PlayFair Display;
+        font-size: 2rem;
+    }
+
+    nav a:hover{
+        background-color:grey;
+        color:white;
+
+    }
+
+.middlepic{
+    background-image:url(../images/ryan-spencer-Um9AkOiIDcU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+    
+}
+
+.blankspace{
+    height: 20vh;
+}
+
+
+
+.gallery{
+    height:70vh;
+    /* width:auto; */
+    display:flex;
+    align-items: stretch;
+    justify-content: space-around;
+    
+}
+
+.gallery .left {
+    /* background-image: url(../images/cody-board-gitJDJm-Zuk-unsplash.jpg); */
+    width: 75%;
+    /* background-color: hotpink; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+    
+
+    
+}
+
+.gallery .left div img{
+    height:40vh;
+    
+    
+}
+
+
+
+.gallery .right{
+    width:25%;
+    padding:5% 1%;
+    /* background-color: cornflowerblue; */
+    box-sizing: content-box;
+    
+}
+
+h3{
+    font-family: PlayFair Display;
+    color:grey;
+}
+
+.footer a{
+    display:inline-block;
+    padding:1%;
+    width:10%;
+    text-align: center;
+    text-decoration: none;
+    color:grey;
+    border:solid 2px grey;
+}
