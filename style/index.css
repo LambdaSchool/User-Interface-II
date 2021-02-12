@@ -1,1 +1,129 @@
-/* Add CSS styling here */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: 1px solid black;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+}
+h4{
+    text-align: center;
+} 
+.home{
+background-color:aquamarine;
+padding: 5%
+}
+.home
+h1{
+    font-size: 5rem;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about img{
+    width: 50%;
+    margin: 2%;
+}
+h2{
+    padding: 5%;
+}
+.aboutTxt button{
+    padding:2%;
+    width: 40%;
+    font-size:1.8rem;
+}
+.aboutTxt p{
+    padding-top: 5%;
+    font-size: 2rem;
+}
+.aboutTxt{
+    width: 40%;
+    margin: 10% 3% 0;
+}
+.imgCnt{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top:1%;
+}
+
+.imgCnt div{
+    display: flex;
+    width: 20%;
+    max-width: 100%;
+    margin: 1%;
+    text-align: center;
+    
+}
+.imgCnt p{
+    text-align: center;
+    width: 100%;
+    padding-top: 10%
+}
+
+.imgCnt1{ 
+   display:flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+   max-width: 100%;
+   text-align: center;
+   margin-bottom: 2%;
+}
+.imgCnt1 div{
+    display: flex;
+    max-width: 100%;
+    width: 20%;
+    margin: 1%;
+}
+.imgCnt1 p{
+    text-align: center;
+    width: 100%;
+    padding: 10%;
+}
+.img1{
+   display:flex;
+   flex-wrap:wrap;
+   
+
+}
+.img2{
+    display: flex;
+    flex-wrap:wrap;
+}
+.img3{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.img4{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.img5{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.img6{
+    display:flex;
+    flex-wrap:wrap;
+}
+.img7{
+    display:flex;
+    flex-wrap:wrap;
+}
+.img8{
+    display:flex;
+    flex-wrap:wrap;
+
+}
