@@ -1,1 +1,199 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    /*border: 1px solid hotpink;*/
+}
+
+/*GENERAL STYLES*/
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+h1, h2{
+    letter-spacing: 3px;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+section{
+    padding: 2% 0;
+}
+
+/*HEADER STYLES*/
+h1{
+    text-align: center;
+}
+.links{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+a{
+    border: 1px solid black;
+    padding: .5% 3%;
+}
+a:hover{
+    background-color: black;
+    color:white;
+}
+
+/*ABOUT STYLES*/
+h2{
+    text-align: center;
+}
+#about p{
+    text-align: center;
+}
+
+/*BACKGROUND IMAGE STYLES*/
+.bg-img{
+    background-image: url(../Images/xps-Gi3iUJ1FwxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+/*PROJECTS STYLES*/
+#projects{
+    display: flex;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.left img{
+    width: 24%;
+    
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 20%;
+    padding: 0 5% 0 5%;
+}
+
+/*FOOTER STYLES*/
+footer{
+    height: 15rem;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 1rem 1.2rem;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media(max-width:800px){
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        width: 15%;
+        text-align: center;
+    }
+    #about p{
+        padding: 0 20%;
+    }
+    .bg-img{
+        height: 40vh;
+        margin: 0 5%;
+    }
+    #projects{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .left{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .left img{
+        width: 50%;
+        padding: 2% 5% 0 5%;
+    }
+    .right{
+        display: flex;
+    }
+    .left, .right{
+        width: 100%;
+    }
+   .right p{
+       text-align: center;
+       margin: 4% 5% 0 5%;
+   }
+}
+
+/*PHONE*/
+@media(max-width:500px){
+   a{
+       text-align: center;
+       width: 20%;
+   }
+}
