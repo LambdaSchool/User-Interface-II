@@ -15,7 +15,7 @@ The module challenge is the afternoon project or assignment that students work t
 
 In this challenge you will be building a simple portfolio website based on a wireframe of your choosing using the CSS principles covered today.
 
-Portfolio websites are a great way to show off your work to friends, family, and future employers. As you progress through Lambda School you can update this site with projects you're proud of. Similarly, you can change the style, add a blog page, the possibilites are really endless.
+Portfolio websites are a great way to show off your work to friends, family, and future employers. As you progress through Lambda School you can update this site with projects you're proud of. Similarly, you can change the style, add a blog page, the possibilites are really endless..
 
 ## Instructions
 
@@ -38,7 +38,7 @@ Once your repository is set up, practice what you learned today to create a port
 - [ ]  Information about you in place of the given placeholder
 - [ ]  A `My Projects` button that links to the projects page
 - [ ]  A `Contact Me` button that links to the contact page
-- [ ]  Links to any social media profiles (Instagram, linkedIn, Twitter) into the footer section of your home page
+- [ ]  Links to any social media profiles (Instagram, linkedIn, Twitter) into the footer section of your home page.
 
 ### Task 3: Stretch Goals
 

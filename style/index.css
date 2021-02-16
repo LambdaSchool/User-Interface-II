@@ -1,1 +1,190 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid yellow;
+}
+
+.container {
+    padding: 0%;
+    padding: 4%;
+    border: 10px ridge #266035;
+    background-color: black;
+    color: hotpink;
+}
+
+header #headerName {
+    display: flex;
+    padding: 2%;
+}
+
+h1 {
+    font-size: 250%;
+    color: #fbfffb;
+    padding: 2%;
+    background-color:#f23224;
+}
+
+.navBar {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color:#f23224;
+    padding-left: 6%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.navBar a {
+    padding: 1% 2% 1% 2%;  
+    border: 1px solid #f0ead6;
+    color: #f0ead6;
+}
+
+.navBar a:hover {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    background-color: #7851a4;
+}
+
+.main {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.main h2, p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+button {   
+    border: 1px solid #f0ead6;
+    border-radius: 5px;
+    padding: 1%;
+    justify-content: center;
+}
+
+.main button {
+    justify-content: center;
+}
+
+.images {
+    width: 20%;
+    padding: 1%
+}
+
+ .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* .images h4 {
+    align-content: center;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f23224;
+    height: 25%;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+}
+
+.footer h3 {
+    align-content: center;
+    text-align: center;
+    padding: 5%;
+    width: auto;
+    font-size: auto;
+    display: block;
+}
+
+.container.footer a {
+    padding: 10px 10px;    
+    border: 1px solid #f0ead6;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: #f0ead6;
+    padding: 5%;
+    width: auto;
+}
+
+footer a:hover {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    background-color: #7851a4;
+
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width:500px)
+
+
+.container {
+    margin: 100%;
+    padding: 0%;
+    padding: 4%;
+    border: 10px ridge #266035;
+    color: hotpink;
+}
+
+.main {
+    padding: 2%;
+    display: flex;
+    flex-direction: column
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.main .info {
+    align-content: center;
+    justify-content: center;
+}
+
+.main h2, p {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.images {
+    width: 80%;
+}
+
+h4 {
+    /* justify-content: center;
+    align-content: center; */
+    padding: 1% 4%;
+    text-align: center;
+}
+
+
+
+/* I think I am having a problem with my live server display. It seems when I comment out areas of the code I'm tweaking it will show it correctly when viewing as a phone (500px setting). If I go to normal responsive view, it is all the same unless I comment out the responsive view code at the top and let it read the bottom where the media query is. So I have to comment out the code above to get it to view properly in the live server. I'm not sure if the live server is supposed to pick up that you have swapped to a mobile view.. it should.. or my media tag is not linked properly. Since I'm not seeing the proper adjustments in the mobile view live server it's hard to know if I'm doing it right. I've messed around with it for several hours now but I'm basically just editing the old code to make it fit a mobile view because it won't respond to the @media query for the 500px limit. */
