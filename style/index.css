@@ -1,1 +1,312 @@
-/* Add CSS styling here */
+/* CSS RESET CODE BEGINS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing:border-box;
+    max-width:100%; /*you can never be bigger than your parent - this is going to stop that dreaded horizontal scroll bar*/
+    border:1px solid grey;
+}
+
+html{
+    font-size:62.5%; /* 1 rem = 10px */
+}
+
+/* CSS RESET CODE ENDS HERE  */
+
+/* STARTS header css */
+
+body{
+    font-family: 'Benne';
+}
+
+
+header {
+    background-color: #272537;
+    margin: 0% 0% 0% 0%;
+    padding: 4% 2% 6% 2%;
+}
+
+.container-block {
+    width: 10%;
+    display: inline;
+    font-family: 'Benne';
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 280%;
+    font-weight: bold;
+    /* margin: 2% 2% 2% 4%; */
+}
+
+.home{
+    background-color: #D1DCE2;
+}
+
+.about{
+    background-color: #D1DCE2;
+}
+
+.contact{
+    background-color: #D1DCE2;
+}
+
+.projects{
+    background-color: #D1DCE2;
+}
+/* ENDS header CSS */
+
+
+/* STARTS top-container CSS */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* padding: 1em; */
+    /* background: #D45769; */
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    background: #606977;
+    padding: 5px;
+}
+
+.top-img {
+    width: 35em;
+    height: 25em;
+}
+
+.top-text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 240%;
+}
+
+.my-projects{
+    background-color: #D4CFC9;
+    display: flex;
+    width: 22%;
+    padding: 1% 1% 1% 1%;
+    font-family: 'Benne';
+    justify-content: center;
+}
+
+.top-text-paragraph {
+    font-size: 200%;
+    width: 90%;
+    height: 90%;
+}
+
+/* ENDS top-container CSS */
+
+
+/* STARTS picture rows CSS */
+
+.row1, .row2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #E5D817;
+}
+
+.picture-container {
+    padding: 1em;
+}
+
+.picture {
+    /* background: aqua; */
+    height: 17em;
+    width: 17em;
+}
+
+.picture-title {
+    font-size: 2em;
+}
+
+/* ENDS row pictures container CSS */
+
+
+/* STARTS FOOT CONTAINER CSS */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3BF76;
+    padding: 5em;
+}
+
+h3 {
+    font-size: 2em;
+    /* width: 10%; */
+}
+
+.footer-button {
+    width: 8em;
+    height: 3em;
+    font-family: 'Benne';
+    background-color: #D1DCE2;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fb-icon {
+  height: 3.5em;
+}
+
+/* ENDS foot container CSS */
+
+
+/* STARTS responsive CSS design */
+
+@media(max-width: 800px) {
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-text-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+
+
+    .row1 .row2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+        
+    }
+
+    .picture-container {
+       margin: 1em 1em 1em 1em; 
+    }
+
+    .picture {
+        height: 25em;
+        width: 25em;
+    }
+
+}
+
+@media(max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-text-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+
+
+
+    .row1 .row2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+        
+    }
+
+    .picture-container {
+       margin: 1em 1em 1em 1em; 
+    }
+
+    .picture {
+        height: 15em;
+        width: 15em;
+    }
+}
+
