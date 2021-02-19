@@ -1,0 +1,198 @@
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:inline-block;
+}
+body {
+    width:100%;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    border:1px solid grey;
+}
+/*general styles*/
+html{;
+    font-size:62.5%;
+}
+body{
+    line-height:1.5;
+    font-size:1.8rem;
+    color:#4F4F4F;
+    background-color:#bff8bf;
+    font-family:'Times New Roman', Times, serif , sans-serif;
+}
+h1, h2, h3{
+    width:100%;
+    letter-spacing: 3px;
+    text-align: center;
+    color:#266035;
+    font-family:'Times New Roman', Times, serif , sans-serif;
+}
+h1{
+    font-size:5rem;
+    color:#4f4f4f;
+}
+h2{
+    font-size:4rem;
+}
+h3{
+    font-size:2.5rem;
+}
+a{
+    text-decoration:none;
+    color:#4F4F4F;
+}
+section{
+    padding:4% 0;
+}
+
+
+/*body Section Styles*/
+.header{
+    width: 100%;
+}
+.title h1{display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+    font-size: 2rem;
+    width: 100%;
+}
+nav{
+    width:0 auto;
+    display:flex;
+    justify-content: space space-between;
+    padding:10%;
+}
+/*Body styles*/
+.middlewhite{
+    
+    background-color:whitesmoke;
+    width:100%;
+}
+
+.jwg h2{
+    display:flex;
+    font-size: 2rem;
+}
+.tester{
+    display: flex;
+    justify-content: space-around;
+}
+.imgleft {display: flex;
+    height:50vh;
+   width:40%;
+   margin-top: 10%;
+   margin-left: 10%;   
+}
+
+.textright{ 
+    display:;
+
+text-align: center;
+height:
+padding-left:50%;
+width:35%;
+padding-bottom:0%;
+
+
+
+
+
+  /*center group of "projects"*/
+
+}
+.me h1{
+    align-content:flex-start;
+    width:25%;
+}
+
+.projects2 {
+    padding:2%;
+    margin-top:2%;
+    width:25%
+    
+}
+span{
+    color:red;
+    border:none;
+}
+
+.picalign{
+    width: 100%;
+    display: flex;
+    justify-content: space around;
+    flex-wrap: wrap;
+}
+.wrapem{
+    width:100%;
+    padding: 10% 10% 10% 10%;
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100vh;
+    
+
+}
+.footer p{align-self: center;
+    background-color:beige;
+}
+.hitmeup{
+    align-self: center;
+}
+/*footer styles*/
+/*.like ,tmeup  {
+
+    display:flex;
+    width: ;*/
+
+    
+
+
+}
+
+
+
