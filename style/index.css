@@ -1,1 +1,201 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    max-width: 100%;
+    font-size: 100%;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    width: 96%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    margin: 2%;
+}
+
+.headername {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.headernav { 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.buttons {
+    padding: 10px 20px;
+    background-color:cadetblue;
+    color: black;
+    border: 1px black solid;
+    margin: 0 2%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.buttons:hover{
+    background-color: black;
+    color: white;
+} 
+
+
+.middlesection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.middleimage {
+    background-image: url(https://picsum.photos/800/400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+}
+
+.middletext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+.middletext p {
+    font-family: arial;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+.showcaseimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-around;
+}
+.showcaseimages p {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.scimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px;
+}
+footer p {
+    display: none;
+}
+
+.linked {
+    height: 30px;
+    width: 30px;
+    padding: 5px 0 0 5px;
+    background-color: white;
+    margin: 0;
+}
+
+@media (max-width:800px) {
+    header {
+        /* background-color: rgb(70, 70, 122); */
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        height:25vh;
+    }
+    .headernav {
+        flex-direction: column;
+    }
+    .buttons {
+        width: 120px;
+        text-align: center;
+        margin: 1px 0;
+    }
+
+    footer p{
+        display: contents;
+    }
+} 
+
+@media (max-width:500px) {
+    .buttons {
+        background-color: tomato;
+        color: palegoldenrod
+    }
+
+    .scimage {
+        width: 40%;
+    }
+}
