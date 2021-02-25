@@ -1,1 +1,254 @@
 /* Add CSS styling here */
+
+*{
+     background-color:#1b1c1c; 
+    
+    /* min-width:500px; */
+}
+
+h1{
+    margin:10px;
+    font-family: 'Akaya Kanadaka', cursive;
+    color:white;
+    font-size: 60px;
+   text-shadow:5px 5px black;
+
+}
+.navbar{
+margin:10px;
+height:40px;
+display: flex;
+justify-content: flex-end;
+background: #1b1c1c;
+font-family: 'Indie Flower', cursive;
+}
+
+.button1{
+    
+    
+    width:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: white;
+text-decoration: none;
+align-content: stretch;
+border-radius: 75%;
+}
+
+
+
+.button2{
+    height:40px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 75%;
+}
+.button3{
+    height:40px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 75%;
+}
+
+.button4{
+    height:40px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 75%;
+}
+.button1:hover{
+    background-color: #03ad9c;
+    transition: .75s;
+    border-radius: 45%;
+    text-shadow:1px 1px black;
+    }
+
+.button2:hover{
+        background-color: #03ad9c;
+        transition: .75s;
+        border-radius: 45%;
+        text-shadow:1px 1px black;
+        }
+
+.button3:hover{
+            background-color: #03ad9c;
+            transition: .75s;
+            border-radius: 45%;
+            text-shadow:1px 1px black;
+            }
+
+.button4:hover{
+                background-color: #03ad9c;
+                transition: .75s;
+                border-radius: 45%;
+                text-shadow:1px 1px black;
+                
+                    
+                }
+                 
+                
+.container{
+    
+    height: 90vh;
+    width: 100%;
+    /* margin:10px 30px; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.image img{
+    padding:5px 100px;
+    margin:5px 20px;
+   height:300px;
+   width:300px;
+}
+.main{
+    
+    height:550px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainimage img{
+    height:450px;
+    width:650px;
+    
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: 'Indie Flower', cursive;
+}
+footer.f{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background-color: transparent;
+}
+
+footer a{
+    
+height:40px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+background: #1b1c1c;
+font-family: 'Indie Flower', cursive;
+
+}
+.button5{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 75%;
+}
+
+.button5:hover{
+    background-color: #03ad9c;
+    transition: 1.25s;
+    border-radius: 45%;  
+    text-shadow:1px 1px black;
+}
+@media only screen and (max-width:800px){
+    header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    .mainimage img{
+    width:60vw;
+    height:45vh;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    }
+    
+    
+    .navbar{
+        padding:4%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .container{
+        margin:0 4% 0 0%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .image img{
+        margin:0;
+        padding: 0;
+        height:35vh;
+        width:35vw;
+        display:flex;
+        flex-flow: row wrap;
+        justify-items: flex-start;
+    }
+    
+    }
+    
+@media only screen and (max-width:500px){
+header{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.mainimage img{
+width:60vw;
+height:45vh;
+display:flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+}
+
+
+.navbar{
+    padding:4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    margin:0 4% 0 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.image img{
+    margin:0;
+    padding: 0;
+    height:35vh;
+    width:35vw;
+    display:flex;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+}
+
+}
