@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------------------------------- */
+/* Add CSS styling here */
+
+* {
+    background-color: ;
+    border: 1px solid black;
+    
+}
+
+header h1 {
+    display:flex;
+    justify-content:flex-start;
+    margin-top:35px ;
+    border: 1px solid black;
+    font-size: 30px;
+    
+
+}
+
+
+/* NAVIGATION */
+
+header nav{
+   display:flex;
+  justify-content:flex-end;
+    
+}
+
+
+.navbar {
+    
+    
+    width:50%;
+    display:flex;
+  border: 1px solid black;
+  
+   }
+
+   .home {
+    border: 1px solid black;
+    width: 25%;
+    height: 40px;
+    text-align: center;
+   }
+
+   .about {
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    
+   }
+
+   .contacts {
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+   }
+
+   .projects{
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+   }
+
+   /* BIG BOX */
+
+  
+
+   .bigbox{
+       height: 420px;
+       width: 1000px;
+       margin-left: 105px;
+       margin-right: 40px;
+       margin-top: 80px;
+       border: 1px solid black;
+       display:flex;
+       
+       
+    }
+   
+       
+   
+   .firstbox h1{
+       margin-left: 415px;
+       margin-top: 200px;
+       display: flex;
+       flex-flow: column;
+       text-align: center;
+       border: 1px solid black;
+       
+       height: 50px;
+  
+       
+
+    }
+
+    .firstbox h3 {
+        margin-top: 20px;
+        margin-left: 415px;
+        
+       height: 50px;
+        
+        
+        
+        
+       
+    }
+
+   
+   
+   
+   
+
+   .bigbox h3 {
+    border: 1px solid black;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    /* margin-top: 300px; */
+    
+   }
+
+   .container{
+       margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+    .box{
+        width:20%;
+        border:3px solid #4f4f4f;
+        text-align:center;
+        padding:4%;
+        background-color:#fff;
+    }
+
+
+    /* FOOTER CONTACT ME */
+footer{
+    margin-top: 80px;
+    height: 80px;
+    border:3px solid black;
+}
+    footer .contactme {
+        text-align: center;
+        margin-top: 20px;
+
+    }
