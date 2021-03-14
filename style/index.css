@@ -1,1 +1,153 @@
-/* Add CSS styling here */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	color: #3f3939;
+	font-family: 'Poppins', sans-serif;
+	max-width: 100%;
+}
+
+/* GENERAL */
+
+h2 {
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 1% auto 0;
+}
+
+.title h2 {
+	color: #3f3939;
+	background-color: white;
+	transition: all 0.3s ease-in-out;
+}
+.title h2:hover {
+	/* background-color: #3f3939; */
+	color: rgb(244, 237, 237);
+	text-shadow: 2px 2px 0 #3f3939;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	width: 40%;
+}
+
+.button {
+	padding: 2px;
+	width: 15rem;
+	border: 1px solid #3f3939;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	background-color: #3f3939;
+	color: white;
+}
+
+/* BODY */
+main * {
+	transition: all 0.3s ease-in-out;
+}
+
+main {
+	background-image: url('https://images.unsplash.com/photo-1615366105533-5b8f3255ea5d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80');
+	/* display: flex; */
+	width: 80%;
+	padding: 12rem 0;
+	margin: 5% auto;
+	text-align: center;
+	background-position: center;
+	/* overflow: hidden; */
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	text-shadow: 2px 2px 0 white;
+	letter-spacing: -0.1rem;
+	line-height: 4rem;
+	/* width: 100%; */
+}
+
+main h2 {
+	text-shadow: 2px 2px 0 white;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 0 15%;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.top_row,
+.bottom_row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.top_row {
+	margin-bottom: 2%;
+}
+
+.image {
+	width: 25%;
+}
+
+.image img {
+	width: 100%;
+}
+
+/* FOOTER  */
+footer {
+	display: flex;
+	background: #bada55;
+	width: 100%;
+	justify-content: space-between;
+	padding: 2%;
+	/* position: fixed; */
+	bottom: 0;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 5%;
+}
+
+footer nav a {
+	margin-right: 5%;
+}
+
+.foot-contact {
+	padding: 1rem 1.5rem;
+	margin: 2rem 0;
+	border-radius: 10px;
+	font-size: 1rem;
+	background-color: white;
+}
+.social {
+	display: flex;
+}
