@@ -1,1 +1,123 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
 /* Add CSS styling here */
+
+*{
+    box-sizing: border-box;
+    border: 0;
+    max-width: 100%;
+	padding: 0;
+
+    
+}
+
+nav {
+	display: flex;
+	width:auto
+
+}
+html {
+	font-size: 62.5%;
+
+}
+
+body {
+	background: gray;
+	line-height: 1;
+	color: black;
+	}
+}	
+
+.info {
+	width: 100px;
+	padding: 20px;
+	border: 10px solid gray;
+	margin: 0;
+
+}
+
+h1 {
+	font-size: 10rem;
+	font-weight:bold;
+	font-family:'Courier New', Courier, monospace;
+	text-align: center;
+
+
+}
+
+h2 {
+	font-size: 6rem;
+	text-align: center;
+
+}
+p {
+	font-size: 8rem;
+	text-align: center;
+
+}
+a {
+	text-decoration: none;
+	letter-spacing: 3px;
+	color: grey;
+
+}
+.info {
+	display: flex;
+}
+
+a:hover {
+	color: black;
+
+}
+section {
+	padding: 5%;
+
+}
+
+header nav {
+	position:fixed;
+	width: 100%;
+	top: 0;
+	background-color: black;
+	align-items: center;
+	height: 11vh;
+	justify-content:space-evenly;
+	 
+}
