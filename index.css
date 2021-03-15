@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box; 
+    max-width:100%; 
+    /* border: 1px solid red; */
+  }
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height: 1.5;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3, h5{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2 rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+section{
+    padding: 4%;
+}
+a {
+    text-decoration: none;
+}
+
+/********************** */
+/*END General Styles*/
+/********************** */
+
+/* ******************************** */
+/* ******** HEADER WITH NAV ******* */
+/* ******************************** */
+
+section.headersizer {
+    margin: 0 4%;
+    padding: 0 4%;
+    background-color: lightgray;
+}
+.myheader {
+    display: flex;
+    justify-content: space-between;
+}
+.myheader h1 {
+    text-align: left;
+    width: auto;
+}
+.myheader nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end ;
+    width: 50%;
+    /* height: 50%; */
+}
+.myheader nav a {
+    width: 50%;
+    padding: 0 5% 9% 0 ;
+}
+
+/* ******************************** */
+/* ******** INTRO TXT & IMG ******* */
+/* ******************************** */
+
+.top {
+    padding: 0 4%;
+    margin: 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.topimg, .toptxt {
+    text-align: left;
+    width: 100%;
+}
+.toptxt {
+    padding: 0 5%;
+    text-align: left;
+}
+.toptxt h2 {
+    text-align: left;
+}
+
+/* ******************************** */
+/* ****** PORTFOLIO GALLERY ******* */
+/* ******************************** */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gitem {
+    width: 22%;
+}
+.peek h3 {
+    /* font-size: 1rem bold; */
+    width: 100%;
+    margin: 0 auto;
+ }
+/* ******************************** */
+/* ****** FOOTER W/NAV ************ */
+/* ******************************** */
+
+.myfoot {
+    padding: 0;
+    margin: 0 4%;
+    background-color: lightgray;
+    text-align: center;
+}
+div.footlinks a {
+    padding: 0 5%;
+}
+
+
+/* Responsive Design for mobile devices below */
+
+
+/* ********TABLET STYLE DISPLAY (500-800PX*********) */
+@media(max-width: 800px) {
+/* ******************************** */
+/* ******** HEADER WITH NAV ******* */
+/* ******************************** */
+
+    .myheader {
+       align-items: flex-end;
+    }
+    .myheader h1 {
+        font-size: 4rem;
+     }
+    .myheader nav {
+        align-items: flex-start ;
+    }
+    
+    .myheader nav a {
+        padding: 0 5% 12% 0 ;
+    }
+/* ******************************** */
+/* ******** INTRO TXT & IMG ******* */
+/* ******************************** */
+
+    .top {
+       align-items: center;        
+    }
+
+    .toptxt h2 {
+        text-align: left;
+    }
+}
+/* ********TELEPHONE STYLE DISPLAY (<=500PX)********* */
+@media(max-width: 500px) {
+
+/* ******************************** */
+/* ******** HEADER WITH NAV ******* */
+/* ******************************** */
+
+    .myheader {
+        flex-direction: column;
+        align-items: center;
+    }
+    .myheader h1 {
+        margin: 2% auto;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .myheader nav {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    .myheader nav a {
+        text-align: center;
+        padding: 1%;
+    }
+/* ******************************** */
+/* ******** INTRO TXT & IMG ******* */
+/* ******************************** */
+
+    .top {
+        flex-direction: column;        
+    }
+    .topimg, .toptxt {   
+        text-align: center;
+    }
+    .toptxt {
+        padding: 0 10%;
+        margin: 0;
+    }
+    .toptxt h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+/* ******************************** */
+/* ****** PORTFOLIO GALLERY ******* */
+/* ******************************** */
+
+   .gitem {
+        width: 48%;
+    }
+}
