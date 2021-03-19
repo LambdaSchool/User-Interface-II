@@ -1,1 +1,139 @@
 /* Add CSS styling here */
+/* -----Start CSS Reset----- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -----End CSS Reset-----*/
+
+/* Start Styling */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    background: linear-gradient(-45deg,rgb(230, 120, 142), #ee7752, rgb(230, 120, 142), #23d5ab, rgb(230, 120, 142));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 30px 5px;
+    margin-bottom: 50px;
+    background-color: bisque;
+}
+
+.aboutme-container {
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+}
+
+.aboutme-container .paragraph1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.myprojects-container{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    background-color: bisque;
+    padding-top: 2%;
+    padding-bottom:2% ;
+    flex-direction: column;
+}
