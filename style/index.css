@@ -1,1 +1,603 @@
-/* Add CSS styling here */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+	outline: 0;
+	font-family: "Chakra Petch", "Courier New", Courier, monospace;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	background: transparent;
+}
+/* 
+ * end of reset. used the universal condensed reset and added box-sizing
+ *
+ * start of styling to baseline flex containers
+ */
+body {
+	text-align: center;
+	background-color: rgb(199, 199, 199);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0% auto;
+}
+/*
+ * end of tdubs adjustments to baseline and turning on flex
+ * 
+ * start of nav bar styling that goes across pages
+ */
+header.container {
+	justify-content: space-between;
+	padding: 1% 2%;
+	background-color: rgb(199, 199, 199);
+}
+
+header.container img {
+	width: 10em;
+	height: auto;
+}
+
+header.container nav {
+	width: 40%;
+	font-size: 1.75em;
+}
+
+header.container nav a {
+	width: auto;
+	height: auto;
+	padding: 0.5% 1.5%;
+	color: black;
+	text-decoration: 0.125em overline dotted black;
+}
+/* 
+ * nav bar responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	header.container img {
+		width: 50%;
+	}
+
+	header.container nav {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	header.container nav a {
+		margin: 3% 0%;
+		font-size: 0.875em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	header.container nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 50%;
+		font-size: 0.75em;
+	}
+
+	header.container nav a {
+		margin: 0% 2%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* small monitors and laptop screens */
+	header.container nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 50%;
+		font-size: 1.25em;
+	}
+
+	header.container nav a {
+		margin: 0% 2%;
+	}
+}
+/*
+ * end of responsive nav bar styling
+ *
+ * hover below does not change regardless of screensize
+ */
+header.container nav a:hover {
+	border: 0.125em dotted rgb(38, 98, 88);
+	color: rgb(9, 23, 20);
+	font-weight: bolder;
+	text-decoration: none;
+}
+/* 
+ * end of header nav bar styling that carries throughout website
+ *
+ * start of other element styling that goes throughout pages
+ */
+h1 {
+	font-family: "Acme", sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+	text-shadow: 0.25em 0.25em 0.25em rgb(38, 98, 88); /* adds drop-shadow to element */
+}
+
+h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+p {
+	padding: 2% 12%;
+	font-family: "Lemonada", cursive;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+/*
+ * end of other element styling that carries throughout website
+ *
+ * start of footer styling that goes throughout pages
+ */
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 1%;
+	background-color: rgb(199, 199, 199);
+}
+
+footer p a {
+	font-size: 1.75em;
+	font-weight: bold;
+	color: black;
+	text-decoration: 0.125em overline dotted black;
+}
+
+footer p a:hover {
+	border: 0.125em dotted rgb(38, 98, 88);
+	font-family: "Lemonada", cursive;
+	font-weight: bolder;
+	color: rgb(9, 23, 20);
+	text-decoration: none;
+}
+
+footer p .magic {
+	font-family: "Lemonada", cursive;
+	font-size: 1.8em;
+	font-weight: bolder;
+}
+
+footer nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	margin: 0% auto;
+}
+
+footer nav a img {
+	width: 33%;
+	margin-bottom: 2%;
+}
+/*
+ * footer responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	footer p .magic {
+		padding: 0% 1%;
+		font-size: 1.5em;
+		line-height: 0.75;
+	}
+
+	footer nav {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	footer nav {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* small monitors and laptop screens */
+	footer nav a img {
+		width: 80%;
+	}
+}
+/*
+ * end of footer styling that carries throughout website
+ */
+.textbox-shading {
+	padding: 2%;
+	background-color: rgb(94, 77, 64, 0.5);
+	border-radius: 4em;
+} /* textbox-shading adds color behind blocks of text throughout website */
+
+/* 
+ * textbox-shading: maintain proper spacing around the screen responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	.textbox-shading {
+		width: 95%;
+	}
+}
+/*
+ * end of landing image with name and projects link responsive styling
+ *
+ * start of landing page styling 
+ */
+.landing.container {
+	display: flex;
+	flex-direction: column;
+	height: 42em;
+	background: rgb(12, 26, 24) url(https://images.pexels.com/photos/1292115/pexels-photo-1292115.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center;
+	background-size: cover;
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+
+.landing.container.textbox-shading {
+	height: 33%;
+}
+
+.landing.container h1 {
+	text-shadow: 0.25em 0.25em 0.25em whitesmoke; /* adds drop-shadow to element */
+}
+
+.landing.container p {
+	margin-bottom: 6%;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+	text-shadow: 0.25em 0.25em 0.25em rgb(133, 152, 154); /* adds drop-shadow to element */
+}
+
+.landing.container a {
+	font-family: "Acme", sans-serif;
+	font-size: 1.75em;
+	color: black;
+	text-decoration: 0.125em overline dotted black;
+}
+
+.landing.container a:hover {
+	border: 0.25em dotted rgb(133, 152, 154);
+	color: rgb(9, 23, 20);
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.project-preview.container {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url(https://images.pexels.com/photos/1061623/pexels-photo-1061623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: bottom;
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset;
+}
+
+.project-preview.container img {
+	width: 30%%;
+	margin: 2%;
+}
+/*
+ * project preview responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	.project-preview.container {
+		flex-direction: column;
+		padding: 5% 0%;
+	}
+	.project-preview.container img {
+		min-width: 90%;
+		margin: 2%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	.project-preview.container {
+		padding: 5% 0%;
+	}
+	.project-preview.container img {
+		min-width: 40%;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	/* large and widescreen monitors */
+	.project-preview.container img {
+		width: 24%;
+	}
+}
+/*
+ * end of project preview styling
+ *
+ * start of about page styling
+ */
+.about.container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 80%;
+	line-height: 1.5;
+}
+
+.about.container p {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.about.container :nth-child(3) {
+	background-color: rgb(38, 98, 88, 0.5);
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+
+.about.container :nth-child(4) {
+	background-color: rgb(133, 152, 154, 0.5);
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+
+.about.container :nth-child(5) {
+	background-color: rgb(94, 77, 64, 0.5);
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+/*
+ * about page responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	.about.container p {
+		padding-top: 6%;
+		padding-bottom: 6%;
+		font-size: 0.95em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	.about.container p {
+		padding: 5%;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* small monitors and laptop screens */
+	.about.container p {
+		font-size: 1.05em;
+	}
+}
+/*
+ * end of about page styling. 
+ *
+ * start of contact page styling
+ */
+.contact.container {
+	flex-direction: column;
+	width: 80%;
+	background-image: url(https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+
+main.contact div.textbox-shading {
+	margin: 3%;
+	background-color: rgb(199, 199, 199);
+	box-shadow: 0px 0px 16px 16px rgb(255, 255, 255) inset; /* blends edges into each other */
+}
+
+.contact.container form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	line-height: 2;
+}
+
+label {
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+
+input {
+	padding: 1%;
+	border: 0.125em solid rgb(38, 98, 88);
+}
+
+div.client-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+div.client-input > label {
+	line-height: 1;
+}
+
+div.client-input input {
+	margin-right: 2%;
+}
+
+.color-pallette.container {
+	flex-direction: column;
+}
+
+input[name="main-color"] {
+	width: 6em;
+	height: 4em;
+}
+
+.accent.container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+div.accent.container input {
+	width: 3em;
+	height: 3em;
+}
+
+input[type="url"] {
+	min-width: 250px;
+}
+
+form label span {
+	font-weight: bold;
+	background-color: rgb(255, 255, 0, 0.5);
+}
+
+div.center-buttons {
+	display: flex;
+	justify-content: space-around;
+	width: 20%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	padding: 2%;
+	font-family: "Lemonada", cursive;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	padding: 2%;
+	border: none;
+	text-transform: uppercase;
+}
+
+form p {
+	font-family: "Chakra Petch", monospace;
+}
+/*
+ * contact page responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	.contact.container {
+		background-image: unset;
+	}
+
+	main.contact div.textbox-shading {
+		background-color: rgb(199, 199, 199);
+		box-shadow: unset;
+	}
+	div.client-input {
+		flex-direction: column;
+	}
+
+	div.client-input input {
+		min-width: 12em;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	.contact.container {
+		width: 100vw;
+		background-size: cover;
+		background-position: bottom right;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* small monitors and laptop screens */
+	label {
+		font-size: 1em;
+	}
+
+	div.client-input input {
+		max-width: 25%;
+	}
+}
+/*
+ * end of contact page styling
+ *
+ * start of projects page styling
+ */
+main.projects.container {
+	flex-direction: column;
+	background-image: url(https://images.pexels.com/photos/5243591/pexels-photo-5243591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 16px 16px rgb(199, 199, 199) inset; /* blends edges into each other */
+}
+
+main.projects.container div.textbox-shading {
+	margin: 3% 0%;
+	color: rgb(199, 199, 199);
+	background-color: rgba(21, 197, 168, 0.25);
+	box-shadow: 0px 0px 16px 16px rgba(21, 197, 168, 0.25); /* blends edges into each other */
+}
+
+.rows {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects.container div.rows img {
+	max-width: 30%;
+	margin: 1.5%;
+}
+/*
+ * start of projects page responsive styling
+ */
+@media screen and (max-width: 500px) {
+	/* standard cell phone screens */
+	main.projects.container {
+		padding-bottom: 8%;
+	}
+
+	main.projects.container div.textbox-shading {
+		width: 90%;
+		background-color: transparent;
+		box-shadow: unset;
+	}
+
+	.rows {
+		flex-direction: column;
+	}
+
+	.projects.container div.rows img {
+		min-width: 90%;
+		margin: 2%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* tablet screens */
+	main.projects.container {
+		padding-bottom: 3%;
+	}
+
+	main.projects.container div.textbox-shading {
+		margin-top: 10%;
+		width: 50%;
+	}
+
+	.rows {
+		flex-direction: column;
+	}
+
+	.projects.container div.rows img {
+		min-width: 50%;
+		width: 50%;
+	}
+}
