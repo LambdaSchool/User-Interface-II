@@ -1,1 +1,348 @@
-/* Add CSS styling here */
+
+
+/* CSS RESET  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+.body-container {
+    background-image: url("curveTV.jpeg");  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.profilePicture {
+ border-radius: 200px;
+ max-width: 200px;
+ height: 200px;
+}
+.nav-section {
+    background-color: gray;
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+}
+.image-random{
+    border: 10px solid black;
+}
+.nav-section h1{
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    animation-name: name;
+    animation-duration: 4s;
+    font-family: Great Vibes;
+}
+
+@keyframes  footer {
+    0% {color: white; left:200px; top:0px;}
+    50%{color: green; left:0px; top:200px;}
+    100%{color: white; left:0px; top:200px;}
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding-left: 3rem;
+
+}
+.nav-links {
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: white;
+    border-bottom: 2px rgb(30, 99, 163) solid;
+    transition: .5s;
+    padding-right: 50px;
+}
+@media screen and (max-width: 500px){
+.nav-links {
+    display: column;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    .profilePicture {
+    display: none;
+   
+    }
+}
+@media screen and (min-width: 400px) {
+    body {
+    background-color: grey;
+    }
+  .nav-links a{
+      width: 100%;
+  }
+}
+
+.main-info {
+    display: flex;
+
+}
+
+.main-info img{
+    padding:1rem 0rem 1rem 1rem;
+
+}
+
+h2{
+    font-size: 3rem;
+    font-family: Great Vibes;
+}
+
+.main-text {
+    padding: 3rem 0 0rem 3rem;
+    font-size: 3rem;
+    width: 80%; 
+    margin-bottom: 20px;
+}
+
+
+.main-text p{
+    font-size:3rem;
+    padding: 5rem 5rem 5rem 5rem;
+   
+}
+.main-text a{
+    margin: 14rem 0rem 0rem 3rem;
+}
+
+.button1 {
+    
+    font-family: 'Chelsea Market', cursive;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: black;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-bottom: 10px;
+    margin:3rem;
+    border:3px solid black;
+    letter-spacing: .7rem;
+}
+
+
+.button:hover {
+    font: bold 4rem cursive;
+    font-family: "Niconne";
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding: 1rem 3rem 1rem 3rem;
+    border-top: 1px solid #CCCCCC;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin:3rem;
+
+    /* transition: .4s; */
+}
+
+.first-row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    padding: 10px;
+    border: 4px solid white;
+    background-color:  black;
+     
+}
+.item p {
+    text-align: center;
+    letter-spacing: .5rem;
+    font-size: 24px;
+    font-family: monospace;
+    color: white
+}
+.first-row img{
+    padding: 1rem;
+    
+}
+
+.text-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.second-row {
+    display: flex;
+    flex-wrap: row;
+    width:23.5%;
+}
+
+.second-row img{
+    padding:1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-text {
+    padding: 3rem 0 0rem 3rem;
+    font-size: 3rem;
+    width: 80%;
+}
+
+.main-text p{
+    font-size:3rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.main-text a{
+    margin: 14rem 0rem 0rem 3rem;
+}
+
+.button1 {
+    
+    font-family: 'Chelsea Market', cursive;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: black;
+    padding: 1rem 3rem 1rem 3rem;
+    
+    margin:3rem;
+    letter-spacing: .7rem;
+}
+
+
+.button:hover {
+    font: bold 4rem cursive;
+    font-family: "Niconne";
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding: 1rem 3rem 1rem 3rem;
+    border-top: 1px solid #CCCCCC;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin:3rem;
+    transition: .4s;
+}
+
+.first-row{
+    display: flex;
+    flex-wrap: row;
+    
+}
+
+.first-row img{
+    padding: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.second-row {
+    display: flex;
+    flex-wrap: row;
+    width:23.5%;
+}
+
+.second-row img{
+    padding:1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    font-size: 3rem;
+    font-family: "Niconne";
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategrey;
+    
+}
+
+footer h2 {
+    padding-top: 2rem;
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    
+   
+}
+
+
+footer a:hover {
+    color:white
+
+}
+@media (max-width: 500px){
+    footer{
+        flex-direction: column;
+    }
+}
