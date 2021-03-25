@@ -1,0 +1,488 @@
+/* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.profiletitle {
+    margin-top: 70%;
+    margin-left: 460%;
+	font-size: 2em;
+	font-family: "Berkshire Swash";
+    
+    
+}
+
+.title {
+	font-size: 2em;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	margin-left: 70px;
+	display: flex;
+	justify-content: right;
+	margin-top: 40px;
+}
+
+
+.navigation {
+	margin-bottom: 20px;
+	margin-top: 75px;
+	font-size: 1.3em;
+	color: white;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	height: 25px;
+	padding-top: 7px;
+	
+	
+}
+
+.button {
+	font-family: "Merriweather";
+	background-color: black;
+	color: white;
+}
+
+.button1 {
+	margin-right: 175px;
+	color: white;
+	background-color: black;
+	font-family: "Merriweather";
+	font-size: 20px;
+    text-decoration: none;
+    padding-right: 1%;
+    padding-left: 1%;
+    
+    
+    
+}
+
+.button2 {
+	margin-right: 175px;
+	color: white;
+	background-color: black;
+	font-family: "Merriweather";
+	font-size: 20px;
+    text-decoration: none;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.button3 {
+	margin-right: 175px;
+	color: white;
+	background-color: black;
+	font-family: "Merriweather";
+	font-size: 20px;
+    text-decoration: none;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+
+.button4{
+	color: white;
+	background-color: black;
+	font-family: "Merriweather";
+	font-size: 20px;
+    text-decoration: none;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.textindex {
+	display: flex;
+    justify-content: center;
+    margin-left: 2em;
+	font-size: 1.2em;
+   
+	
+}
+
+.header {
+	display: flex;
+    justify-content: center;
+	margin-top: 50px;
+	
+	
+}
+
+.picture {
+	margin-left: 60px;
+	margin-bottom: 45px;
+	
+	
+}
+
+.button {
+	margin: 50px;
+	font-size: 1.2em;
+	width: 30px;
+	
+}
+
+img {
+	width: 300px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+}
+
+
+.footerq {
+	font-size: 1.5em;
+	margin-top: 40px;
+	font-family: "Merriweather";
+	
+}
+
+.profile {
+	border-radius: 50%;
+}
+
+.contactbutton {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-family: "Merriweather";
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	height: 30px;
+}
+
+
+.flex4 {
+	text-align: center;
+	margin-top: 60px;
+	margin-left: 50px;
+
+}
+
+
+
+
+.flex2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.flex3 {
+	display: flex;
+	justify-content: center;
+}
+
+.quote {
+	font-family: sans-serif;
+    margin-top: 10%;
+    margin-right: 50%;
+    
+    
+    	
+}
+
+.footer {
+	background-color: #add8e6;
+	padding: 10px;
+}
+
+
+.picture_contact {
+
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+.contact_image {
+	border: black 5px;
+	width: 700px;
+	border-radius: 20%;
+	
+}
+
+.email {
+	font-family: "Merriweather";
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+.phone {
+	font-family: "Merriweather";
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.address {
+	font-family: "Merriweather";
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.aboutpicture {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.aboutpic {
+	border-radius: 25px;
+	margin-left: 130px;
+	margin-top: 0px;
+}
+
+.abouttext {
+	text-align: center;
+	margin: 45px;
+	margin-top: 70px;
+	font-size: 1.1em;
+	width: 70%;
+	font-family: sans-serif;
+	margin-left: 75px;
+	
+	
+}
+
+.abouttitle {
+	text-align: center;
+	
+}
+
+.flexabout {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.aboutheader {
+	display: flex;
+	align-items: center;
+}
+
+
+.aboutsection {
+	display: flex;
+	text-align: center;
+	
+
+}
+
+
+.lifeofpablo {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	font-family: "Berkshire Swash";
+	font-size: 50px;
+}
+
+
+.quoteindex {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.projectsbutton {
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
+   margin-top: 0;
+   margin-left: 17em;
+   margin-bottom: 7em;
+   color: white;
+ 
+}
+
+.actuallink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.actuallink {
+    margin-right: 10em;
+    margin-bottom: 0px;
+    background-color: black;
+    padding: .5em;
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .navigation {
+        flex-direction: column;
+    }
+    
+
+   .textindex {
+       display: none;
+   }
+
+   .quoteindex {
+       display: none;
+   }
+
+    .button1 {
+        background-color: black;
+        width: 20%;
+        margin-bottom: 2%;
+        margin-top: 20%;
+        padding: .7%;
+
+    }
+
+    .button2 {
+        background-color: black;
+        width: 19%;
+        margin-bottom: 2%;
+        padding: .7%
+    }
+
+    .button3 {
+        background-color: black;
+        width: 25%;
+        margin-bottom: 2%;
+        padding: .7%;
+    }
+
+    .button4 {
+        background-color: black;
+        width: 25%;
+        margin-bottom: 2%;
+        padding: .7%;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex3 {
+        flex-direction: column;
+    }
+
+    img {
+        margin-left: 37%;
+    }
+
+    .contact_image {
+        display: none;
+    }
+
+    .contact {
+        margin-top: 30%;
+    }  
+    
+}
+
+@media (max-width: 500px) {
+
+    .navigation {
+        flex-direction: column;
+
+    }
+
+    .button1 {
+        width: 30%;
+    }
+
+    .button2 {
+        width: 30%;
+    }
+
+    .button3 {
+        width: 35%;
+    }
+
+    .button4 {
+        width: 40%;
+    }
+
+    .picture {
+        display: flex;
+        margin-right: 30%;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        margin-left: 20%;
+    }
+
+    .projectsbutton {
+        display: flex;
+        justify-content: center;
+        margin-left: 35%;
+    }
+
+    .lifeofpablo {
+        display: none;
+    }
+
+    .aboutpicture {
+        display: flex;
+        margin-top: 40%;
+        margin-right: 30%;
+    }
+
+
+
+     
+        
+    
+}
