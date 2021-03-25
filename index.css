@@ -1,0 +1,80 @@
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+  header{
+     background-color:lightgrey;
+  }
+  h1{
+    display:flex;
+    justify-content:flex-start;
+  }
+  
+footer{
+  background-color:lightgrey;
+  justify-content: center;
+  text-align: center;
+}
+ .flex{
+    display: flex;
+}
+.box{
+  align-items:center;
+}
+.name{
+  font-style:oblique;
+}
+.random{ content:url("https://picsum.photos/seed/picsum/200");
+ margin: 50px 0.5%;
+}
+#about-top{
+  justify-content: space-between;
+}
+#about-top-image{
+  width: 30em;
+  justify-content:flex-start; 
+}
+#about-top-text{
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  width:50%;
+}
+#project-gallery{
+  flex-flow:wrap;
+  justify-content: space-evenly;
+  vertical-align: top;
+  text-align: center;
+}
+
+#fungi{
+  width:12em;
+  height:13em;
+  padding-top: 4em;
+}
+#nisqually{
+  width:12em;
+  height:13em;
+  padding-top: 4em;
+}
+
+#madre{
+   width:15em;
+  height:13em;
+  padding-top: 4em;
+}
+#ethereum{
+  width:13em;
+  height:13em;
+  padding-top: 4em;
+}
