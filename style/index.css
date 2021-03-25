@@ -1,1 +1,106 @@
 /* Add CSS styling here */
+body{
+  background-color: darkgrey;
+}
+h1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .Tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px;
+  }
+
+  .Tag img {
+    height:300px;
+    width:400px;
+    margin:20px;
+  }
+  header {
+    background-color: coral;
+    border-style: double;
+
+  }
+
+  /*NavBar*/
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    }
+    nav a {
+     text-decoration: none;
+    color: black;
+    }
+    nav a:hover {
+      color: crimson;
+    }
+    
+    .para {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 105px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+  width: 17%;
+}
+
+p {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+p:hover {
+  color: crimson;
+}
+
+img {
+  border: 1px dotted coral;
+}
+
+img:hover {
+  border: 2px solid red;
+}
+
+  .flexwrap_container {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      border-radius: 50%;
+      margin: 15px;
+      width: 150px;
+      height: 150px;
+    }
+
+    Footer {
+      text-align: center;
+      margin: 5%;
+      background-color: coral;
+      border-style: double;
+      }
+
+    @media only screen and (max-width: 800px){
+      body {
+        background-color: lightblue;
+      }
+
+    }@media only screen and (max-width: 500px){
+      body {
+        background-color:papayawhip;
+      } 
