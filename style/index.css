@@ -1,1 +1,158 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+  
 /* Add CSS styling here */
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /* border:1px solid grey */
+}
+/* general styles */
+html{
+	font-size:62.5%
+}
+body{
+	font-size:1.6rem;
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size:4rem;
+	font-family: 'New Tegomin', serif;
+	padding: 0 3%;
+}
+section{
+	padding:4%
+}
+/* header styles */
+header{
+	background-color:#202020;
+	color:#707070;
+}
+nav{
+	display:flex;
+	justify-content:left;
+}
+nav a{
+	display:inline-block;
+	padding:1% 0;
+	width:9%;
+	text-align:center;
+	color: white;
+	text-decoration:none;
+	background-color:#202020;
+	
+}
+nav a:hover{
+background-color:#707070;
+color:white;
+transition:1s;
+}
+/* top section styles */
+.top{
+	display:flex;
+}
+.top div{
+	width:45% 
+	
+}
+.top h2{
+font-family: 'New Tegomin', serif;
+font-size:3rem
+}
+.top a{
+	display:inline-block;
+	padding:1% 0;
+	width:20%;
+	text-align:center;
+	color:white;
+	text-decoration:none;
+	background-color:#1F2833;
+}
+.leftImage {
+	text-align: center;	
+}
+.leftImage img{
+	border-radius:5%
+}
+.rightInfo {
+	display:flex;
+	flex-direction:column;
+	padding:15% 0;
+}
+/* image gallery */
+.projectImages1 {
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+}
+
+.projectImages1 {
+	margin-top:-18%;
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+}
+.projectImages2 {
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+}
+.projectImages1 img{
+	border-radius:5%
+}
+.projectImages2 img{
+	border-radius:5%
+}
+footer{
+	background-color:#707070;
+	padding: 5%;
+	text-align: center;
+	color:white;
+}
+footer a{
+	display:inline-block;
+	padding:1% 0;
+	width:10%;
+	text-align:center;
+	color:white;
+	text-decoration:none;
+	background-color:#1F2833;
+}
