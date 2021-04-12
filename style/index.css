@@ -1,1 +1,220 @@
-/* Add CSS styling here */
+/*Reset*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+
+
+
+
+
+
+/*General Styling*/
+body{
+    background-color:grey;
+    text-decoration:none;
+}
+h1{
+    font-size:5rem; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:navy;
+}
+
+h2{
+    font-size:3.0rem;
+}
+p{
+    font-size:2.5rem;
+    line-height:1.;
+}
+
+span{
+    font-size:2.5rem;
+    padding:5%;
+}
+.mypic{
+    width:60%;
+    padding:2.9%;
+}
+.parent{
+    
+}
+
+.nava{
+    display:flex;
+    text-decoration:none;
+    border-style:ridge;
+    padding:1%;
+    color:white;
+    background:lightskyblue;
+    border-color:darkblue;
+    
+}
+.navb{
+    text-decoration:none;
+    border-style:ridge;
+    padding:0.2%;
+    color:white;
+    background:darkblue;
+}
+.navc{
+    text-decoration:none;
+    Border-style:ridge;
+    font-size:2.5rem;
+    padding:1%;
+    color:white;
+    background:darkblue;
+
+}
+.navc:hover{
+    color:darkblue;
+    background:white;
+}
+
+.nava:hover{
+    color:darkblue;
+    background:white;
+}
+.navb:hover{
+    color:darkblue;
+    background:white;
+}
+
+
+.mypic img{
+    max-width:100%;
+    
+
+}
+.section-one{
+    display:flex;
+}
+
+.top-home,.top-about,.top-contact,.top-projects{
+    background-color:lightblue;
+}
+
+
+.parent .top{
+ justify-content:flex-start;
+  width: 20%;
+  border: 1px solid black;
+  background: lightgray;
+}
+
+.parent nav{
+    display:flex;
+    flex-flow:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    flex-basis:25%;
+    flex-shrink:10;
+    font-size:2.2rem;
+    width:50%;
+
+}
+
+
+.image-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+
+}
+
+/*Footer Styling*/
+img{
+    max-width:25%;
+    height:38rem;
+    border-style:groove;
+    border-color:transparent;
+
+}
+
+footer{
+    text-align:center;
+    padding:5%;
+}
+
+.finalcon{
+    padding:1%;
+    font-size:2.6rem;
+
+}
+.email{
+    text-decoration:none;
+    font-size:2rem;
+    color:black;
+    background:grey;
+    border-style:ridge;
+    
+}
+/*Tablet*/
+@media(max-width:800px){
+    body{
+        background-color:darkcyan;
+    }
+    .parent .top{
+        width:40%;
+    }
+    .image-container{
+        align-content:column;
+        flex-wrap:wrap;
+
+    }
+
+
+    
+
+}
+/*Phone*/
+@media(max-width:500px){
+    body{
+        background-color:pink;
+    }
+    .parent nav{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        align-content:space-between;
+
+    }
+    .parent .top{
+        width:20%;
+    }
+    .image-container{
+        width:100%;
+    }
+    .aboutme p{
+        display:none;
+    }
+}
