@@ -1,1 +1,82 @@
 /* Add CSS styling here */
+/*CSS reset*/
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+/*Borders to keep all my sections in order*/
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    border:1px solid grey;
+}
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+}
+nav{
+    width:100%;
+    z-index: 999;
+    height:8vh;
+}
+nav .links{
+    display:flex;
+    justify-content: space-evenly;
+    position:fixed;
+    color:white;
+    
+}
+#about{
+    display:flex;
+    justify-content: space-between;
+
+}
+#about .about-img{
+    width:50%;
+}
+#about .about-text{
+    width:50%;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
