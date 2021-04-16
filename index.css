@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Karantina', cursive;
+    max-width: 100%;
+    background-color: lightgray;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    color: red;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 130px;
+}
+
+nav a{
+    margin: 30px 30px;
+    border: 1px solid lightgray;
+    padding: 30px;
+    display: inline-flex;
+    border-radius: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+nav a:hover {
+    background: black;
+    color: red;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.top-section{
+    display: flex;
+    font-size: 40px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+h2{
+    font-size: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-1{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    justify-content: center;
+    align-self: center;
+}
+
+.container-2{
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.container-3{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.container-4{
+    display: inline-flex;
+    width: 400px;
+    height: 400px;
+    justify-content: flex-end;
+}
+
+.bottom-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+
+}
+
+.img-1{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+    justify-content: left;
+}
+
+.img-2{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.img-3{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.img-4{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.img-5{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.img-6{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.img-7{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
+.img-8{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+
+footer{
+    display: flex;
+    background-color: black;
+    color: red;
+    justify-content: space-around;
+}
+
+h3{
+    font-size: 60px;
+    align-self: center;
+    }
+
+
+.footer-contact{
+    display: flex;
+}
