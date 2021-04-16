@@ -1,1 +1,135 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    padding: 0.3%;
+    max-width: 100%;
+    background-color: slategray;
+    text-decoration: none;
+}
+body img{
+    width: 40%;
+    height: 40%;
+}
+.Image-Header{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+h1{
+    color: black;
+    justify-content: flex-end;
+    text-align: left;
+}
+.right-box div{
+    display: flex;
+    justify-content: flex-end;
+    float:right
+}
+.top-buttons{
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.top-buttons nav{
+    padding-bottom: 5%;
+}
+.top-buttons nav a{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 1%;
+}
+.top-section{
+    display: flex;
+    flex-direction: row;
+}
+.top-section a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 40%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.top-section img{
+    width: 500px;
+    height:250px;
+}
+.bottom-section{
+    display: flex;
+    flex-direction: row;
+}
+.bottom-section a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 40%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.bottom-section img{
+    width: 500px;
+    height: 250px;
+}
+#button5{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20%;
+    margin: -15%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: darkslategray;
+    padding: 5%;
+    margin: 0%;
+}
