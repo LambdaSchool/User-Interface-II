@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Karantina', cursive;
+    background-color: lightgray;
+    font-size: 62.5%;
+    display: flex;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    color: orchid;
+    justify-content: space-around;
+    width: 100%;
+    height: 25vh;
+}
+
+h1{
+    font-size: 13rem;
+}
+
+nav a{
+    margin: 3rem 3rem;
+    border: .1rem solid lightgray;
+    padding: 3rem;
+    display: inline-flex;
+    border-radius: 30px;
+    color: white;
+    font-size: 3rem;
+}
+
+nav a:hover {
+    background: black;
+    color: orchid;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.top-section{
+    display: flex;
+    font-size: 4rem;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+h2{
+    font-size: 8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-1{
+    display: flex;
+    width: 80rem;
+    height: 40rem;
+    justify-content: center;
+    align-self: center;
+}
+
+.container-2{
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.container-3{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.container-4{
+    display: inline-flex;
+    width: 40rem;
+    height: 40rem;
+    justify-content: flex-end;
+}
+
+.bottom-section{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: space-around;
+
+}
+
+.img-1{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+    justify-content: left;
+}
+
+.img-2{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+.img-3{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+.img-4{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+.img-5{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+.img-6{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+.img-7{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+.img-8{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: auto;
+}
+
+
+footer{
+    display: flex;
+    background-color: black;
+    color: orchid;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+h3{
+    font-size: 6rem;
+    align-self: center;
+    }
+
+
+.footer-contact{
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-flow: row wrap;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        }
+    .bottom-section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}
