@@ -1,1 +1,399 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset Above */
+
+body{
+    width: 100%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3.5rem;
+    padding: 1.5rem;
+}
+.top{
+    background-color: grey;
+    padding-bottom: .1rem;
+}
+nav{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+nav a{
+    text-decoration: none;
+    margin: auto 0;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    border: 1px solid black;
+    width: 50%;
+    height: 30rem;
+    margin: 1rem 2rem 2rem 4rem;
+}
+.intro{
+    margin: 0 4% ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.intro h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.intro a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+.intro a:hover{
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+.intro p{
+  font-size: 1.2rem;
+}
+.gallery1{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;  
+    margin-bottom: 2rem;
+}
+.gallery2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.image{
+    width: 25%;
+    margin:0 5%;
+}
+.image:hover{
+    opacity: .5;
+    transition: all .3s;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    background-color: grey;
+    text-align: center;
+    font-size: 2.5rem;
+}
+footer h2{
+    margin-bottom: 1rem;
+}
+
+footer a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 4rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+footer a:hover{
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+
+/* MEDIEA QUERIES */
+@media(max-width:1183px){
+ 
+     .box{
+     width: 70%;
+     height: 20rem;
+     }
+     .intro{
+         text-align: center;
+         margin: 0 4% ;
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .intro a{
+         margin-bottom:1.5rem;
+     }
+
+     .gallery1{
+         width: 100%;
+         margin-top: 2.5rem;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     .gallery2{
+         width: 100%;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     .gallery1 .image{
+         width: 30%;        
+         padding-top:3rem ;
+ 
+     }
+     .gallery2 .image{
+        width: 30%;    
+         margin-top: 2rem;
+     }
+     /* .gallery2 .hidden{
+         display: none;
+     } */
+     .intro h2{
+     font-size: 3rem;
+     margin-top: 1%;
+     }
+     footer h2{
+         font-size: 2rem;
+     }
+}
+
+
+
+@media (max-width:800px) {
+    h1{
+        margin-left: 3.5rem;
+     }
+     .top{
+         text-align: center;
+         background-color: white;
+         padding-bottom: .1rem;
+     }
+     nav{
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+         margin: 0 auto;
+     }
+     nav a{
+         width: 25%;
+         margin: 0 auto;
+     }
+     header{
+         flex-direction: column;
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+     }
+     .box{
+     width: 70%;
+     height: 20rem;
+     }
+     .intro{
+         text-align: center;
+         margin: 0 4% ;
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .intro a{
+         margin-bottom:1.5rem;
+     }
+
+     .gallery1{
+         width: 100%;
+         margin-top: 2.5rem;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     .gallery2{
+         width: 100%;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     .gallery1 .image{
+         width: 25%;        
+         padding-top:3rem ;
+ 
+     }
+     .gallery2 .image{
+        width: 25%;    
+         margin-top: 2rem;
+     }
+     .gallery2 .hidden{
+         display: none;
+     }
+     .intro h2{
+     font-size: 3rem;
+     margin-top: 1%;
+     }
+     footer h2{
+         font-size: 2rem;
+     }
+}
+
+    
+/* Mobile */
+@media (max-width:600px) {
+    
+    .top{
+        text-align: center;
+        background-color: white;
+        padding-bottom: .1rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        margin: 0 auto;
+    }
+    header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 70%;
+        height: 20rem;
+    }
+    .gallery1{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gallery2{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gallery1 .image{
+      width:50%
+
+    }
+    .gallery2 .image{
+       width:50%
+    }
+
+}
+@media (max-width:500px) {
+    
+    .top{
+        text-align: center;
+        background-color: white;
+        padding-bottom: .1rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        margin: 0 auto;
+    }
+    header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 70%;
+        height: 20rem;
+    }
+    .gallery1{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gallery2{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gallery1 .image{
+      width:75%
+
+    }
+    .gallery2 .image{
+       width:75%
+    }
+
+}
