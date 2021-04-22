@@ -1,1 +1,375 @@
 /* Add CSS styling here */
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+
+html {
+    font-size: 62.5;
+    font-family: JetBrains Mono;
+    box-sizing:border-box;
+    max-width: 100%;
+    height: 90vh;
+    background-color: #87CEFA;
+    display: flex;
+    justify-content:center;
+    padding: 2.5rem;
+}
+
+/* Main header/nav container with Title */
+
+h1 {
+    font-size: 5rem;
+    font-family: DotGothic16;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+}
+
+h1:hover {
+    text-transform:uppercase;
+    transform: translate3d(20px, 20%, 1rem);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: Syne Mono;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+}
+
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: #4682B4;
+    padding: 2rem;
+    font-family: Piazzolla;
+}
+nav a {
+    
+    color:black;
+    background-color: #FFFAFA;
+    padding: .75rem;
+    border-radius: 50%;
+}
+
+nav a:hover{
+    text-transform: uppercase;
+    background-color: #4682B4    ;
+    color: #E6E6FA
+}
+
+/* End of main header/nav container with Title */
+
+.image-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.image-info-container img {
+    width: 30rem;
+    border-radius: 25%;
+    padding: 2 rem;
+    
+}
+
+.chris-info {
+    padding: 2rem;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: .5rem;
+    border: .5rem solid #8FBC8F;
+    color: #2F4F4F;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color:#8FBC8F;
+    text-transform:uppercase;
+}
+
+.short-info {
+    padding: 15px 5px 15px 5px;
+    color: #191970;
+    font-weight:bold;
+    background-color: #8FBC8F;
+    font-size: 1.2rem;
+}
+
+.short-info:hover {
+    font-style: oblique;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: Syne Mono;
+    line-height: 2;
+    background-color: #8FBC8F;
+    padding: 2rem;
+}
+
+.image-info-container {
+    margin: 2rem;
+}
+
+.image-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-top-images{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.box-middle-images{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.box-bottom-images{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+span {
+    color: #ec3944;
+}
+
+p a span {
+    text-decoration: none;
+}
+
+span:hover {
+    color: white;
+    background-color: #ec3944;
+}
+
+h3{
+    font-size: 3rem;
+    color: #DEB887
+
+}
+
+h3:hover {
+    transform: translate3d(20px, 20%, 1rem);
+    text-transform: capitalize;
+}
+
+
+/* Contacts page begin */
+
+.contact {
+    font-size: 2rem;
+    color: #B0E0E6;
+    padding: 2%;
+}
+
+.contact:hover {
+    text-transform: uppercase;
+    color:teal;
+    border: .5rem dotted #66CDAA;
+    padding: .2rem;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-page p {
+    font-family: Syne Mono;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    line-height: 2;
+}
+
+.first-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Adding in Media queries below - max width 1000 & 800px*/
+
+@media (max-width:1000px) {
+    .image-info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
+
+@media (max-width:800px) {
+    html {
+    margin: 10%
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    header nav a {
+        margin-bottom: 1rem;
+    }
+
+    h1 {font-size: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.image-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-container .image-info-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-info-container img {
+    margin-top: 2%;
+}
+
+.image-info-container p {
+    width: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-image-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h4 {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+/* Adding in Media queries below - max width 500px*/
+
+
+@media (max-width:500px) {
+    html {
+        width: 100%;
+        margin: 10%;
+        display: flex;
+        flex-direction: column,
+    }
+
+    h1 {font-size: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header nav {
+    margin-bottom: 3rem;
+}
+
+body .main-container {
+    width: 80%;
+}
+
+.main-container .image-info-container {
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.image-info-container img {
+    margin-top: 4rem;
+}
+
+.image-info-container p {
+    width: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+
+.main-image-container {
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.box-top-images .box-middle-images .box-bottom-images {
+    flex-direction: column;
+}
+
+}
