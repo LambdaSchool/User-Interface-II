@@ -1,1 +1,437 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styles */
+
+* {
+    /* border: 1px solid grey; */
+    box-sizing: border-box; 
+    /* Be careful of bottom 3 styles */
+    /* padding: 0;
+    margin: 0;
+     */
+     max-width: 100; 
+}
+html {
+    font-size: 62.5%; 
+}
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.6rem;
+    line-height:1.5;
+    color:#4f4f4f;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:3px;
+}
+
+
+section {
+    padding: 4% 0;
+    /* try not using %, stick w pixels or rem */
+    }
+.container {
+    margin-top: 1%;
+   
+}
+
+/* Element Styles */
+h1{
+    font-size: 10rem;
+    color:rgb(33, 32, 32);
+}
+h1:hover {
+    color: white;
+}
+h2 {
+    font-size: 5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+
+/* Header Styles */
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+}
+
+.logo{
+    width: 25%;
+    display: flex;
+}
+.links{
+    width: 50%;
+    display: flex;
+
+}
+.links a{
+    border: 1px solid#4f4f4f;
+    width: 25%;
+    transition: 2s;
+    
+}
+
+a { 
+    color: #4f4f4f;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+a:hover{
+    color:rgb(242, 239, 234);
+    background-color: #4f4f4f;
+}
+
+
+/* Splash Section Styles*/
+
+.splash-box {
+    background-color: red;
+    width: 75%;
+    height: 700px;
+    margin: 0 auto;
+    padding-right: 2%;
+    /* try removing margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image:url(/assets/main-img.jpg);
+    background-size: cover; 
+    /* background-position-y: 65%;
+    background-position-x: left; */
+    background-position: 55% 70%;
+  
+
+}
+
+.splash-box a {
+    font-size: 3rem;
+    border: 1px solid  #1b1b1b;
+    background-color: rgb(255, 247, 240);
+    border-radius: 12px;
+    padding: 10px 50px;
+}
+.splash-box a:hover{
+    color: rgb(252, 246, 240);
+    background-color: #4f4f4f;
+    transition: 1s;
+}
+
+/* Gallery Styles */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.gallery div{
+    /* background-color: rgb(213, 180, 245); */
+    width: 30%;
+    height: 400px;
+    /* height: 40vh; */
+    /* Be careful of vh & vw (view height/view width) */
+    margin: 1% 0;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid #afafaf;
+    
+}
+
+.gallery div h3{
+    background-color: bisque;
+    padding: 10px;
+}
+
+div h3:hover{
+    background-color:#4f4f4f;
+    color: white;
+}
+
+.project-1 {
+    background-image:url(/assets/sweet-eats.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+.project-2 {
+    background-image:url(/assets/learn-to-code.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+
+}
+.project-3{
+    background-image:url(/assets/yosemite-park.png);
+    background-size: cover;
+    background-size: 150%;
+    background-repeat: no-repeat;
+
+}
+/* Footer Styles */
+
+footer {
+    background-color: rgb(225, 223, 223);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer div a{
+  /* padding: 10%; */
+ 
+  
+}
+.contact-me{
+    width: 10%;
+    /* padding: 0.5%; */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me a {
+    background-color:#4f4f4f;
+    color: white;
+    padding: 15px;
+}
+
+.contact-me a:hover{
+    color: #4f4f4f;
+    background-color: white;
+
+}
+
+/* Media Query Styles */
+
+@media(max-width: 800px){
+
+    .container {
+        /* background-color: pink; */
+        width: 95%;
+        margin: 0 auto;
+    }
+    header {
+        /* margin: 0 auto; */
+        display: flex;
+        
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .logo{
+       margin-top: 10px;
+       width: 80%;
+       justify-content: center;
+        /* display: flex; */
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links a{
+        width: 30%;
+        justify-content: center;
+    }
+    a { 
+        padding: 15px 0;
+    }
+    .splash-box {
+        width: 90%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        
+      
+    }
+    .splash-box a {
+        font-size: 1.75rem;
+        padding: 10px;
+        margin: 0 auto;
+       
+    }
+    h1{
+        font-size: 5rem;
+        margin: 0 auto;
+        /* color: rgb(33, 32, 32); */
+        color: rgb(60, 60, 60);
+        text-shadow: 2px 2px #e6e3e3;
+    }
+    h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .gallery div{
+        width: 45%;
+        height: 225px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        background-color: white;
+        border: 1px solid rgb(169, 169, 169);
+    }
+    .project-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+       
+    }
+    .project-2 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+    }
+    .project-3{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 500px){
+    .container {
+        /* background-color: yellow; */
+        width: 95%;
+        margin: 0 auto;
+        
+    }
+
+    header {
+        /* margin: 0 auto; */
+        display: flex;
+        
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .logo{
+       margin-top: 10px;
+       width: 80%;
+       justify-content: center;
+        /* display: flex; */
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links a{
+        width: 40%;
+        justify-content: center;
+    }
+    a { 
+        padding: 15px 0;
+    }
+
+    .splash-box {
+        width: 90%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+      
+    }
+    .splash-box a {
+        font-size: 1.75rem;
+        padding: 10px;
+        margin: 0 auto;
+       
+        /* align-items: center; */
+    }
+    h1{
+        font-size: 5rem;
+        margin: 0 auto;
+        color: rgb(33, 32, 32);
+    }
+    h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .gallery div{
+        width: 45%;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    div.contact-me{
+        width: 35%;
+        height: 75px;
+        align-items: center;
+    }
+      
+}
