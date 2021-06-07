@@ -1,1 +1,212 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styling*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+    color:#9a32cd;
+    line-height: 1.5;
+    font-family:sans-serif;
+    background-color: #fffafa;
+}
+h1, h2, h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    color: #f6a400;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+section{
+    padding: 4%;
+}
+a{
+    text-decoration: none;
+    color:#f6a400;
+}
+nav{
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    background-color: #4f4f4f;
+}
+.top-text{
+    background-color: #4f4f4f;
+    padding: .5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+.logo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 80%;
+    border-radius: 50%;
+    padding: .5rem;
+}
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+/*Top Section Styles*/
+#top{
+    height: 60vh;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.fineartamerica.com%2Fimages%2Fartworkimages%2Fmediumlarge%2F3%2F22-detroit-michigan-skyline-michael-tompsett.jpg&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center top;
+}
+/*Project section*/
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    border: 3px solid grey;
+    padding: 4%;
+    width: 20%;
+    margin: 4%;
+    background-color: #f6a400;
+}
+:hover.box{
+    opacity: 50%;
+}
+.maintitles{
+    justify-content: center;
+}
+footer{
+    background-color: #4f4f4f;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+/* Phone View */
+@media only screen and (max-width: 480px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+   nav{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   nav a{
+       width: 5rem;
+       padding: 5%;
+   }
+   .row-1, .row-1 p, .row-1 h2{
+       width: 100%;
+       margin: 0% auto;
+       padding: 0% auto;
+       letter-spacing: 0px;
+   }
+   .accessible{
+       font-size: 1rem;
+   }
+   .accessible button{
+    padding: 3%;
+    margin: 1%;
+    width: 15%;
+}
+    /* Tablet View */
+    @media only screen and (max-width: 800px) {
+        .row-1, .row-1 p, .row-1 h2{
+            width: 90%;
+            margin: 0% auto;
+            padding: 0% auto;
+            letter-spacing: 0px;
+        }
+        .accessible{
+            font-size: 1rem;
+        }
+        .accessible button{
+         padding: 1%;
+         margin: 1%;
+         width: 8%;
+     }
+/* Widescreen View */
+@media only screen and (min-width: 2000px) {
+    h1{
+        font-size: 7vh;
+    }
+    nav{
+        font-size: 3vh;
+    }
+    .row-1, .row-1 p, .row-1 h2, .row-5 p{
+        width: 100%;
+        margin: 0% auto;
+        padding: 0% auto;
+        letter-spacing: 0px;
+        font-size: 4vh;
+    }
+    .accessible{
+        font-size: 4vh;
+    }
+    .accessible button{
+     padding: 1%;
+     margin: 1%;
+     width: 8%;
+ }
+ .header a{
+     font-size: 5vh;
+ }
