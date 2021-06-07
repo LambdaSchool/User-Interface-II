@@ -1,1 +1,265 @@
-/* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+/* body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+*/
+ol, ul {
+	list-style: none;
+	} 
+
+
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+    
+/* general Brit Hemming Styles */
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 3px dashed black; */
+}
+
+/* note 1rem = 10px using 62.5% makes math and scalability easier. */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color:#4f4f4f;
+    /* font-family: 'Roboto Mono', monospace; */
+	font-family: 'PT Sans', sans-serif;
+}
+
+section{
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+h1, h2, h3{
+	/* letter-spacing: 3px; */
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 6rem;
+	color: White;
+	padding-left: 2%;
+	
+}
+/* Header Styles */
+h2{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 4rem;
+	color: black;
+	padding-left: 2%;
+}
+
+a{
+    text-decoration: none;
+	background-color: rgb(179, 170, 170);
+	padding: 1%;
+	border-radius: 25%;
+	margin: 0 1%;
+}
+a:hover{
+	background-color: rgb(11, 223, 57);
+}
+
+header{
+	background-color:#444c55;
+}
+nav{
+	display:flex;
+	flex-direction: row;
+    justify-content:flex-start;
+	margin: 1%;	
+}
+
+/* Section id="about" Styles */
+#about{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: wrap;
+	background-color: antiquewhite;
+	/* background-size: cover; */
+}
+#about:hover{
+	border-color: green;
+}
+img{
+	border-radius: 50%;
+	
+}
+.bio-container{
+	margin: 3%;
+	padding: 1%;
+}
+.bio-container a{
+	border-radius: 10%;
+	border-style: solid;
+	border-color: green;
+	border-width: 1px;
+	margin: 0;
+	padding: 0.25%;
+}
+.bio-container a:hover{
+	background-color: green;
+	color: white;
+}
+
+#project-link{
+	background-color: rgb(241, 60, 14);
+}
+
+/* section id="Projects" General Styles */
+
+#projects {
+    border: 3px solid black;
+    padding:1%;
+    margin-top: 2%;
+    box-shadow: 3px 3px 10px;
+    display: flex; 
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+#projects:hover{
+    border: 5px solid #005057;
+}
+/* #projects img{
+	size
+} */
+#projects button{
+		color: white;
+		background-color:#BB2026;
+		font-size: 100%;
+		margin: 3%;
+		height: auto;
+		border-radius: 10%;
+}
+#projects button:hover{
+    background-color: green;
+}
+
+/* alternating backgrounds in id="projects" Styles*/
+.card {
+    margin: 1%;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+    
+}
+.card:hover{
+    border: 3px solid black;
+}
+
+ .card.grey{
+	background-color: rgb(190, 192, 194);
+}
+
+/* Footer Styles */
+footer{
+	background-color:#444c55;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+footer h3{
+	font-size: 110%;
+	color: White;
+	margin-top: 1%;
+}
+
+footer button{
+	font-size: 100%;
+	padding: 1% 2%;
+	margin: 1%;
+}
+footer button:hover{
+	background-color: green;
+}
+/* Responsive Styles */
+/* max-width scales down - desktop first */
+@media (max-width: 800px) {
+	.bio-container {
+	  background: rgb(189, 189, 146);
+	  background-color: #E0E1E3;
+	}
+  }
+
+  @media (max-width: 500px) {
+	#veryTop{
+		background-color: #3A5743;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h1{
+		font-size: 3rem;
+		text-align: center;
+	}
+	h2{
+		font-size: 2rem;
+		text-align: center;
+	}
+	.bio-container {
+	  background: rgb(124, 124, 64);
+	  color: bisque;
+	  text-align: center;
+	}
+
+  }
+
+  /* min-width scales up - mobile first */
