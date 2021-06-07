@@ -1,0 +1,286 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, nav {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+    width: 100%;
+}
+/* general styles */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    font-size: 1.8 rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #333;
+    padding-bottom: 2%;
+}
+
+button {
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    letter-spacing: 3px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    
+}
+
+/* Header Styling */
+
+header {
+    background-color:#F9F4F1;
+    border-bottom: 5px solid #333;
+}
+
+.links {
+    display: flex;
+    margin-left: 2%;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.links a {
+   text-decoration: none;
+    background-color: #333;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+.links a:hover {
+    text-decoration: none;
+    background-color: #dcb8ad;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+
+/* about me styling */
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+.left {
+    flex: 3 1.75 auto;
+    background-image: url("https://ashleyannlaz.com/wp-content/uploads/2021/02/IMG_1841-820x550.jpg");
+    background-position: center top;
+    background-size: cover;
+    height: 250px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 20%;
+    background-color: #F9F4F1;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    padding-top: 3%;
+}
+
+.right {
+    flex: 1 1.25 auto;
+    display: flex;
+    height: 250px;
+}
+
+.right p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing:1.5px;
+    color: #333;
+    justify-content: space-around;
+    padding-top: 1%;
+    
+}
+
+.gallery p {
+    padding-top: 5%;
+    
+}
+
+.gallery div {
+    margin: 1%;
+    flex: 0 1 auto;
+    
+}
+
+.box {
+    width: 20%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: #F9F4F1;
+    /* max-width: 100%; */
+    text-align: center;
+    margin-top: auto;
+    min-height: 10vh;
+    border-top: 5px solid #333;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    margin: 2%;
+}
+
+.contact button {
+    width: 20%;
+}
+
+@media screen and (max-width: 500px) {
+    
+    header {
+        padding: 1%;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 0;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body { box-sizing: border-box;
+  
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 40%;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top:10px;
+    }
+
+    .contact button {
+        width: 35%;
+    }
+
+    footer h2 {
+        font-size: 2.2rem;
+    }
+
+    .left {
+        height: 150px;
+    }
+    .right {
+        height: auto;
+    }
+
+    .about {
+        padding: 2% 5%;
+    }
+
+
+}
+
+
+
