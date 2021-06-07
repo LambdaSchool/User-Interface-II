@@ -1,1 +1,324 @@
-/* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  padding: 0.3%;
+  max-width: 100%;
+  background-color: #aaaaaa;
+  text-decoration: none;
+  border: 1px solid grey;
+}
+.Image-Header {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image a {
+  background-color: #aaaaaa;
+  text-decoration: none;
+  color: black;
+  margin-top: 1%;
+  padding: 1%;
+  border-radius: 8px;
+}
+.Image-Header .image {
+  width: 60vh;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url("../Img/nadir-balcikli-wE9nUW7tMmk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.Name {
+  width: 40%;
+  text-transform: uppercase;
+}
+h1 {
+  background-color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+h2 {
+  color: white;
+  background-color: black;
+  border-radius: 7px;
+  padding: 1%;
+}
+.top-buttons {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+nav a {
+  background-color: #222831;
+  color: white;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+}
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+.top-section a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 40%;
+  background-color: #222831;
+  color: white;
+  border-radius: 20px;
+}
+.top-section img {
+  width: 500px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+.bottom-section a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 40%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+.bottom-section img {
+  width: 450px;
+  height: 250px;
+  margin-top: 5%;
+  border-radius: 20px;
+}
+#button5 {
+  background-color: #aaaaaa;
+  color: black;
+  border-radius: 20px;
+  padding: 30%;
+  margin: -10%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+  padding: 5%;
+  margin: 0%;
+  margin-top: 2%;
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+  /*Top of page - name and nav bar*/
+  .top-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+  nav {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
+  }
+  nav a {
+    margin-top: 2%;
+  }
+  /*White picture with name and projects button on it*/
+
+  .image {
+    margin: auto;
+    max-width: 90%;
+  }
+  .image a {
+    margin: 5% auto;
+    padding: 3%;
+  }
+  h2 {
+    margin: 1% auto;
+    font-size: 1.8rem;
+  }
+  .image a {
+    font-size: 2rem;
+  }
+  /*Projects top row*/
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  .top-section img {
+    max-width: 20vh;
+    max-height: 20vh;
+  }
+  /*Projects bottom row*/
+
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  .bottom-section img {
+    max-width: 20vh;
+    max-height: 20vh;
+  }
+}
