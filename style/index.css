@@ -1,1 +1,341 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    border:1px solid grey;
+}
+
+
+/*General Styles*/
+
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:black;
+    line-height:1.5;
+    background-color:#ffe8d6;
+}
+
+nav a:first-child {
+margin-left: 20px;
+}
+
+.links a {
+    border: white 1px solid;
+    
+}
+
+nav {
+    font-size: 1.5rem;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+nav h1 {
+    margin: 1vh;
+    font-size: 5rem;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: .5% 1.5%;
+}
+
+img {
+    height:auto;
+    width: 70%;
+}
+
+header {
+    background-color:#cb997e;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: center;
+    margin: .5%;    
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.topLeftBox {
+ width: 25%;
+}
+
+.topRightBox {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* border:solid;
+    border-color: red; */
+    width: 50%;
+}
+
+.topRightBox h2 {
+    font-size: 5rem;
+    display: flex;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+.topRightBox button {
+    display: flex;
+    justify-content: left;
+    font-family: 'Averia Sans Libre', cursive;
+    width: 20%;
+    
+}
+
+.topRightBox p {
+    margin: 5;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+.middleRow {
+    display: flex;
+    margin: .5%;    
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.middleRow img {
+    width: 150px;
+    height: 150px;
+}
+
+.bottomRow {
+    display: flex;
+    margin: .5%;    
+    justify-content: space-evenly;
+}
+
+.bottomRow img {
+    width: 150px;
+    height: 150px;
+}
+
+.box {
+    text-align: center;
+    width: 25%;
+    font-size: 1.4rem;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+footer {
+    background-color:#cb997e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+}
+
+footer h2 {
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+footer button {
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 800px) {
+    /* header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header img {
+        size: 50vh;
+    }
+
+    .links a {
+       display:flex;
+       flex-direction: column; 
+       text-align: center;
+       font-size: 10px
+       width: 20%;
+       margin: 0 auto;
+    }
+
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .middleRow {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: initial;
+        text-align: center;
+        
+    }
+
+    .bottomRow {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: initial;
+        text-align: center;
+    }
+    
+    .container {
+        flex-wrap: wrap;
+    } */
+} 
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 45vh;
+    }
+
+    .topLeftBox img {
+        size: 500px;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+       display:flex;
+       flex-direction: column; 
+       text-align: center;
+       font-size: 10px;
+       width: 10%;
+       margin: 0 2rem;
+    }
+
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstRow img {
+        width: 70%;
+    }
+
+    .topRightBox {
+    align-items: center;
+}
+
+    .topRightBox p {
+        text-align: center;
+    }
+    .topRightBox h2 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+  
+    .topRightBox button {
+        justify-content: center;
+        width: 50%;
+    }
+
+    .middleRow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center; 
+    }
+
+    .box {
+        width: 40%;
+
+    }
+
+    /* .pictures {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    .bottomRow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .container {
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    footer div h2 {
+        width: 100%;
+    }
+}
