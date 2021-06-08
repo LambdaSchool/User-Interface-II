@@ -1,1 +1,290 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/*General Styles*/
+
+html{
+    font-size: 62.5%;
+}
+
+.myname{
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: cursive;
+    padding-bottom: 2.5%;
+}
+
+header{
+    height: 10vh;
+    border-bottom: 5px solid red;
+} 
+
+nav a{
+    display: inline-flex
+    color: black;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+}
+
+a:hover {
+    background-color: blue;
+  }
+    
+  .middle{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .left{
+      width: 45%;
+      margin-left: 3%;
+      text-align: center;
+      top: 25%;
+      padding-top: 10%;
+  }
+
+  .right{
+    width: 45%;
+    margin-left: 3%;
+    text-align:left;
+    top: 25%;
+    font-size: 4rem;
+    font-family: cursive;
+    padding-top: 20%;
+}
+
+.right a{
+    font-size: 2rem;
+    width: 20%;
+    background-color: black;
+    color: blanchedalmond;
+    border: solid black 1px;
+    justify-content: left;
+    border-radius: 10%;
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img{
+    width: 20%;
+    margin-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+p{
+    font-size: 2rem;
+    max-width: 80%;
+    padding-top: 2%;
+}
+
+.footer{
+    background-color: red;
+    height: 30vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer a{
+    font-size: 3rem;
+    margin-left: 45%;
+    width: 20%;
+    background-color: black;
+    color: blanchedalmond;
+    border: solid black 1px;
+    justify-content: center;
+}
+
+h3{
+    font-size: 3rem;
+   text-align: center;
+   padding-top: 2.5%;
+   justify-content: center;
+}
+
+@media(max-width: 800px){
+    .myname {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a:hover {
+        background-color: blue;
+    
+      }
+
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 10%;
+
+        
+    }
+
+
+    .gallery img {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+
+    }
+
+    .right {
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        justify-content: center;
+        padding-top: 5%;
+
+    }
+
+    .right p {
+        margin: auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+
+    }
+
+    nav a{
+        color: blue;
+        align-items: center;
+    }
+
+    .footer a{
+        justify-items: center;
+        margin-left: 40%;
+    }
+
+}
+
+@media(max-width: 500px){
+    .myname {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a:hover {
+    
+        width: 40%;
+      }
+
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 10%;
+
+
+
+    .gallery img {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+
+    }
+
+    .right {
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        justify-content: center;
+        padding-top: 5%;
+
+    }
+
+    .right p {
+        margin: auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+
+    }
+
+    nav a{
+        color: blue;
+        align-items: center;
+    }
+
+    .footer a{
+        justify-items: center;
+        margin-left: 35%;
+    }
+
+
+
+
