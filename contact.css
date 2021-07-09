@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	font-family: sans-serif;
+	background-color: #f7f7f7;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+header nav a {
+	padding: 1rem;
+	border-radius: 20px;
+	color: black;
+	font-size: 1.5rem;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+header nav a:hover {
+	padding: ;
+	color: white;
+	background-color: blue;
+	border: 2px solid lightslategray;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	width: 90vw;
+}
+
+main .head {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main form fieldset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
+	width: 15rem;
+}
+
+main form input {
+	height: 1.5rem;
+	width: 14.5rem;
+}
+
+main form .textarea {
+	height: 300px;
+}
+
+main form textarea {
+	height: 290px;
+	width: 14.5rem;
+}
+
+main form button {
+	height: 1.5rem;
+	width: 14.5rem;
+	background-color: #ffc1c1;
+}
+
+main form button:hover {
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 5%;
+	width: 100%;
+}
+
+footer a:hover i {
+	font-size: 2rem;
+}

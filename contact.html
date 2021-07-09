@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href='contact.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
 </head>
 <body>
-    <h1> CONTACT </h1>
+    <header>
+        <nav>
+            <a href='index.html'>Home</a>
+            <a href='about.html'>About</a>
+            <a href='projects.html'>Projects</a>
+        </nav>
+    </header>
+    <main>
+        <form action='' method = 'post'>
+            <div class = 'head'>
+                <h1>Contact Me</h1>
+                <h3>Feel free to send me a message.</h3>
+            </div>
+            <div class = 'imput'>
+            <fieldset>
+                <input placeholder = 'Name' type='text' tabindex='1' required>
+            </fieldset>
+            <fieldset>
+                <input placeholder = 'Email' type='email' tabindex='2' required>
+            </fieldset>
+            <fieldset>
+                <input placeholder = 'Phone Number' type='text' tabindex='3' required>
+            </fieldset>
+            <fieldset>
+                <input placeholder = 'Website url' type='url' tabindex='4' required>
+            </fieldset>
+            <fieldset class = 'textarea'>
+                <textarea placeholder = 'Type your message here...' tabindex='5' required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name = 'submit' type='submit' id='submit' data-submit='...Sending'>Send</button>
+            </fieldset>
+        </div>
+        </form>
+    </main>
+    <footer>
+        <a href='https://www.linkedin.com/in/brandon-may-782862161/'><i class="fa fa-linkedin"></i></a>
+        <p>copyright 2021 &#169;</p>
+        <a href='https://github.com/battleb2014'><i class="fa fa-github"></i></a>
+    </footer>
 </body>
 </html>
