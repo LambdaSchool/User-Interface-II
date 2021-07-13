@@ -1,3 +1,5 @@
+day 2 project! 
+
 # Flexbox Module Challenge
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.
@@ -23,11 +25,13 @@ Portfolio websites are a great way to show off your work to friends, family, and
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+    tring to redo this project 
+
+- [done ] Create a forked copy of this project.
+- [done ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [done ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [done ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ done] Push commits: git push origin `<firstName-lastName>`.
  
 ### Task 2: Minimum Viable Product
 
@@ -69,5 +73,5 @@ The following goals are designed to stretch your knowledge and may require addit
 
 Follow these steps for completing your project.
 
-- [ ] Submit a pull request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ok] Submit a pull request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 
