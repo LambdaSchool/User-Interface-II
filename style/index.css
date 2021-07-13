@@ -1,1 +1,153 @@
-/* Add CSS styling here */
+html{
+    font-size: 62.5%;
+}
+
+section{
+    padding: 4%;
+}
+
+header{
+    background-color: grey;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+
+.topSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.topSection img{
+    width: 50em;
+    height: 30em;
+    
+}
+
+.aboutMe{
+    padding: 40px;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+.image{
+    text-align: center;
+}
+
+.row img{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 5rem;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*tablets*/
+
+@media(max-width: 800px){
+    #aboutMe{
+        background-position:left center;
+    }
+    #aboutMe div{
+        width: 50%;
+        margin-right: 3%;
+        margin-top: 5%;
+    }
+    #row{
+        background-position: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
+/*phones*/
+
+@media(max-width:500px){
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .link{
+        width: 100%;
+    }
+    #aboutMe{
+        justify-content: center;
+        height: auto;
+    }
+    #about div{
+        display: flex;
+        margin: 0;
+        width: 90%;
+    }
+
+    .topSection{
+        flex-wrap: wrap;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+}
